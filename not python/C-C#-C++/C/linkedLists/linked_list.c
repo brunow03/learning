@@ -298,7 +298,7 @@ void add_content(cell *lst, int x, int k){
 void delete_cell (cell *p)
 {
    cell *garbage;
-   garbage = p->next;
+   garbage = p;
    p->next = garbage->next;
    free (garbage);
 }

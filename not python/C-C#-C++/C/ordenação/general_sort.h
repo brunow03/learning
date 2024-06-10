@@ -29,4 +29,6 @@ void stringSort(char (*)[20], int n);
 
 void printArrayString(char (*)[20], int n);
 
+int equal_arrays(int u[], int v[], int n);
+
 #endif
