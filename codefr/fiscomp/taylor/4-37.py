@@ -1,7 +1,7 @@
 import numpy as np
-from matplotlib.pylab import show,plot,xlabel,ylabel,savefig
+from matplotlib.pylab import show,plot,xlabel,ylabel,savefig,grid
 
-theta = np.linspace(0,np.pi(),500)
+theta = np.linspace(0,np.pi,500)
 
 M = R = g = 1
 m1 = .7*M 
@@ -13,7 +13,10 @@ def potential(theta, m):
 PE1 = [potential(t,m1) for t in theta]
 PE2 = [potential(t,m2) for t in theta]
 
-xlabel('theta')
+
+
+grid()
+xlabel('\u03B8')
 ylabel('U(\u03B8)')
 plot(theta,PE1)
 plot(theta,PE2)
