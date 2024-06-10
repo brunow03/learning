@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Sales_item.h"
+#include "Sales_item.hpp"
 
 struct Sales_data {
 	// new members: operations on Sales_data objects
