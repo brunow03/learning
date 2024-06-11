@@ -312,7 +312,7 @@ void fillupLL(cell *lst, int n){
 	else
 	{
 		for (int i = 0; i < n; ++i){
-			insert(randInt(200, 100, i*randInt(10,0,i)), lst);
+			insert(randInt(200, 100), lst);
 		}
 	}
 }
