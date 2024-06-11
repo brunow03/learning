@@ -25,6 +25,7 @@ int main(int argc, char const *argv[])
 
 	// Core variables initialization
 	int n;
+	double epslon = 0.15; // tolerance
 	int arr[N];
 	unsigned long long int count = 0ULL; // For fun
 
@@ -37,13 +38,13 @@ int main(int argc, char const *argv[])
 
 	// Loop to find separated
 	int is_it = 0; // As in "is it separated?"
-	while (is_it == 0 || is_it == n-1 || is_it == -1) // Most common & obvious conditions. I don't want them.
+	while (is_it < ((float) n)*(0.5 - epslon) || is_it > ((float) n)*(0.5 + epslon)) // Most common & obvious conditions. I don't want them.
 	{
 		// Random array size
-		n = randInt(50,0);
+		n = randInt(20,0) + 30;
 
 		// Generates a random array
-		randomArray(arr, n, 200, 100); 
+		randomArray(arr, n, 200, 100);
 
 		// Is it, though?
 		is_it = is_separated(arr, 0, n); 
