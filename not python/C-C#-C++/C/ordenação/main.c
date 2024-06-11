@@ -50,11 +50,17 @@ int main(int argc, char const *argv[])
 		is_it = is_separated(arr, 0, n); 
 
         // Prints count of loops
-		printf("\rCount = %llu", count);
+		// printf("\rCount = %llu", count);
+
+		// Print count only every 1000 iterations
+		if (count % 1000 == 0) {
+			printf("\rCount = %llu", count);
+			fflush(stdout);
+		}
 
 		// Counts & flush
 		count++;
-		fflush(stdout);
+		// fflush(stdout);
 
 		// Slow down the loop
         // usleep(50000);  // Sleep for 100,000 microseconds (0.1 seconds)

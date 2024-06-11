@@ -67,7 +67,7 @@ int is_separated(int v[], int p, int r){
 	int i, k;
 	for (int j = p; j < r; ++j) {
 		i = p; 
-		k = r;
+		k = r-1;
 		while (v[i] <= v[j] && i < j) i++;
 		while (v[k] > v[j] && k > j) k--;
 		if (i == j && k == j) return j;
