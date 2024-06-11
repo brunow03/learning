@@ -9,15 +9,16 @@
 #include "../linkedLists/linked_list.h"
 #include <unistd.h>  // Para usar usleep()
 #include "heapsort.h"
-#define N 10
+#define N 1000
 
 struct timespec start, end;
 long long elapsed_ns;
 
 int main(int argc, char const *argv[])
 {
-	clock_gettime(CLOCK_MONOTONIC, &start);
+	printf("\n\033[1mProgram Starts!\033[0m\n");
 
+	clock_gettime(CLOCK_MONOTONIC, &start);
 
 	// Initializes random seed
 	srand(time(NULL));
@@ -39,7 +40,7 @@ int main(int argc, char const *argv[])
 	while (is_it == 0 || is_it == n-1 || is_it == -1) // Most common & obvious conditions. I don't want them.
 	{
 		// Random array size
-		n = randInt(50,0,1);
+		n = randInt(50,0);
 
 		// Generates a random array
 		randomArray(arr, n, 200, 100); 
@@ -84,9 +85,9 @@ int main(int argc, char const *argv[])
 	cell *lst, *lst_odd;
 
 	// Gets a random list size n < 50
-	n = randInt(50,0,1);
+	n = randInt(50,0);
 
-	// Prints it
+	// Prints n
 	printf("Size = %d\n", n);
 
 	//  Creates a linked list
@@ -152,39 +153,27 @@ int main(int argc, char const *argv[])
 	printf("\n===========================================================================================\n");
 
 	printf("\nHeapsort part:\n\n");
-	
-	int heap_vector[] = {1, 4, 6, 7, 11, 16, 17, 21, 22, 26, 27, 29, 31, 37, 44, 53, 55, 56, 60, 63, 64, 68, 70, 78, 81, 84, 87, 
-	88, 89, 94, 97, 102, 105, 112, 118, 120, 121, 126, 127, 129, 133, 141, 146, 147, 151, 152, 154, 158, 165, 168, 170, 175, 176, 
-	177, 180, 186, 187, 189, 192, 195, 201, 206, 208, 211, 212, 213, 222, 230, 231, 234, 236, 237, 242, 243, 244, 247, 249, 250, 
-	251, 259, 260, 261, 264, 270, 271, 272, 274, 281, 287, 289, 294, 303, 304, 311, 319, 323, 325, 326, 328, 329, 333, 335, 341, 
-	344, 355, 356, 360, 364, 365, 366, 367, 368, 372, 373, 376, 377, 383, 384, 385, 390, 391, 392, 393, 400, 403, 408, 410, 423, 
-	425, 426, 433, 434, 439, 442, 447, 450, 453, 457, 458, 463, 464, 465, 469, 476, 479, 482, 492, 495, 496, 500, 503, 506, 507, 
-	508, 510, 516, 524, 526, 527, 528, 533, 538, 545, 551, 556, 558, 560, 562, 564, 565, 571, 575, 577, 583, 585, 588, 590, 593, 
-	597, 607, 610, 611, 617, 621, 628, 630, 631, 633, 636, 638, 641, 642, 647, 649, 656, 663, 670, 672, 673, 680, 684, 685, 688, 
-	693, 694, 695, 697, 699, 704, 706, 713, 715, 718, 722, 732, 733, 737, 738, 739, 740, 741, 747, 748, 752, 753, 757, 764, 767, 
-	769, 770, 771, 776, 781, 783, 785, 788, 789, 793, 801, 803, 805, 812, 814, 822, 826, 831, 833, 834, 842, 844, 847, 851, 852, 
-	858, 862, 863, 864, 867, 868, 869, 871, 873, 878, 881, 883, 888, 891, 895, 897, 900, 902, 905, 906, 911, 915, 917, 922, 923, 
-	925, 930, 935, 939, 944, 946, 947, 958, 962, 964, 967, 972, 973, 976, 978, 980, 982, 985, 989, 991, 993, 1000};
 
-	n = 300;
+	int heap_vector[] = {84, 974, 772, 756, 553, 397, 654, 106, 821, 796};
+
+	n = 9;
+	heap_vector[0] = 0;
 	printArray(heap_vector, n);
 	printf("Is it heap: %d\n\n", isheap(heap_vector, n));
 	buildheap(heap_vector, n);
 	printArray(heap_vector, n);
 	printf("Is it heap now? %d\n\n", isheap(heap_vector, n));
 
-	printf("Heap sprting:\n");
-	heapsort(heap_vector, n);
-	printArray(heap_vector, n);
+	int new_heap_vector[] = {0, 690, 608, -995, -495, -773, 774, -237, 754, -474};
+	printf("Heap sorting:\n");
+	heapsort(new_heap_vector, n);
+	printArray(new_heap_vector, n);
+
+	// ===========================================================================================>	
 
 	printf("\n\033[1mProgram complete!\033[0m\n");
 	printf("\a");
 	printf("\n");
-
-
-
-
-
 
 	clock_gettime(CLOCK_MONOTONIC, &end);
 

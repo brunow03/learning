@@ -1,7 +1,7 @@
 #include "heapsort.h"
 #include <stddef.h>
 #include <stdio.h>
-#define swap(A, B) {int t = A; A = B; B = t;}
+#define swap(A, B) {int t = (A); (A) = (B); (B) = t;}
 
 // Receives an array v[1..m] that is a heap
 // except perhaps for indices 2 and 3 and
@@ -21,12 +21,12 @@ sieve (int v[], int n) {
 }
 
 int isheap(int v[], int n){
-	for (int i = n; i > 1; --i){
-		if (v[i/2] < v[i]){
-			return 0;
-		}
-	}
-	return 1;
+    for (int i = n / 2; i > 0; --i){
+        if (v[i] < v[2*i] || (2*i + 1 <= n && v[i] < v[2*i + 1])){
+            return 0;
+        }
+    }
+    return 1;
 }
 
 // Rearranges an array v[1..m] so that

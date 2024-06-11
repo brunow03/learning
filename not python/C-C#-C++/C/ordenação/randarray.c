@@ -9,6 +9,6 @@ void randomArray(int v[], int n, int p, int q){
 	}
 }
 
-int randInt(int n, int m, int seed){
+int randInt(int n, int m){
 	return rand() % n - m;
 }
