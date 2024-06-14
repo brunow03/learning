@@ -1,14 +1,17 @@
 #include <stdio.h>
+#include <time.h>
+#include <limits.h>
+#include <stdlib.h>
+#include <unistd.h>  // Para usar usleep()
+
 #include "mergesort.h"
 #include "general_sort.h"
+#include "radixsort.h"
 #include "randarray.h"
 #include "quicksort.h"
-#include <limits.h>
-#include <time.h>
-#include <stdlib.h>
-#include "../linkedLists/linked_list.h"
-#include <unistd.h>  // Para usar usleep()
 #include "heapsort.h"
+#include "../linkedLists/linked_list.h"
+
 #define N 1000
 
 struct timespec start, end;
@@ -37,11 +40,15 @@ int main(int argc, char const *argv[])
 	printf("Valor máximo de unsigned long long int: %llu\n\n", ULLONG_MAX);
 
 	// Loop to find separated
+	n = 50;
 	int is_it = 0; // As in "is it separated?"
-	while (is_it < ((float) n)*(0.5 - epslon) || is_it > ((float) n)*(0.5 + epslon)) // Most common & obvious conditions. I don't want them.
+	while (is_it < 2 || is_it > 48 
+			/*is_it < ((float) n)*(0.5 - epslon) || is_it > ((float) n)*(0.5 + epslon)*/) 
+			
+			// Most common & obvious conditions. I don't want them.
 	{
 		// Random array size
-		n = randInt(20,0) + 30;
+		// n = randInt(20,0) + 30;
 
 		// Generates a random array
 		randomArray(arr, n, 200, 100);
@@ -53,7 +60,7 @@ int main(int argc, char const *argv[])
 		// printf("\rCount = %llu", count);
 
 		// Print count only every 1000 iterations
-		if (count % 1000 == 0) {
+		if (count % 100000 == 0) {
 			printf("\rCount = %llu", count);
 			fflush(stdout);
 		}
@@ -175,6 +182,38 @@ int main(int argc, char const *argv[])
 	printf("Heap sorting:\n");
 	heapsort(new_heap_vector, n);
 	printArray(new_heap_vector, n);
+
+	// ===========================================================================================>	Radix sorting part
+
+	printf("\n===========================================================================================");
+	printf("\n===========================================================================================\n");
+	printf("\n");
+
+	int radix_n;
+	radix_n = randInt(50,0);
+	int radix_vector[radix_n];
+
+	bin_rand_array(radix_vector, radix_n);
+	printf("Radix_n = %d\n", radix_n);
+	printArray(radix_vector, radix_n);
+	organize_bin(radix_vector, radix_n);
+	printArray(radix_vector, radix_n);
+
+	// DNA
+	printf("\n");
+	radix_n = randInt(50,0);
+	char dna_vector[radix_n];
+	DNA_rand_array(dna_vector, radix_n);
+	printf("Array size = %d\n", radix_n);
+	printcArray(dna_vector, radix_n);
+
+	// transforming in an int array
+	int *dna_vector_int;
+	dna_vector_int = dna_to_int(dna_vector, radix_n);
+	printArray(dna_vector_int, radix_n);
+
+	countingsort(dna_vector_int, radix_n, 4);
+	printArray(dna_vector_int, radix_n);
 
 	// ===========================================================================================>	
 
