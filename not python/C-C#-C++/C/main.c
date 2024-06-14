@@ -4,13 +4,13 @@
 #include <stdlib.h>
 #include <unistd.h>  // Para usar usleep()
 
-#include "mergesort.h"
-#include "general_sort.h"
-#include "radixsort.h"
-#include "randarray.h"
-#include "quicksort.h"
-#include "heapsort.h"
-#include "../linkedLists/linked_list.h"
+#include "./ordenação/mergesort.h"
+#include "./ordenação/general_sort.h"
+#include "./ordenação/radixsort.h"
+#include "./ordenação/quicksort.h"
+#include "./ordenação/heapsort.h"
+#include "./linkedLists/linked_list.h"
+#include "./random/randarray.h"
 
 #define N 1000
 

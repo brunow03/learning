@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-#include "../ordenação/randarray.h"
+#include "../random/randarray.h"
 
 /*
 // Function to check if the list is empty
