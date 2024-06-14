@@ -9,4 +9,8 @@ int randInt(int n, int m);
 
 //int * arraysection(int v[], int p, int r);
 
+void bin_rand_array(int v[], int n);
+
+void DNA_rand_array(char c[], int n);
+
 #endif // RANDARRAY_H

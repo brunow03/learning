@@ -31,4 +31,8 @@ void printArrayString(char (*)[20], int n);
 
 int equal_arrays(int u[], int v[], int n);
 
+void printcArray(char *v, int n);
+
+int *dna_to_int(char v[], int n);
+
 #endif
