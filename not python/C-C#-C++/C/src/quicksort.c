@@ -1,8 +1,8 @@
-#include "quicksort.h"
+#include "../include/quicksort.h"
 #include <stddef.h>
-#include "../linkedLists/linked_list.h"
+#include "../include/linked_list.h"
 #include <stdlib.h>
-#include "general_sort.h"
+#include "../include/general_sort.h"
 
 static void truncated_sort(int v[], int n){
 	insertionsort(v, n);

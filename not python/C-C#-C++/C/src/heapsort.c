@@ -1,4 +1,4 @@
-#include "heapsort.h"
+#include "../include/heapsort.h"
 #include <stddef.h>
 #include <stdio.h>
 #define swap(A, B) {int t = (A); (A) = (B); (B) = t;}

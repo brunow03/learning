@@ -1,5 +1,5 @@
-#include "radixsort.h"
-#include "general_sort.h"
+#include "../include/radixsort.h"
+#include "../include/general_sort.h"
 #include <stdlib.h>
 
 // Array of bits. A function to rearrange in increasing order an array v[] whose elements are 0s and 1s. 

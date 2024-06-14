@@ -1,20 +1,37 @@
 CC = gcc
 OUTPUT_FILE = output.txt
+MAIN = ./main
+SRC = main.c ./src/*.c
+IGNORE = $(shell find src/ ! -name "recursive.c" -name "*.c")
 
-all: clean compile run
+all: time clean compile run
+
+time:
+	@echo "==========================================================================================================" | tee -a $(OUTPUT_FILE)
+	@echo "==========================================================================================================" | tee -a $(OUTPUT_FILE)
+	@echo "==========================================================================================================" | tee -a $(OUTPUT_FILE)
+	@echo "==========================================================================================================" | tee -a $(OUTPUT_FILE)
+	@stat -c %y Makefile | tee -a $(OUTPUT_FILE)
 
 clean:
 	@echo "Cleaning..."
-	@find . -type f ! \( -name "*.c" -o -name "*.h" -o -name "*.txt" -o -name "Makefile" \) -exec rm -f {} +
-	
+	@rm $(MAIN) || true
+# @find . -type f ! \( -name "*.c" -o -name "*.h" -o -name "*.txt" -o -name "Makefile" \) -exec rm -f {} +
+
 compile:
 	@echo "Compiling..."
-	@$(CC) -o main ./linkedLists/linked_list.c main.c ./ordenação/*.c ./random/*.c
+	@$(CC) -o $(MAIN) $(SRC)
 # -fsanitize=address
 
 run:
 	@echo "Running..."
-	@./main | tee -a output.txt
+	@$(MAIN) | tee -a $(OUTPUT_FILE)
+
+
+# @./main
+
+# main:	./ordenação/*.c ./random/*.c
+
 
 
 # ==============================================================================
