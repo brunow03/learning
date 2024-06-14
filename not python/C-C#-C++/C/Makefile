@@ -3,7 +3,7 @@ OUTPUT_FILE = output.txt
 EXEC = ./main
 SRC = main.c ./src/*.c
 
-all: time clean compile run
+all: time clean compile run clean
 
 time:
 	@echo "==========================================================================================================" | tee -a $(OUTPUT_FILE)
@@ -25,6 +25,7 @@ compile:
 run:
 	@echo "Running..."
 	$(EXEC) | tee -a $(OUTPUT_FILE) $(IGNORE)
+	@rm $(EXEC)
 
 
 # @./main
