@@ -2,7 +2,6 @@ CC = gcc
 OUTPUT_FILE = output.txt
 MAIN = ./main
 SRC = main.c ./src/*.c
-IGNORE = $(shell find src/ ! -name "recursive.c" -name "*.c")
 
 all: time clean compile run
 
@@ -15,17 +14,17 @@ time:
 
 clean:
 	@echo "Cleaning..."
-	@rm $(MAIN) || true
+	rm $(MAIN) || true
 # @find . -type f ! \( -name "*.c" -o -name "*.h" -o -name "*.txt" -o -name "Makefile" \) -exec rm -f {} +
 
 compile:
 	@echo "Compiling..."
-	@$(CC) -o $(MAIN) $(SRC)
+	$(CC) -o $(MAIN) $(SRC)
 # -fsanitize=address
 
 run:
 	@echo "Running..."
-	@$(MAIN) | tee -a $(OUTPUT_FILE)
+	$(MAIN) | tee -a $(OUTPUT_FILE) $(IGNORE)
 
 
 # @./main
