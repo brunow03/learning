@@ -1,4 +1,4 @@
-#include "randarray.h"
+#include "../include/randarray.h"
 #include <stdlib.h>
 #include <time.h>
 
