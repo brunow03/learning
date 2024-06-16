@@ -215,6 +215,8 @@ int main(int argc, char const *argv[])
 	countingsort(dna_vector_int, radix_n, 4);
 	printArray(dna_vector_int, radix_n);
 
+	
+
 	// ===========================================================================================>	
 
 	printf("\n\033[1mProgram complete!\033[0m\n");
