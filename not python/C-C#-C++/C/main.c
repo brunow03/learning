@@ -4,6 +4,8 @@
 #include <stdlib.h>
 #include <unistd.h>  // Para usar usleep()
 
+#include "./include/binarytrees.h"
+#include "./include/stringmatching.h"
 #include "./include/mergesort.h"
 #include "./include/general_sort.h"
 #include "./include/radixsort.h"
@@ -11,6 +13,7 @@
 #include "./include/heapsort.h"
 #include "./include/linked_list.h"
 #include "./include/randarray.h"
+#include "./include/hashing.h"
 
 #define N 1000
 
@@ -215,7 +218,56 @@ int main(int argc, char const *argv[])
 	countingsort(dna_vector_int, radix_n, 4);
 	printArray(dna_vector_int, radix_n);
 
+	// ===========================================================================================>	Hashing part
 	
+	printf("\n===========================================================================================");
+	printf("\n===========================================================================================\n");
+	printf("\n");
+
+	printf("Hashing part\n");
+	int Num;
+	int R = 9999;
+	char * file;
+
+	// 1K
+	file = "./data/randInt1k.txt";
+	Num = 1000;
+	printf("\n%d", Num);
+	direct_addressing(Num,R,file);
+
+	// 10K
+	file = "./data/randInt10k.txt";
+	Num = 10000;
+	printf("\n%d", Num);
+	direct_addressing(Num,R,file);
+
+	// 100K
+	file = "./data/randInt100k.txt";
+	Num = 100000;
+	printf("\n%d", Num);
+	direct_addressing(Num,R,file);
+
+	// 1M
+	file = "./data/randInt1M.txt";
+	Num = 1000000;
+	printf("\n%d", Num);
+	direct_addressing(Num,R,file);
+
+	// ===========================================================================================>	Biinary Tree part
+	
+	printf("\n===========================================================================================");
+	printf("\n===========================================================================================\n");
+	printf("\n");
+
+	printf("Binary tree part\n");
+	printf("\n");
+
+	tree myTree = initializeBinaryTree();
+
+	initializeBinaryTree();
+	leftrootright (myTree);
+
+	free(myTree);
 
 	// ===========================================================================================>	
 

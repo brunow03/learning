@@ -125,3 +125,39 @@ digitalsort (byte **v, int n, int W, int R)
 	free (fp);
 	free (aux);
 }
+/*
+void array_of_struct(point v[], int n, int R){
+	int r;
+	int *fp, *aux;
+	fp = malloc ((R+1) * sizeof (int));
+	aux = malloc (n * sizeof (int));
+
+	for (r = 0; r <= R; ++r)
+		fp[r] = 0;
+	for (int i = 0; i < n; ++i) {
+		r = v[i].x;
+		fp[r+1] += 1;
+	}
+   
+	// A
+	for (r = 1; r <= R; ++r)
+		fp[r] += fp[r-1];
+	
+	// B
+	for (int i = 0; i < n; ++i) {
+		r = v[i].x;
+		aux[fp[r]] = v[i].x;
+		fp[r]++;  // C
+	}
+   
+	// D 
+	for (int i = 0; i < n; ++i)
+	v[i] = aux[i];
+
+	free (fp);   
+	free (aux);
+}
+
+void array_of_letters(char v[], int n){
+
+}*/	

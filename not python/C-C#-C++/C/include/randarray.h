@@ -13,4 +13,6 @@ void bin_rand_array(int v[], int n);
 
 void DNA_rand_array(char c[], int n);
 
+double randDouble();
+
 #endif // RANDARRAY_H

@@ -19,7 +19,7 @@ clean:
 
 compile:
 	@echo "Compiling..."
-	$(CC) -o $(EXEC) $(SRC)
+	$(CC) -o $(EXEC) $(SRC) -lcurl
 # -fsanitize=address
 
 run:
