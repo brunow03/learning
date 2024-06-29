@@ -1,0 +1,284 @@
+/* ALGORITMOS/algorithms/chapters/aulas-print.css */
+HTML {
+  font-size: 14px;
+}
+body { 
+  color: #000020;
+  color: black;
+  margin-left: 2.5%; /*was 2% 3.5%*/
+  margin-right: 0.5%; /*was 0.5% 1%*/
+}
+h1 {
+   margin-top: 3.0em;
+   color: black;
+}
+h2 {
+   color: black;
+}
+h3 {
+   color: black;
+}
+span.paragraph { /* inline h4 */
+  color: black;
+}
+a:link {
+   text-decoration: underline;
+}
+a:visited {
+   text-decoration: underline;
+}
+/* no!
+a:link kbd {
+   text-decoration: none;
+   text-decoration: underline;
+}
+a:visited kbd {
+   text-decoration: none;
+   text-decoration: underline;
+}
+*************/
+acronym {
+  background-color: white;
+/*color: #ffffff;*/
+  text-decoration: none;
+}
+p.navigation { 
+   background-color: white;
+   color: #000060; 
+   border-bottom: 1px solid black;
+}
+a.navig:link {
+   color: #000020; 
+}
+a.navig:visited {
+   color: #000020; 
+}
+kbd {
+  font-size: 0.88em;
+  font-size: 0.93em;
+}
+pre {
+  font-size: 0.82em;
+  font-size: 0.85em;
+}
+blockquote { 
+  margin-left: 2em;
+  margin-right: 1em;
+}
+.graynote { /* comments in text*/
+   color: gray;
+   color: #c0c0c0;
+}
+.graynote a:link {
+   color: #c0c0c0;
+   text-decoration: none;
+   text-decoration: underline;
+}
+.graynote a:visited {
+   color: #c0c0c0;
+   text-decoration: none;
+   text-decoration: underline;
+}
+.graynote kbd {
+   color: gray;
+   color: #c0c0c0;
+}
+.graynote a:link kbd {
+  color: #c0c0c0;
+/*text-decoration: underline;*/
+}
+.graynote a:visited kbd {
+  color: #c0c0c0;
+/*text-decoration: underline;*/
+}
+pre .comm { /*comments in code*/
+  color: #b02010;
+  color: gray;
+  color: silver;
+}
+pre .comm a:link {
+  color: #b05050;
+  color: gray;
+  text-decoration: none;
+  text-decoration: underline;
+}
+pre .comm a:visited {
+  color: #b05050;
+  color: gray;
+  text-decoration: none;
+}
+h2.exr {
+  color: #c02060; /*same as ordinary h2*/
+  color: #ff8000; /*comes out gray in black-and-white*/
+  color: silver;
+  color: #e0e0e0;
+}
+h3.exr {
+  color: #ff8000;
+  color: silver;
+  color: #e0e0e0;
+}
+div.exr {
+  font-size: 0.91em; /* smaller than in aulas.css */
+  color: gray;
+  color: #c0c0c0;
+}
+li.exr {
+  color: gray;
+  color: #c0c0c0;
+}
+div.exr kbd { 
+   font-size: 0.95em;
+}
+div.exr pre { 
+   font-size: 0.83em; /* 0.82 in aulas.css */ 
+}
+div.exr pre .comm {
+  color: #c05050; /*dimmer than outside .exr*/
+  color: silver;
+  color: #e0e0e0;
+}
+div.exr a:link {
+   text-decoration: underline;
+}
+div.exr a:visited {
+   text-decoration: underline;
+}
+/**** no!
+div.exr a:link kbd {
+   text-decoration: underline;
+}
+div.exr a:visited kbd {
+   text-decoration: underline;
+}
+********************/
+li.exr table.trivial {
+  font-size: 0.88em; /* smaller than in aulas.css */ 
+}
+pre.ind {
+  margin-left: 3.3rem;
+}
+p.indent {
+  margin-left: 3.3rem;
+}
+pre.hlt { /* yellow background */
+  margin-left: 3.3rem; /*left: 3.3=3.3-padding*/
+  padding: 0.0rem;
+}
+pre.terminal {
+  margin-left: 2.8rem; /*left: 2.8=3.3-padding*/
+  padding-left: 0.5rem;
+}
+img.h14 { 
+   height: 14px;
+   height: 0.9em;
+}
+img.h48 { 
+  height: 48px;
+  height: 2.5em;
+}
+img.h60 {
+  height: 55px;
+  height: 3.4em;
+}
+img.h65 {
+  height: 57px;
+  height: 3.8em;
+}
+img.h70 {
+  height: 65px;
+  height: 4.0em;
+}
+img.h78 { 
+  height: 78px;
+  height: 4.4em;
+}
+img.h100 { 
+  height: 100px;
+  height: 5.0em;
+}
+img.h110 { 
+  height: 110px;
+  height: 5.5em;
+}
+img.h120 { 
+  height: 120px;
+  height: 5.7em;
+}
+img.h130 { 
+  height: 130px;
+  height: 6.2em;
+}
+img.h140 { 
+  height: 140px;
+  height: 6.7em;
+}
+img.h150 { 
+  height: 150px;
+  height: 7.1em;
+}
+img.h155 { 
+  height: 155px;
+  height: 7.4em;
+}
+img.h160 { 
+  height: 160px;
+  height: 7.6em;
+}
+img.h165 { 
+  height: 165px;
+  height: 7.8em;
+}
+img.h170 { 
+  height: 170px;
+  height: 8.1em;
+}
+img.h180 {
+  height: 180px;
+  height: 8.5em;
+}
+img.h185 { 
+  height: 185px;
+  height: 8.8em;
+}
+img.h190 { 
+  height: 190px;
+  height: 9.0em;
+}
+img.h200 { 
+  height: 200px;
+  height: 9.5em;
+}
+img.h210 { 
+  height: 210px;
+  height: 10.0em;
+}
+img.h230 {
+  height: 230px;
+  height: 11.0em;
+}
+img.h250 {
+  height: 250px;
+  height: 12.0em;
+}
+img.h370 {
+  height: 370px;
+  height: 17.5em;
+}
+img.h400 {
+  height: 400px;
+  height: 19.0em;
+}
+img.h430 {
+  height: 430px;
+  height: 20.0em;
+}
+div.q-and-a {
+  font-size: 0.91em; /* smaller than in aulas.css */
+}
+div.q-and-a kbd {
+  font-size: 0.90em; /* 0.90 in aulas.css */
+}
+div.q-and-a pre {
+  font-size: 0.85em; /* 0.85 in aulas.css */
+}

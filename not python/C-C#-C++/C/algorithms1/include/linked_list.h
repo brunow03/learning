@@ -4,7 +4,7 @@
 
 typedef struct record cell;
 
-struct record{
+struct record {
 	int contents;
 	struct record *next;
 };
