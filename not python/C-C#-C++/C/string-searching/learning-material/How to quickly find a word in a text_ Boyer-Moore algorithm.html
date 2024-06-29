@@ -1,0 +1,1861 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!-- Google tag (gtag.js) -->
+<script async="" src="How%20to%20quickly%20find%20a%20word%20in%20a%20text_%20Boyer-Moore%20algorithm_files/google-analytics_analytics.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DHW8MJ408P');
+</script>
+<meta charset="utf-8"> 
+<title>How to quickly find a word in a text: Boyer-Moore algorithm</title>
+<meta name="Author" content="Paulo Feofiloff">
+<meta name="description" content="Searching for a pattern in a text. DNA matching. Boyer-Moore algorithm. Performance.">
+<meta name="keywords" content="substring search, design decisions, pattern matching, computer science">
+<link rel="canonical" href="https://www.ime.usp.br/~pf/algorithms/chapters/string-matching.html">
+<link rel="alternate" href="https://www.ime.usp.br/~pf/algoritmos/aulas/strma.html" hreflang="pt">
+<link rel="alternate" href="https://www.ime.usp.br/~pf/algorithms/chapters/string-matching.html" hreflang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="How%20to%20quickly%20find%20a%20word%20in%20a%20text_%20Boyer-Moore%20algorithm_files/aulas.css" type="text/css">
+<link rel="stylesheet" media="screen and (max-width:800px)" href="How%20to%20quickly%20find%20a%20word%20in%20a%20text_%20Boyer-Moore%20algorithm_files/aulas-mobile.css" type="text/css">
+<link rel="stylesheet" media="print" href="How%20to%20quickly%20find%20a%20word%20in%20a%20text_%20Boyer-Moore%20algorithm_files/aulas-print.css" type="text/css">
+</head>
+
+<body>
+
+
+
+
+
+<p class="navigation">
+<a class="navig" href="https://www.ime.usp.br/~pf/algorithms/">Algorithms Design</a> 
+&nbsp; | &nbsp;
+<a class="navig" href="https://www.ime.usp.br/~pf/algorithms/index.html#C-language">C&nbsp;language</a> 
+&nbsp; | &nbsp;
+<a class="navig" href="https://www.ime.usp.br/~pf/algorithms/idx.html">Index</a>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+</p><h1>Searching for a word in a text</h1>
+
+
+
+
+
+<div class="epigrafes">
+
+<p>
+<q>It's like looking for a needle in a haystack.</q><br>
+
+
+
+</p><p>
+How many times<br>
+does the word <q>algorithm</q> appear in this chapter?
+
+</p></div>
+
+
+
+
+<p>Searching for a word in a text is a daily activity for most of us.
+In a computational context,
+this problem is known as
+<em>substring searching</em>, or <em>string matching</em>,
+and can be formulated as follows:
+
+</p><p class="indent" id="original-problem">
+Find all the occurrences of a given array&nbsp; <var>a</var>&nbsp;
+in a given array&nbsp;&nbsp;<var>b</var>.
+
+
+</p><p id="assumptions">
+We shall assume that the elements of the arrays are <a href="https://www.ime.usp.br/~pf/algorithms/chapters/bytes.html#byte">bytes</a>,
+though the problem makes sense for arrays of any other kind.
+We shall not treat the arrays as <a href="https://www.ime.usp.br/~pf/algorithms/chapters/strings.html#string">strings</a>,
+and therefore the presence of a final null byte is irrelevant.
+
+</p><p>Em many applications
+(and in the examples below),
+the elements of <var>a</var> and&nbsp;<var>b</var> 
+represent <a href="https://www.ime.usp.br/~pf/algorithms/chapters/bytes.html#ascii-alphabet">ASCII characters</a>
+and therefore each byte belongs to the set 
+<span class="nw"><a href="https://www.ime.usp.br/~pf/algorithms/chapters/footnotes/math.html#abbrev">0 . . 127</a></span>.&nbsp;
+In other applications, 
+the elements of <var>a</var> and&nbsp;<var>b</var> represent 
+<a href="https://www.ime.usp.br/~pf/algorithms/appendices/unicode.html#unicode-alphabet">Unicode characters</a> in 
+
+<a href="https://www.ime.usp.br/~pf/algorithms/chapters/strings.html#utf-8"><span class="nw">UTF-8</span> encoding</a>
+(in which case each character may correspond to more than one byte).&nbsp;
+In general, however,
+there are no restrictions on the elements of <var>a</var> and&nbsp;<var>b</var>:
+each element is a byte with value between 0 and&nbsp;255.
+
+</p><p>We say that the array <var>a</var> is a <dfn>word</dfn>
+(even if it does not represent a word in English)
+and the array <var>b</var> is a <dfn>text</dfn>.&nbsp;
+The problem consists, then,
+of finding the occurrences of a word in a text.
+
+</p><p>
+Looking for a  software virus in a digital file, for example,
+is, essentially, the problem of searching for a word (the virus)
+in a text (the file).&nbsp;
+In the case of genetic code processing, for example,
+the elements of the arrays are the letters
+A, C, G, and&nbsp;T.&nbsp;
+Here is an example of an occurrence
+of the word <span class="ls2">TACTA</span>  
+in the text <span class="nw ls2">GTAG…TAG</span>:
+
+
+
+
+</p><div class="tC bC">
+<table class="strmatch">
+<tbody><tr class="boxes">
+  <td class="gry">G
+  </td><td class="gry">T
+  </td><td class="gry">A
+  </td><td class="gry">G
+  </td><td class="gry">T
+  </td><td class="gry">A
+  </td><td class="gry">T
+  </td><td class="gry">A
+  </td><td class="gry">T
+  </td><td class="gry">A
+  </td><td class="gry">T
+  </td><td class="gry">A
+  </td><td class="gry">T
+  </td><td class="gry">A
+  </td><td class="gry">T
+  </td><td class="gry">A
+  </td><td class="gry">C
+  </td><td class="gry">T
+  </td><td class="gry">A
+  </td><td class="gry">C
+  </td><td class="gry">T
+  </td><td class="gry">A
+  </td><td class="gry">G
+  </td><td class="gry">T
+  </td><td class="gry">A
+  </td><td class="gry">G
+</td></tr><tr class="hspacer5">
+  <td colspan="26">
+</td></tr><tr class="boxes">
+  <td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="lrn">T
+  </td><td class="lrn">A
+  </td><td class="lrn">C
+  </td><td class="lrn">T
+  </td><td class="lrn">A
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+</td></tr></tbody></table>
+</div>
+
+
+
+
+  
+
+
+
+<div class="minitoc">
+<p>Table of contents:
+</p><ul>
+<li><a href="#sec:project-decisions">Terminology and design decisions</a>
+</li><li><a href="#inocente">The naive algorithm</a>
+</li><li><a href="#boyermoore">First Boyer-Moore algorithm</a>
+</li><li><a href="#sec:second-bm">Second Boyer-Moore algorithm</a>
+</li><li><a href="#sec:third-bm">Third Boyer-Moore algorithm</a>
+</li></ul>
+</div>
+
+
+
+
+
+
+
+<h2 id="sec:project-decisions">Terminology and design decisions</h2>
+
+<p>
+We have already made the design decision of dealing only with arrays of bytes.
+Here is another design decision:
+the word and the text will be indexed starting from&nbsp;1
+(rather than&nbsp;0)
+because this will slightly simplify the expressions 
+that specify segments of the arrays.&nbsp;
+Finally, we shall restrict ourselves to the simplified version of the problem
+that asks for just one number:
+
+</p><p class="indent" id="the-problem">
+Find the number of occurrences of
+a word <span class="nw"><var>a</var>[1 . . <var>m</var>]</span>
+in a text <span class="nw"><var>b</var>[1 . . <var>n</var>]</span>.
+
+
+
+</p><p>
+If <span class="nw"><var>m</var> &gt; <var>n</var></span>,
+the number of occurrences is zero.
+To make sure that the number of occurrences is finite,
+we assume <span class="nw"><var>m</var> ≥ 1</span>.
+
+</p><p>
+We shall use the following terminology when discussing
+<a href="https://www.ime.usp.br/~pf/algorithms/chapters/footnotes/cs-concepts.html#problem-solving">the problem</a>:
+
+</p><ul id="suffix">
+<li class="sspace">
+an array&nbsp; <span class="nw"><var>a</var>[1 . . <var>m</var>]</span>&nbsp;
+<dfn>matches</dfn>
+an array&nbsp; <span class="nw"><var>b</var>[<var>j</var> . . <var>k</var>]</span>&nbsp;
+if&nbsp; <span class="nw"><var>a</var>[1] = <var>b</var>[<var>j</var>] </span>,&nbsp;
+<span class="nw"><var>a</var>[2] = <var>b</var>[<var>j</var>+1] , </span>
+…&nbsp;,&nbsp; <span class="nw"><var>a</var>[<var>m</var>] = <var>b</var>[<var>k</var>] </span>;&nbsp;
+of course we must have <span class="nw"><var>m</var> − 1 =</span> <span class="nw"><var>k</var> − <var>j</var></span>;
+
+</li><li class="sspace">
+a <dfn>suffix</dfn> of an array <span class="nw"><var>b</var>[1 . . <var>k</var>]</span>
+is any terminal <a href="https://www.ime.usp.br/~pf/algorithms/chapters/footnotes/math.html#segment">segment</a> of the array, 
+that is,
+any segment of the form&nbsp; <span class="nw"><var>b</var>[<var>j</var> . . <var>k</var>]</span>;
+
+
+
+</li><li class="sspace">
+the expression <q><span class="nw"><var>a</var>[1 . . <var>m</var>]</span>
+matches a suffix of <span class="nw"><var>b</var>[1 . . <var>k</var>]</span></q>
+will be used as a shorthand for
+<q><span class="nw"><var>a</var>[1 . . <var>m</var>]</span>
+matches <span class="nw"><var>b</var>[<var>k</var>−<var>m</var>+1 . . <var>k</var>]</span></q>;
+
+</li><li class="sspace">
+an array&nbsp; <span class="nw"><var>a</var>[1 . . <var>m</var>]</span>
+<dfn>occurs in</dfn> <span class="nw"><var>b</var>[1 . . <var>n</var>]</span>&nbsp;
+if there exists <var>k</var> 
+such that <span class="nw"><var>a</var>[1 . . <var>m</var>]</span>
+matches a suffix of <span class="nw"><var>b</var>[1 . . <var>k</var>]</span>.
+
+</li></ul>
+
+
+
+<p>Note that two occurrences of <var>a</var> in <var>b</var> may overlap.
+For example, 
+the two occurrences of <kbd class="ls2">BABA</kbd> 
+in <kbd class="ls2">XBABABAX</kbd>
+overlap.
+
+
+
+</p><p class="right">
+<audio class="my" controls="controls" src="How%20to%20quickly%20find%20a%20word%20in%20a%20text_%20Boyer-Moore%20algorithm_files/string-matching-terminology.mp3">
+</audio>
+
+
+</p><p class="extratop">
+<span class="paragraph">Examples.</span>&nbsp;
+In the following examples,
+the sign ↓ indicates the positions&nbsp; <var>k</var>&nbsp; at which
+the array <var>a</var> (lower line)
+matches a suffix of the array <span class="nw"><var>b</var>[1 . . <var>k</var>]</span>
+(upper line):
+
+
+
+
+
+
+
+</p><div class="tC bB">
+<table class="strmatch">
+<tbody><tr class="indices">
+  <td class="bnk" colspan="18">
+  </td><td class="bnk">↓
+  </td><td class="bnk" colspan="6">
+</td></tr><tr class="boxes">
+  <td class="gry"><kbd>U</kbd>
+  </td><td class="gry"><kbd>m</kbd>
+  </td><td class="gry"><kbd>&nbsp;</kbd>
+  </td><td class="gry"><kbd>v</kbd>
+  </td><td class="gry"><kbd>e</kbd>
+  </td><td class="gry"><kbd>t</kbd>
+  </td><td class="gry"><kbd>o</kbd>
+  </td><td class="gry"><kbd>r</kbd>
+  </td><td class="gry"><kbd>&nbsp;</kbd>
+  </td><td class="gry"><kbd>a</kbd>
+  </td><td class="gry"><kbd>&nbsp;</kbd>
+  </td><td class="gry"><kbd>o</kbd>
+  </td><td class="gry"><kbd>c</kbd>
+  </td><td class="gry"><kbd>o</kbd>
+  </td><td class="gry"><kbd>r</kbd>
+  </td><td class="gry"><kbd>r</kbd>
+  </td><td class="gry"><kbd>e</kbd>
+  </td><td class="gry"><kbd>&nbsp;</kbd>
+  </td><td class="gry"><kbd>e</kbd>
+  </td><td class="gry"><kbd>m</kbd>
+  </td><td class="gry"><kbd>&nbsp;</kbd>
+  </td><td class="gry"><kbd>b</kbd>
+  </td><td class="gry"><kbd>&nbsp;</kbd>
+  </td><td class="gry"><kbd>s</kbd>
+  </td><td class="gry"><kbd>e</kbd>
+</td></tr><tr class="hspacer5">
+  <td colspan="25">
+</td></tr><tr class="boxes">
+  <td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="lrn"><kbd>o</kbd>
+  </td><td class="lrn"><kbd>c</kbd>
+  </td><td class="lrn"><kbd>o</kbd>
+  </td><td class="lrn"><kbd>r</kbd>
+  </td><td class="lrn"><kbd>r</kbd>
+  </td><td class="lrn"><kbd>e</kbd>
+  </td><td class="lrn"><kbd>&nbsp;</kbd>
+  </td><td class="lrn"><kbd>e</kbd>
+  </td><td class="bnk"><kbd>&nbsp;</kbd>
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+</td></tr></tbody></table>
+</div>
+
+
+<div class="tB bB">
+<table class="strmatch">
+<tbody><tr class="indices">
+  <td class="bnk" colspan="14">
+  </td><td class="bnk">↓
+  </td><td class="bnk" colspan="5">
+  </td><td class="bnk">↓
+  </td><td colspan="5">
+</td></tr><tr class="boxes">
+  <td class="gry"><kbd>3</kbd>
+  </td><td class="gry"><kbd>1</kbd>
+  </td><td class="gry"><kbd>3</kbd>
+  </td><td class="gry"><kbd>1</kbd>
+  </td><td class="gry"><kbd>4</kbd>
+  </td><td class="gry"><kbd>3</kbd>
+  </td><td class="gry"><kbd>1</kbd>
+  </td><td class="gry"><kbd>4</kbd>
+  </td><td class="gry"><kbd>1</kbd>
+  </td><td class="gry"><kbd>3</kbd>
+  </td><td class="gry"><kbd>1</kbd>
+  </td><td class="gry"><kbd>4</kbd>
+  </td><td class="gry"><kbd>1</kbd>
+  </td><td class="gry"><kbd>5</kbd>
+  </td><td class="gry"><kbd>9</kbd>
+  </td><td class="gry"><kbd>3</kbd>
+  </td><td class="gry"><kbd>1</kbd>
+  </td><td class="gry"><kbd>4</kbd>
+  </td><td class="gry"><kbd>1</kbd>
+  </td><td class="gry"><kbd>5</kbd>
+  </td><td class="gry"><kbd>9</kbd>
+  </td><td class="gry"><kbd>2</kbd>
+  </td><td class="gry"><kbd>6</kbd>
+  </td><td class="gry"><kbd>3</kbd>
+  </td><td class="gry"><kbd>1</kbd>
+  </td><td class="gry"><kbd>4</kbd>
+</td></tr><tr class="hspacer5">
+  <td colspan="26">
+</td></tr><tr class="boxes">
+  <td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="lrn"><kbd>3</kbd>
+  </td><td class="lrn"><kbd>1</kbd>
+  </td><td class="lrn"><kbd>4</kbd>
+  </td><td class="lrn"><kbd>1</kbd>
+  </td><td class="lrn"><kbd>5</kbd>
+  </td><td class="lrn"><kbd>9</kbd>
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+</td></tr></tbody></table>
+</div>
+
+<div class="tB bCC">
+<table class="strmatch">
+<tbody><tr class="indices">
+  <td class="bnk" colspan="18">
+  </td><td class="bnk"> ↓
+  </td><td class="bnk" colspan="2">
+  </td><td class="bnk"> ↓
+  </td><td class="bnk" colspan="4">
+</td></tr><tr class="boxes">
+  <td class="gry"><kbd>G</kbd>
+  </td><td class="gry"><kbd>T</kbd>
+  </td><td class="gry"><kbd>A</kbd>
+  </td><td class="gry"><kbd>G</kbd>
+  </td><td class="gry"><kbd>T</kbd>
+  </td><td class="gry"><kbd>A</kbd>
+  </td><td class="gry"><kbd>T</kbd>
+  </td><td class="gry"><kbd>A</kbd>
+  </td><td class="gry"><kbd>T</kbd>
+  </td><td class="gry"><kbd>A</kbd>
+  </td><td class="gry"><kbd>T</kbd>
+  </td><td class="gry"><kbd>A</kbd>
+  </td><td class="gry"><kbd>T</kbd>
+  </td><td class="gry"><kbd>A</kbd>
+  </td><td class="gry"><kbd>T</kbd>
+  </td><td class="gry"><kbd>A</kbd>
+  </td><td class="gry"><kbd>C</kbd>
+  </td><td class="gry"><kbd>T</kbd>
+  </td><td class="gry"><kbd>A</kbd>
+  </td><td class="gry"><kbd>C</kbd>
+  </td><td class="gry"><kbd>T</kbd>
+  </td><td class="gry"><kbd>A</kbd>
+  </td><td class="gry"><kbd>G</kbd>
+  </td><td class="gry"><kbd>T</kbd>
+  </td><td class="gry"><kbd>A</kbd>
+  </td><td class="gry"><kbd>G</kbd>
+</td></tr><tr class="hspacer5">
+  <td colspan="26">
+</td></tr><tr class="boxes">
+  <td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="lrn"><kbd>T</kbd>
+  </td><td class="lrn"><kbd>A</kbd>
+  </td><td class="lrn"><kbd>C</kbd>
+  </td><td class="lrn"><kbd>T</kbd>
+  </td><td class="lrn"><kbd>A</kbd>
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+</td></tr></tbody></table>
+</div>
+
+
+
+
+<p class="extratop" id="directions">
+<span class="paragraph">Scan directions.</span>&nbsp;
+Any algorithm that looks for a word in a text
+must scan the text.&nbsp;
+To look for occurrences of a word&nbsp;<var>a</var>
+in a text&nbsp;<var>b</var>,
+we could scan <var>b</var> from left to right 
+or from right to left.&nbsp;
+The two alternatives are equivalent,
+but we shall always use the first:
+compare <var>a</var> to <span class="nw"><var>b</var>[1 . . <var>m</var>]</span>,
+then to <span class="nw"><var>b</var>[2 . . <var>m</var>+1]</span>,
+and so on. 
+
+</p><p>For a fixed <var>k</var>,
+  the element-by-element comparison of <span class="nw"><var>a</var>[1 . . <var>m</var>]</span>
+with a suffix of <span class="nw"><var>b</var>[1 . . <var>k</var>]</span>
+could be done from left to right 
+or from right to left.
+The two alternatives are equivalent,
+but one of the algorithms we shall study further down
+requires that the direction of comparison be <em>opposite</em> 
+to the direction in which the text is scanned.
+Therefore, the element-by-element comparison
+will be always done
+from right to left:
+first <var>a</var>[<var>m</var>] with <var>b</var>[<var>k</var>],
+then
+<var>a</var>[<var>m</var>−1] with <var>b</var>[<var>k</var>−1],
+and so&nbsp;on. 
+
+
+
+
+
+
+
+
+
+
+</p><h2 class="exr">Exercises 1</h2>
+
+<div class="exr">
+
+<ol>
+
+<li class="exr">
+How many times the word&nbsp; <kbd class="ls2">AAA</kbd>&nbsp;
+occurs in the text&nbsp; <span class="nw"><kbd class="ls2">AAAAA</kbd> </span>?
+
+</li><li class="exr">
+Which byte values represent the characters&nbsp;
+<kbd>A</kbd>, <kbd>C</kbd>, <kbd>G</kbd>, and&nbsp;<kbd>T</kbd>?
+
+
+
+</li><li class="exr">
+Discuss (vaguely, in general terms) the following statement:
+any algorithm for the <a href="#the-problem">simplified version</a>
+of the problem can be modified 
+to solve the <a href="#original-problem">more general version</a>.
+
+</li></ol>
+</div>
+
+
+
+
+
+
+
+
+<h2 id="inocente">The naive algorithm</h2>
+
+<p>The following function solves <a href="#the-problem">the problem</a> 
+in the most obvious and direct manner.
+It patiently tries to match <kbd>a[1..m]</kbd> with <kbd>b[1..m]</kbd>,
+then with <kbd>b[2..m+1]</kbd>, and so on:
+
+
+</p><pre class="hlt">typedef <a href="https://www.ime.usp.br/~pf/algorithms/chapters/int-and-char.html#unsigned-char">unsigned char</a> byte;
+
+<span class="comm">// Receives arrays a[1..m] and b[1..n], with
+// m &gt;= 1 and n &gt;= 0, and returns the number
+// of occurrences of a in b.</span>
+
+int 
+naive (byte a[], int m, byte b[], int n) 
+{
+   int occurs = 0;
+   for (int k = m; k &lt;= n; ++k) {
+      <span class="comm">// does a[1..m] match b[k-m+1..k]?</span>
+      int i = m, j = k;
+      while (<a href="https://www.ime.usp.br/~pf/algorithms/chapters/footnotes/c-language.html#shortcircuit">i &gt;= 1 &amp;&amp; a[i] == b[j]</a>) 
+         --i, --j;   
+      if (i &lt; 1) ++occurs;
+   }
+   return occurs;
+}
+</pre>
+
+
+
+
+<p>We can imagine that, in each iteration, the word&nbsp; <kbd>a</kbd>&nbsp;
+slides from left to right along the text&nbsp;&nbsp;<kbd>b</kbd>,&nbsp;
+as in the following example:
+
+
+</p><div class="tC bC">
+<table class="strmatch">
+<tbody><tr class="boxes">
+  <td class="gry"><kbd>X</kbd>
+  </td><td class="gry"><kbd>C</kbd>
+  </td><td class="gry"><kbd>B</kbd>
+  </td><td class="gry"><kbd>A</kbd>
+  </td><td class="gry"><kbd>B</kbd>
+  </td><td class="gry"><kbd>X</kbd>
+  </td><td class="gry"><kbd>C</kbd>
+  </td><td class="gry"><kbd>B</kbd>
+  </td><td class="gry"><kbd>A</kbd>
+  </td><td class="gry"><kbd>A</kbd>
+  </td><td class="gry"><kbd>X</kbd>
+  </td><td class="gry"><kbd>B</kbd>
+  </td><td class="gry"><kbd>C</kbd>
+  </td><td class="gry"><kbd>B</kbd>
+  </td><td class="gry"><kbd>A</kbd>
+  </td><td class="gry"><kbd>B</kbd>
+  </td><td class="gry"><kbd>X</kbd>
+</td></tr><tr class="hspacer5">
+  <td colspan="17">
+</td></tr><tr class="boxes">
+  <td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>C</kbd>
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>A</kbd>
+  </td><td colspan="13">
+</td></tr><tr class="hspacer2">
+  <td colspan="17">
+</td></tr><tr class="boxes">
+  <td class="bnk">
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>C</kbd>
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>A</kbd>
+  </td><td colspan="12">
+</td></tr><tr class="hspacer2">
+  <td colspan="17">
+</td></tr><tr class="boxes">
+  <td class="bnk">
+  </td><td class="bnk">
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>C</kbd>
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>A</kbd>
+  </td><td colspan="11">
+</td></tr><tr class="hspacer2">
+  <td colspan="17">
+</td></tr><tr class="boxes">
+  <td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>C</kbd>
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>A</kbd>
+  </td><td colspan="10">
+</td></tr><tr class="hspacer2">
+  <td colspan="17">
+</td></tr><tr class="boxes">
+  <td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>C</kbd>
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>A</kbd>
+  </td><td colspan="9">
+</td></tr><tr class="hspacer5">
+  <td colspan="17">
+</td></tr><tr class="boxes">
+  <td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk" colspan="3">etc.
+  </td><td colspan="7">
+</td></tr></tbody></table>
+</div>
+
+
+
+
+
+<p>In the worst case,
+the <kbd>naive</kbd> function
+compares each element of <kbd>a[1..m]</kbd> with each element 
+of&nbsp;<kbd>b[1..n]</kbd>
+and therefore consumes time proportional&nbsp;to
+
+</p><p class="center">
+<kbd class="xws">m n</kbd> .
+
+</p><p>Is it possible to solve the problem without comparing
+each element of <kbd>a</kbd> to each element of&nbsp;<kbd>b</kbd>?
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p><h2 class="exr">Exercises 2</h2>
+
+<div class="exr">
+
+<ol>
+
+<li class="exr">
+Does the <kbd>naive</kbd> algorithm work correctly when
+<kbd class="ws">m &gt; n</kbd>?&nbsp;
+What happens <a href="https://www.ime.usp.br/~pf/algorithms/chapters/code-documentation.html#separation-of-concerns">if we try to execute the algorithm with argument <kbd>m</kbd>
+equal to&nbsp;<kbd>0</kbd></a>?
+
+</li><li class="exr">
+Give an example in which the <kbd>naive</kbd> function
+does the greatest possible number of comparisons 
+between elements of <kbd>a</kbd>
+and&nbsp;<kbd>b</kbd>.
+What is this number <em>exactly</em>?
+
+
+
+</li><li class="exr">
+<span class="smallcaps">Solution of the original problem.</span>&nbsp;
+Modify the <kbd>naive</kbd> function to solve
+the <a href="#original-problem">original version</a>
+of the search problem:
+for each occurrence of <kbd>a</kbd> in&nbsp;<kbd>b</kbd>,
+print the index <kbd>j</kbd> for which <kbd>a[1..m]</kbd>
+matches <kbd>b[j..m+j-1]</kbd>.
+
+
+
+</li><li class="exr">
+Study the documentation of the function <kbd>strstr</kbd> in the
+<a href="https://www.ime.usp.br/~pf/algorithms/appendices/string.h.html"><kbd>string</kbd> library</a>.
+
+Try to find out what is the the algorithm that <kbd>strstr</kbd> implements.
+
+
+</li><li class="exr">
+★
+<span class="smallcaps">Consecutive spaces.</span>&nbsp;
+
+Write a function that will receive an array <kbd>b[1..n]</kbd> of bytes  
+and an integer <kbd>m</kbd> and
+return the position of the first occurrence of 
+<kbd>m</kbd> consecutive <a href="https://www.ime.usp.br/~pf/algorithms/appendices/ascii.html#space">spaces</a> (bytes&nbsp;32) in&nbsp;<kbd>b</kbd>.&nbsp;
+(You may assume that the elements of <kbd>b</kbd>
+represent <a href="https://www.ime.usp.br/~pf/algorithms/chapters/bytes.html#ascii-alphabet">ASCII characters</a>,
+but this is irrelevant.)&nbsp;
+Try to examine the least possible number of elements of&nbsp;<kbd>b</kbd>.
+Write a program to test your function.
+
+</li></ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="boyermoore">First Boyer-Moore algorithm</h2>
+
+<p>
+The <dfn>alphabet</dfn> 
+associated with an <a href="https://www.ime.usp.br/~pf/algorithms/chapters/footnotes/cs-concepts.html#instance">instance</a>
+of <a href="#the-problem">our problem</a>
+is any set of byte values
+that contains all the elements 
+of the arrays <kbd>a</kbd> and&nbsp;<kbd>b</kbd>.&nbsp;
+Given <a href="#assumptions">our conventions</a>,
+<kbd>0..255</kbd> is an alphabet of any instance of the problem.
+But some instances can have smaller alphabets,
+such as <kbd>0..127</kbd> in the case of ASCII characters,
+or as&nbsp;
+
+<kbd class="ws">65 67 71 84</kbd>&nbsp;
+in the case of a genetics application. 
+
+
+</p><p> 
+<a href="https://en.wikipedia.org/wiki/Boyer-Moore_string-search_algorithm">R.S.&nbsp;Boyer and J.S.&nbsp;Moore</a>
+had the ingenious ideia
+of using an auxiliary table, indexed by the alphabet,
+to accelerate the <a href="#inocente">naive algorithm</a>.&nbsp;
+Suppose that we have already compared <kbd>a[1..m]</kbd> with
+a suffix of <kbd>b[1..k]</kbd>.
+Now, we can
+<em>skip some iterations</em>
+of the naive algorithm
+and start to compare <kbd>a[1..m]</kbd> with a suffix&nbsp;of
+
+</p><p class="center">
+<kbd>b[1..k+d]</kbd>
+
+</p><p>for some positive&nbsp;<kbd>d</kbd>.&nbsp;
+The value of <kbd>d</kbd> is chosen so that 
+the position <kbd>k+1</kbd> in <kbd>b</kbd> 
+will be paired up with the last occurrence
+(counting from left to right)
+of the byte
+<kbd>b[k+1]</kbd> in&nbsp;<kbd>a[1..m]</kbd>.&nbsp;
+In the example below, the sign | indicates
+the positions that play the role of <kbd>k+d</kbd>.&nbsp;
+When there is a match,
+|&nbsp;is replaced by <span class="nw">↓ </span>:
+
+
+
+
+
+</p><div class="tC bC">
+<table class="strmatch">
+<tbody><tr class="boxes">
+  <td class="bnk" colspan="3">
+  </td><td class="bnk">|
+  </td><td class="bnk" colspan="1">
+  </td><td class="bnk">|
+  </td><td class="bnk" colspan="2">
+  </td><td class="bnk">|
+  </td><td class="bnk">|
+  </td><td class="bnk" colspan="4">
+  </td><td class="bnk"> ↓
+  </td><td class="bnk" colspan="1">
+  </td><td class="bnk">|
+</td></tr><tr class="boxes">
+  <td class="gry"><kbd>X</kbd>
+  </td><td class="gry"><kbd>C</kbd>
+  </td><td class="gry"><kbd>B</kbd>
+  </td><td class="gry"><kbd>A</kbd>
+  </td><td class="gry"><kbd>B</kbd>
+  </td><td class="gry"><kbd>X</kbd>
+  </td><td class="gry"><kbd>C</kbd>
+  </td><td class="gry"><kbd>B</kbd>
+  </td><td class="gry"><kbd>A</kbd>
+  </td><td class="gry"><kbd>A</kbd>
+  </td><td class="gry"><kbd>X</kbd>
+  </td><td class="gry"><kbd>B</kbd>
+  </td><td class="gry"><kbd>C</kbd>
+  </td><td class="gry"><kbd>B</kbd>
+  </td><td class="gry"><kbd>A</kbd>
+  </td><td class="gry"><kbd>B</kbd>
+  </td><td class="gry"><kbd>X</kbd>
+</td></tr><tr class="hspacer5">
+  <td colspan="17">
+</td></tr><tr class="boxes">
+  <td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>C</kbd>
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>A</kbd>
+  </td><td colspan="13">
+</td></tr><tr class="hspacer2">
+  <td colspan="17">
+</td></tr><tr class="boxes">
+  <td class="bnk">
+  </td><td class="bnk">
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>C</kbd>
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>A</kbd>
+  </td><td colspan="11">
+</td></tr><tr class="hspacer2">
+  <td colspan="17">
+</td></tr><tr class="boxes">
+  <td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>C</kbd>
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>A</kbd>
+  </td><td colspan="8">
+</td></tr><tr class="hspacer2">
+  <td colspan="17">
+</td></tr><tr class="boxes">
+  <td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>C</kbd>
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>A</kbd>
+  </td><td colspan="7">
+</td></tr><tr class="hspacer2">
+  <td colspan="17">
+</td></tr><tr class="boxes">
+  <td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>C</kbd>
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>A</kbd>
+  </td><td colspan="2">
+</td></tr><tr class="hspacer2">
+  <td colspan="17">
+</td></tr><tr class="boxes">
+  <td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="bnk">
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>C</kbd>
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>A</kbd>
+</td></tr></tbody></table>
+</div>
+
+ 
+
+<p id="ult-array">
+To implement the ideia,
+we can preprocess the word&nbsp;&nbsp;<kbd>a</kbd>&nbsp;
+and remember, for each <q>letter</q> <kbd>f</kbd> of the alphabet,
+⚠&nbsp;the position of the <em>last occurrence</em> 
+
+of <kbd>f</kbd> in&nbsp;<kbd>a</kbd>.&nbsp;
+This position will be denoted by&nbsp;<kbd>lst[f]</kbd>.&nbsp;
+If the alphabet of the previous example is 
+the set of 128 ASCII characters,
+we shall have 
+
+
+</p><div class="tA bA">
+<table class="container">
+<tbody><tr>
+<td>
+<pre class="small">    f     ... = &gt; ? @ A B C D E F G ...
+lst[f]    ... 0 0 0 0 4 3 2 0 0 0 0 ...
+</pre>
+</td></tr></tbody></table>
+</div>
+
+
+<div class="tA bC">
+<table class="strmatch">
+<tbody><tr class="indices">
+  <td class="bnk"><kbd>1</kbd>
+  </td><td class="bnk"><kbd>2</kbd>
+  </td><td class="bnk"><kbd>3</kbd>
+  </td><td class="bnk"><kbd>4</kbd>
+</td></tr><tr class="boxes">
+  <td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>C</kbd>
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>A</kbd>
+</td></tr></tbody></table>
+</div>
+
+
+
+
+
+
+
+<p>
+Consider the following implementation of the algorithm.&nbsp;
+The first iterative process does the preprocessing of the word
+and the second counts the occurrences of the word in the text.
+
+
+
+</p><pre class="hlt">typedef unsigned char byte;
+
+<span class="comm">// Receives arrays a[1..m] and b[1..n] of
+// bytes, with m &gt;= 1 and n &gt;= 0, and
+// returns the number of occurrences of
+// a in b.</span>
+
+int 
+boyermoore1 (byte a[], int m,
+             byte b[], int n)
+{
+   int lst[256]; <span class="comm">// the alphabet is 0..255</span>
+
+   <span class="comm">// preprocessing the word a</span>
+   for (int f = 0; f &lt; 256; ++f) lst[f] = 0;
+   for (int i = 1; i &lt;=  m; ++i) lst[a[i]] = i;
+
+   <span class="comm">// search word a in text b</span>
+   int occurs = 0;
+   int k = m;
+   while (k &lt;= n) {
+      <span class="comm">// does a[1..m] match b[k-m+1..k]?</span>
+      int i = m, j = k;
+      while (i &gt;= 1 &amp;&amp; a[i] == b[j]) 
+         --i, --j;   
+      if (i &lt; 1) ++occurs;
+      if (k == n) k += 1;
+      else <b>k += m - lst[b[k+1]] + 1;</b>
+   }
+   return occurs;
+}
+</pre>
+
+
+<p>This is the first Boyer-Moore algorithm.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p><h2 class="exr">Exercises 3</h2>
+
+<div class="exr">
+
+<ol>
+
+<li class="exr">
+Answer fast: does the following code fragment
+work correctly?
+<pre class="ind">for (byte f = 0; f &lt; 256; ++f) lst[f] = 0;
+</pre>
+
+
+</li><li class="exr">
+Check that, after preprocessing the word, we have <span class="nw"><kbd>1</kbd> ≤ <kbd>lst[f]</kbd> ≤ <kbd>f</kbd></span>
+for each&nbsp;<kbd>f</kbd>.
+
+</li><li class="exr">
+★
+What happens on the line 
+<q><kbd class="ws">k += m - lst[b[k+1]] + 1</kbd></q>
+if the byte <kbd>b[k+1]</kbd> does not occur in <kbd>a[1..m]</kbd>?&nbsp;
+What happens if <kbd>b[k+1]</kbd> is equal to&nbsp;<kbd>a[m]</kbd>?
+
+
+
+</li><li class="exr">
+Prove that the preprocessing phase in function <kbd>boyermoore1</kbd>
+correctly fills the table&nbsp;<kbd>lst</kbd>.
+
+
+</li><li class="exr">
+Is the following  version of the code correct?
+It is supposed to search for <kbd>a</kbd> in&nbsp;<kbd>b</kbd>. 
+<pre class="ind">occurs = 0; k = m;
+while (k &lt;= n) {
+   i = m, j = k;
+   while (i &gt;= 1 &amp;&amp; a[i] == b[j]) --i, --j;   
+   if (i &lt; 1) ++occurs;
+   kk = k+1;                                 
+   while (kk &lt;= n &amp;&amp; lst[b[kk]] == 0) ++kk;  
+   if (kk &gt; n) break;                       
+   k += m - lst[b[kk]] + kk - k;
+}
+return occurs;
+</pre>
+
+
+
+</li><li class="exr">
+In the function <kbd>boyermoore1</kbd>,
+we could introduce an appropriate sentinel in position <kbd>b[n+1]</kbd>
+and then delete <q><kbd class="ws">if (k == n) k += 1</kbd></q>.
+Write this  version of the code.
+
+
+
+</li><li class="exr" id="horspool">
+★
+Show that the following  version of 
+function <kbd>boyermoore1</kbd>
+is correct:
+<pre class="ind">int lst[256];
+for (int i = 0; i &lt; 256; ++i) lst[i] = 0;
+for (int i = 1; i <b>&lt;   m</b>; ++i) lst[a[i]] = i;
+int occurs = 0, k = m;
+while (k &lt;= n) {
+   int i = m, j = k;
+   while (i &gt;= 1 &amp;&amp; a[i] == b[j]) 
+      --i, --j;   
+   if (i &lt; 1) ++occurs;
+   <b>k += m - lst[b[k]];</b>
+}
+return occurs;
+</pre>
+
+</li></ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="sec:second-bm">Second Boyer-Moore algorithm</h2>
+
+<p>
+The second Boyer-Moore algorithm,
+unlike the first,
+does not need to know the alphabet of 
+word <kbd>a</kbd> and text <kbd>b</kbd> 
+explicitly in advance.
+But it has to compare the word with the text 
+<a href="#directions">from right to left</a>,
+i.e.,
+first <kbd>a[m]</kbd> with&nbsp;<kbd>b[k]</kbd>,
+then <kbd>a[m-1]</kbd> with&nbsp;<kbd>b[k-1]</kbd>,
+and so on.
+
+</p><p>
+Imagine that the word 
+<kbd>a[1..m]</kbd> is&nbsp; <span class="nw"><kbd class="ls3">&amp;CBA*CBA</kbd> </span>.&nbsp;
+Suppose we just discovered that 
+<kbd>a[1..m]</kbd> does not match a suffix of <kbd>b[1..k]</kbd>
+and we are getting ready to check 
+whether <kbd>a[1..m]</kbd> matches a suffix of <kbd>b[1..k+1]</kbd>.&nbsp;
+Now compare the word <kbd>a</kbd> <em>to itself</em> and observe 
+that <kbd>a[h..m]</kbd> matches&nbsp;⚠
+
+</p><p class="indent">
+neither <kbd>a[h-1..m-1]</kbd>,&nbsp;
+nor&nbsp;<kbd>a[h-2..m-2]</kbd>,&nbsp; 
+nor&nbsp;<kbd>a[h-3..m-3]</kbd>.
+
+</p><p>In our example, 
+<kbd>m</kbd> is&nbsp;<kbd>8</kbd>,
+<kbd>h</kbd> is&nbsp;<kbd>6</kbd>
+and&nbsp;
+<kbd class="ls2">CBA</kbd>&nbsp; matches 
+neither&nbsp; <kbd class="ls2">*CB</kbd>&nbsp;
+nor&nbsp; <kbd class="ls2">A*C</kbd>&nbsp;
+nor&nbsp; <kbd class="ls2">BA*</kbd>:
+
+
+
+
+</p><div class="tC bCC">
+<table class="strmatch">
+<tbody><tr class="indices">
+  <td>&nbsp;
+  </td><td><kbd>1</kbd>
+  </td><td colspan="4">&nbsp;
+  </td><td><kbd>h</kbd>
+  </td><td colspan="1">&nbsp;
+  </td><td><kbd>m</kbd>
+  </td><td colspan="4">
+</td></tr><tr class="boxes">
+  <td class="bnk">&nbsp;
+  </td><td class="lrn"><kbd>&amp;</kbd>
+  </td><td class="lrn"><kbd>C</kbd>
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>A</kbd>
+  </td><td class="lrn"><kbd>*</kbd>
+  </td><td class="lrn"><b><kbd>C</kbd></b>
+  </td><td class="lrn"><b><kbd>B</kbd></b>
+  </td><td class="lrn"><b><kbd>A</kbd></b>
+  </td><td colspan="4">
+</td></tr><tr class="hspacer5">
+  <td colspan="13">
+</td></tr><tr class="boxes">
+  <td class="bnk">&nbsp;
+  </td><td class="bnk">&nbsp;
+  </td><td class="bnk">&nbsp;
+  </td><td class="bnk">&nbsp;
+  </td><td class="lrn"><kbd>&amp;</kbd>
+  </td><td class="lrn"><kbd>C</kbd>
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>A</kbd>
+  </td><td class="lrn"><kbd>*</kbd>
+  </td><td class="lrn"><kbd>C</kbd>
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>A</kbd>
+  </td><td class="bnk">&nbsp;
+</td></tr></tbody></table>
+</div>
+
+
+
+<p>It is easy to deduce now, 
+without any additional comparisons,
+that <kbd>a[1..m]</kbd> does not match any suffix
+
+</p><p class="indent">
+of <kbd>b[1..k+1]</kbd>,&nbsp;
+nor of&nbsp;<kbd>b[1..k+2]</kbd>,&nbsp;
+nor&nbsp;of&nbsp;<kbd>b[1..k+3]</kbd>
+
+</p><p>(draw a figure!).&nbsp;
+Therefore,
+the next step must try matching
+<kbd>a[1..m]</kbd> with a
+suffix of <kbd>b[1..k+4]</kbd>.&nbsp;
+As part of this attempt,
+we must compare <kbd>a[h-4..m-4]</kbd> with <kbd>b[k-m+h..k]</kbd>.
+But this is the same as checking whether
+<kbd>a[h-4..m-4]</kbd> matches&nbsp;<kbd>a[h..m]</kbd>,
+since, by assumption, 
+<kbd>b[k-m+h..k]</kbd> is equal to&nbsp;<kbd>a[h..m]</kbd>.
+
+
+</p><p>To complete the illustration,
+suppose that <kbd>a[1..m]</kbd>  matches 
+a suffix of <kbd>b[1..k+4]</kbd>.&nbsp;
+If <kbd class="ws">h-4 ≥ 1</kbd>
+then <kbd>a[h..m]</kbd> <em>matches a suffix of</em>&nbsp;<kbd>a[1..m-4]</kbd>.
+
+
+</p><div class="tB bC">
+<table class="strmatch">
+<tbody><tr class="indices">
+  <td colspan="8">&nbsp;
+  </td><td><kbd>k</kbd>
+  </td><td colspan="9">
+</td></tr><tr class="boxes">
+  <td class="gry"><kbd>-</kbd>
+  </td><td class="gry"><kbd>-</kbd>
+  </td><td class="gry"><kbd>-</kbd>
+  </td><td class="gry"><kbd>-</kbd>
+  </td><td class="gry"><kbd>-</kbd>
+  </td><td class="gry"><kbd>-</kbd>
+  </td><td class="gry"><b><kbd>C</kbd></b>
+  </td><td class="gry"><b><kbd>B</kbd></b>
+  </td><td class="gry"><b><kbd>A</kbd></b>
+  </td><td class="gry"><kbd>*</kbd>
+  </td><td class="gry"><kbd>C</kbd>
+  </td><td class="gry"><kbd>B</kbd>
+  </td><td class="gry"><kbd>A</kbd>
+  </td><td class="gry"><kbd>-</kbd>
+  </td><td class="gry"><kbd>-</kbd>
+  </td><td class="gry"><kbd>-</kbd>
+  </td><td class="gry"><kbd>-</kbd>
+  </td><td class="gry"><kbd>-</kbd>
+</td></tr><tr class="indices">
+  <td colspan="18">&nbsp;
+</td></tr><tr class="indices">
+  <td>&nbsp;
+  </td><td><kbd>1</kbd>
+  </td><td colspan="4">&nbsp;
+  </td><td><kbd>h</kbd>
+  </td><td colspan="1">&nbsp;
+  </td><td><kbd>m</kbd>
+  </td><td colspan="9">
+</td></tr><tr class="boxes">
+  <td class="bnk">&nbsp;
+  </td><td class="lrn"><kbd>&amp;</kbd>
+  </td><td class="lrn"><kbd>C</kbd>
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>A</kbd>
+  </td><td class="lrn"><kbd>*</kbd>
+  </td><td class="lrn"><b><kbd>C</kbd></b>
+  </td><td class="lrn"><b><kbd>B</kbd></b>
+  </td><td class="lrn"><b><kbd>A</kbd></b>
+  </td><td colspan="9">
+</td></tr><tr class="hspacer5">
+  <td colspan="18">
+</td></tr><tr class="boxes">
+  <td class="bnk">&nbsp;
+  </td><td class="bnk">&nbsp;
+  </td><td class="bnk">&nbsp;
+  </td><td class="bnk">&nbsp;
+  </td><td class="bnk">&nbsp;
+  </td><td class="lrn"><kbd>&amp;</kbd>
+  </td><td class="lrn"><b><kbd>C</kbd></b>
+  </td><td class="lrn"><b><kbd>B</kbd></b>
+  </td><td class="lrn"><b><kbd>A</kbd></b>
+  </td><td class="lrn"><kbd>*</kbd>
+  </td><td class="lrn"><kbd>C</kbd>
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>A</kbd>
+  </td><td colspan="5">
+</td></tr></tbody></table>
+</div>
+
+
+
+<p>However, if <kbd class="ws">h-4 &lt; 1</kbd>
+then <kbd>a[1..m-4]</kbd> <em>matches a suffix of</em>&nbsp;<kbd>a[h..m]</kbd>.
+To illustrate this alternative,
+suppose the word is&nbsp; <span class="nw"><kbd class="ls3">BA*CBA</kbd> </span>:
+
+
+
+
+
+</p><div class="tB bC">
+<table class="strmatch">
+<tbody><tr class="indices">
+  <td colspan="6">&nbsp;
+  </td><td><kbd>k</kbd>
+  </td><td colspan="11">
+</td></tr><tr class="boxes">
+  <td class="gry"><kbd>-</kbd>
+  </td><td class="gry"><kbd>-</kbd>
+  </td><td class="gry"><kbd>-</kbd>
+  </td><td class="gry"><kbd>-</kbd>
+  </td><td class="gry"><b><kbd>C</kbd></b>
+  </td><td class="gry"><b><kbd>B</kbd></b>
+  </td><td class="gry"><b><kbd>A</kbd></b>
+  </td><td class="gry"><kbd>*</kbd>
+  </td><td class="gry"><kbd>C</kbd>
+  </td><td class="gry"><kbd>B</kbd>
+  </td><td class="gry"><kbd>A</kbd>
+  </td><td class="gry"><kbd>-</kbd>
+  </td><td class="gry"><kbd>-</kbd>
+  </td><td class="gry"><kbd>-</kbd>
+  </td><td class="gry"><kbd>-</kbd>
+  </td><td class="gry"><kbd>-</kbd>
+  </td><td class="gry"><kbd>-</kbd>
+  </td><td class="gry"><kbd>-</kbd>
+</td></tr><tr class="indices">
+  <td colspan="18">&nbsp;
+</td></tr><tr class="indices">
+  <td>&nbsp;
+  </td><td><kbd>1</kbd>
+  </td><td colspan="2">&nbsp;
+  </td><td><kbd>h</kbd>
+  </td><td colspan="1">&nbsp;
+  </td><td><kbd>m</kbd>
+  </td><td colspan="11">
+</td></tr><tr class="boxes">
+  <td class="bnk">&nbsp;
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>A</kbd>
+  </td><td class="lrn"><kbd>*</kbd>
+  </td><td class="lrn"><b><kbd>C</kbd></b>
+  </td><td class="lrn"><b><kbd>B</kbd></b>
+  </td><td class="lrn"><b><kbd>A</kbd></b>
+  </td><td colspan="11">
+</td></tr><tr class="hspacer5">
+  <td colspan="18">
+</td></tr><tr class="boxes">
+  <td class="bnk">&nbsp;
+  </td><td class="bnk">&nbsp;
+  </td><td class="bnk">&nbsp;
+  </td><td class="bnk">&nbsp;
+  </td><td class="bnk">&nbsp;
+  </td><td class="lrn"><b><kbd>B</kbd></b>
+  </td><td class="lrn"><b><kbd>A</kbd></b>
+  </td><td class="lrn"><kbd>*</kbd>
+  </td><td class="lrn"><kbd>C</kbd>
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>A</kbd>
+  </td><td colspan="7">
+</td></tr></tbody></table>
+</div>
+
+
+
+
+
+
+<p>This example suggests that the implementation of the ideia
+must begin with the following preprocessing of the word&nbsp;<kbd>a</kbd>:&nbsp;
+for each&nbsp;<kbd>h</kbd> in&nbsp;<kbd>1..m</kbd>, 
+compute the greatest <kbd>k</kbd> in <kbd>1..m-1</kbd> 
+such that&nbsp;⚠
+
+
+</p><ul>
+<li class="space">
+<kbd>a[h..m]</kbd> matches a suffix of <kbd>a[1..k]</kbd>&nbsp;&nbsp;or
+
+</li><li class="space">
+<kbd>a[1..k]</kbd> matches a suffix of <kbd>a[h..m]</kbd>.
+</li></ul>
+
+
+<p id="reach">
+
+We shall say that this largest value of&nbsp;<kbd>k</kbd> 
+is the <dfn>jump</dfn>
+of&nbsp;<kbd>h</kbd>.&nbsp;
+Here are some examples of words with the corresponding 
+<kbd>jump</kbd> table:
+
+
+
+
+
+
+
+</p><div class="tC bA">
+<table class="strmatch" style="margin-left:2.7rem;margin-right:0em;">
+
+<tbody><tr class="indices">
+  <td><kbd>1</kbd>
+  </td><td><kbd>2</kbd>
+  </td><td><kbd>3</kbd>
+  </td><td><kbd>4</kbd>
+  </td><td><kbd>5</kbd>
+  </td><td><kbd>6</kbd>
+  </td><td>&nbsp;
+  </td><td><kbd>&nbsp;&nbsp; &nbsp; h&nbsp;&nbsp;</kbd>
+  </td><td><kbd class="ws">6 5 4 3 2 1</kbd>
+</td></tr><tr class="boxes">
+  <td class="lrn"><kbd>C</kbd>
+  </td><td class="lrn"><kbd>A</kbd>
+  </td><td class="lrn"><kbd>A</kbd>
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>A</kbd>
+  </td><td class="lrn"><kbd>A</kbd>
+  </td><td style="width:1.7em">&nbsp;
+  </td><td class="bnk"><kbd>jump[h]&nbsp;</kbd>
+  </td><td class="bnk"><kbd class="ws">5 3 0 0 0 0</kbd>
+</td></tr></tbody></table>
+</div>
+
+
+<div class="tB bA">
+<table class="strmatch" style="margin-left:2.7rem;margin-right:0em;">
+
+<tbody><tr class="indices">
+  <td><kbd>1</kbd>
+  </td><td><kbd>2</kbd>
+  </td><td><kbd>3</kbd>
+  </td><td><kbd>4</kbd>
+  </td><td><kbd>5</kbd>
+  </td><td><kbd>6</kbd>
+  </td><td><kbd>7</kbd>
+  </td><td><kbd>8</kbd>
+  </td><td>&nbsp;
+  </td><td><kbd>&nbsp;&nbsp; &nbsp; h&nbsp;&nbsp;</kbd>
+  </td><td><kbd class="ws">8 7 6 5 4 3 2 1</kbd>
+</td></tr><tr class="boxes">
+  <td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>A</kbd>
+  </td><td class="lrn"><kbd>-</kbd>
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>A</kbd>
+  </td><td class="lrn"><kbd>*</kbd>
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>A</kbd>
+  </td><td style="width:1em">&nbsp;
+  </td><td class="bnk"><kbd>jump[h]&nbsp;</kbd>
+  </td><td class="bnk"><kbd class="ws">5 5 2 2 2 2 2 2</kbd>
+</td></tr></tbody></table>
+</div>
+
+
+
+<div class="tB bCC">
+<table class="strmatch" style="margin-left:2.7rem;margin-right:0em;">
+
+<tbody><tr class="indices">
+  <td><kbd>1</kbd>
+  </td><td><kbd>2</kbd>
+  </td><td><kbd>3</kbd>
+  </td><td><kbd>4</kbd>
+  </td><td><kbd>5</kbd>
+  </td><td><kbd>6</kbd>
+  </td><td><kbd>7</kbd>
+  </td><td><kbd>8</kbd>
+  </td><td><kbd>9</kbd>
+  </td><td><kbd>10</kbd>
+  </td><td><kbd>11</kbd>
+  </td><td>&nbsp;
+  </td><td><kbd>&nbsp;&nbsp; &nbsp; h&nbsp;&nbsp;</kbd>
+  </td><td><kbd class="ws">11 10 9 8 7 6 5 4 3 2 1</kbd>
+</td></tr><tr class="boxes">
+  <td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>A</kbd>
+  </td><td class="lrn"><kbd>-</kbd>
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>A</kbd>
+  </td><td class="lrn"><kbd>*</kbd>
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>A</kbd>
+  </td><td class="lrn"><kbd>*</kbd>
+  </td><td class="lrn"><kbd>B</kbd>
+  </td><td class="lrn"><kbd>A</kbd>
+  </td><td style="width:1.2em">&nbsp;
+  </td><td class="bnk"><kbd>jump[h]&nbsp;</kbd>
+  </td><td class="bnk"><kbd class="ws"><span class="invis">1</span>8 <span class="invis">1</span>8 8 8 8 2 2 2 2 2 2</kbd>
+</td></tr></tbody></table>
+</div>
+
+
+
+
+<p>After these preparations,
+we can examine the implementation of the second Boyer-Moore algorithm:
+
+
+
+
+
+
+
+</p><pre class="hlt">typedef unsigned char byte;
+
+<span class="comm">// Receives a word a[1..m] with 1 &lt;= m and
+// a text b[1..n]. Returns the number of
+// occurrences of a in b.</span>
+
+int 
+boyermoore2 (byte a[], int m,
+             byte b[], int n) 
+{
+   int *jump = malloc ((m+1) * sizeof (int));
+   <span class="comm">// our table will be jump[1..m]</span>
+
+   <span class="comm">// preprocessing of word a</span>
+   int h = m, k = m-1;
+   while (h &gt;= 1 &amp;&amp; k &gt;= 1) {
+      int i = m, j = k; 
+      while (i &gt;= h &amp;&amp; j &gt;= 1)
+         if (a[i] == a[j]) --i, --j;
+         else i = m, j = --k;
+      jump[h--] = k;
+   }
+   while (h &gt;= 1)
+      jump[h--] = k;
+
+   <span class="comm">// search for word a in text b</span>
+   int occurs = 0;
+   k = m;
+   while (k &lt;= n) {
+      int i = m, j = k;
+      while (i &gt;= 1 &amp;&amp; a[i] == b[j]) 
+         --i, --j;   
+      if (i &lt; 1) ++occurs;
+      if (i == m) k += 1;
+      else k += m - jump[i+1];
+   }
+   return occurs;
+}  
+</pre>
+
+
+<p>And here is a more compact and efficient version of the preprocessing:
+</p><pre class="ind"><span class="comm">// preprocessing of word a</span>
+h = m, k = m-1;
+i = m, j = k;
+while (h &gt;= 1) {
+   while (i &gt;= h &amp;&amp; j &gt;= 1)
+      if (a[i] == a[j]) --i, --j;
+      else i = m, j = --k;
+   jump[h--] = k;
+}
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="exr">Exercises 4</h2>
+
+<div class="exr">
+
+<ol>
+
+<li class="exr">
+Show that the preprocessing phase in function
+<kbd>boyermoore2</kbd>
+correctly fills the <kbd>jump</kbd> table.&nbsp;
+Show that this phase 
+consumes <kbd>m<sup>2</sup></kbd> units of time in the worst case.
+
+
+</li><li class="exr">
+We could delete the <q><kbd class="ws">if (i == m) k += 1</kbd></q>
+if we were to introduce an appropriate sentinel in position <kbd>jump[m+1]</kbd>.
+Write this  version of <kbd>boyermoore2</kbd>.
+
+
+</li><li class="exr">
+Show that the following  version of the preprocessing is correct:
+<pre class="ind">i = m;
+j = k = m-1;
+for (h = m; h &gt;= 1; --h) {
+   while (i &gt;= h &amp;&amp; j &gt;= 1)
+      if (a[i] == a[j]) --i, --j;
+      else i = m, j = --k;
+   jump[h] = k;
+}
+</pre>
+
+
+</li><li class="exr">
+Show that the following  version of the preprocessing is correct:
+<pre class="ind">k = m-1;
+r = 0;
+for (h = m; h &gt;= 1; --h) {
+   while (m-r &gt;= h &amp;&amp; k-r &gt;= 1)
+      if (a[m-r] == a[k-r]) ++r;
+      else r = 0, k--;
+   jump[h] = k;
+}
+</pre>
+
+
+</li><li class="exr">
+Use the function <kbd>boyermoore2</kbd>
+to count the number of occurrences of the word&nbsp;
+<kbd class="wrap xws">A&nbsp;B&nbsp;C B C C A&nbsp;B&nbsp;C</kbd>&nbsp;
+in the text&nbsp;
+<kbd class="wrap xws">A&nbsp;B&nbsp;C C B A A B C A B C B C C A&nbsp;B&nbsp;C</kbd>.
+
+</li></ol>
+</div>
+
+
+
+
+
+
+
+
+<h2 id="sec:third-bm">Third Boyer-Moore algorithm</h2>
+
+<p>The third Boyer-Moore algorithm is just the fusion 
+of the two previous ones.
+Each step of 
+the algorithm chooses the larger of the two displacements:
+the one prescribed by the <a href="#ult-array">table <kbd>lst</kbd></a>
+and the one given by the <a href="#reach">table <kbd>jump</kbd></a>.&nbsp;
+(Actually, this is <em>the</em> Boyer-Moore algorithm proper:
+the distinction between the first and second algorithms 
+was done above for expository convenience only.)
+
+
+</p><p>
+The preprocessing consumes <kbd>m<sup>2</sup></kbd> units of time.
+Unfortunately, 
+the search phase
+consumes&nbsp; <kbd class="xws">m n</kbd>&nbsp; units of time in the worst case,
+just as the naive algorithm.&nbsp;
+But the worst case is so rare that in the average case, 
+typical of practical applications,
+the third Boyer-Moore algorithm consumes
+time proportional to&nbsp; <kbd>n</kbd>&nbsp;
+and independent of&nbsp;<kbd>m</kbd>.&nbsp;
+In other words, on average,
+each element of the text is compared with only a few elements of the word,
+regardless of the length of the word.
+
+
+
+</p><p>The definition of the <kbd>jump</kbd> table 
+can be perfected so that 
+even in the worst case
+the search phase of the third algorithm <a href="#cole">consumes only <kbd class="ws">6n</kbd>
+units of time</a>.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p><h2 class="exr">Exercises 5</h2>
+
+<div class="exr">
+
+<ol>
+
+<li class="exr">
+Implement the third Boyer-Moore algorithm.
+
+
+</li><li class="exr" id="exr:performance">
+★
+<span class="smallcaps">Performace tests.</span>&nbsp;
+Compare, experimentally, 
+the performance of the third Boyer-Moore algorithm 
+with that of the <a href="#inocente">naive algorithm</a>.&nbsp;
+Invent interesting word/<wbr>text pairs for the tests.&nbsp;
+
+To do the tests, you can use a file of common English words
+(see, for example, the <a href="https://www.ime.usp.br/~pf/algorithms/chapters/downloads/1-1000.txt">file <kbd>1-1000.txt</kbd></a> copied from 
+https://<wbr>gist.github.com/<wbr>deekayen/<wbr>4148741#<wbr>file-1-1000-txt).
+To stress-test your program, run it on a larger file of English words.
+(See, for example the 
+<a href="https://github.com/dwyl/english-words/blob/master/words_alpha.txt">file of 466K words in English</a>.)
+You can also use the book
+<a href="https://www.ime.usp.br/~pf/estruturas-de-dados/aulas/sandbox/tale.txt"><cite>The Tale of Two Cities</cite></a> by Charles Dickens,
+as <a href="https://www.ime.usp.br/~pf/algorithms/books.html#sedgewick-wayne">Sedgewick and Wayne do</a>.
+
+
+</li><li class="exr" id="cole">
+★
+<span class="smallcaps">Challenge.</span>&nbsp;
+Investigate the changes that must be done 
+to the definition of the <kbd>jump</kbd> table  
+so that the third Boyer-Moore algorithm 
+does at most <kbd>6n</kbd> comparisons 
+between bytes of the word and the text
+in the search phase.
+
+
+</li><li class="exr">
+Write a function that 
+receives arrays <kbd>b[1..n]</kbd>, <kbd>a[1..m]</kbd>, <kbd>x[1..p]</kbd>
+and replaces by <kbd>x</kbd> each occurrence of 
+<kbd>a</kbd> in&nbsp;<kbd>b</kbd>.
+
+
+</li><li class="exr">
+<span class="smallcaps">Wildcard searching.</span>&nbsp;
+Suppose that the character
+<kbd>#</kbd> has a special meaning inside any word:
+it represents 0 or more occurrences of any
+other character
+(that is, <kbd>#</kbd> is a wildcard).
+Examples:
+  <ul>
+  <li>the word <kbd>A#B#C</kbd> matches any segment of the text
+  that begins with&nbsp;<kbd>A</kbd>, 
+  ends with <kbd>C</kbd>, and has a <kbd>B</kbd> 
+  somewhere between <kbd>A</kbd>&nbsp;and&nbsp;<kbd>C</kbd>;
+  </li><li>the word&nbsp; <kbd>x#[#]#=#;</kbd>&nbsp; matches&nbsp; 
+     <kbd>x[i] = x[i-1] + 1;</kbd>&nbsp; as well as&nbsp;
+     <span class="nw"><kbd>x2[i]=x[i-1]+1; y= z;</kbd> </span>.
+  </li></ul>
+<p style="margin-top:0.2em">
+Write a function to search for a word
+in a text interpreting the character&nbsp;<kbd>#</kbd>
+as described above.
+
+
+
+</p></li><li class="exr">
+★
+
+<span class="smallcaps">Grep.</span>&nbsp;
+Study the powerful <a href="https://www.ime.usp.br/~pf/algorithms/appendices/linux-utilities.html#grep"><kbd>grep</kbd></a> utility
+for searching words in files.
+
+</li></ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+<hr>
+<p>See the
+<a href="https://en.wikipedia.org/wiki/String_matching"><em>String searching algorithm</em></a> 
+entry in Wikipedia.
+
+</p><hr>
+<p>See the site
+<a href="https://www-igm.univ-mlv.fr/~lecroq/string/index.html"><em>Exact String Matching Algoritms</em></a>,
+with animations of algorithms for searching words in texts.
+
+</p><hr>
+<p>
+See the bibliography
+<a href="https://www.cs.ucr.edu/%7Estelo/pattern.html"><em>Pattern Matching Pointers</em></a>.
+
+</p><hr>
+<p>
+Updated 2018-09-02<br>
+https://www.ime.usp.br/~pf/algorithms/<br>
+© <a href="mailto:pf@ime.usp.br?subject=About_Algorithms_site:_"><em>Paulo Feofiloff</em></a><br>
+<em><a href="https://www.ime.usp.br/en/computer-science-department/"><abbr title="Department of Computer Science">CS</abbr></a>-<a href="https://www.ime.usp.br/en/home/"><abbr title="Institute of Mathematics and Statistics">IME</abbr></a>-<a href="https://www5.usp.br/english/institutional/"><abbr title="University of São Paulo (Brazil)">USP</abbr></a></em>
+
+
+</p></div>
+
+
+
+</body></html>

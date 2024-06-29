@@ -1,0 +1,1733 @@
+/* ALGORITMOS/algorithms/chapters/aulas.css */
+/* Estilos sem classe can be especificados with ".default"? */
+HTML {
+  font-family: "DejaVu Serif", "Book Antiqua", "Century Schoolbook L", "TeXGyrePagella", "Garamond", Bookman, "URW Bookman L", "Cambria", Palatino, serif; 
+  font-size: 20px;
+  line-height: 1.4; /*default is 1.2*/
+  width: 100%; /*to prevent "overflow" badges in inspect*/
+}
+/* /////////////////////////////////////////////////////////////////////////////
+"Century Schoolbook L",
+Georgia, >>> figures/digits are old-style and proportional spacing
+Cambria,
+alatino,
+Brill,
+Colibri,
+Consolas,
+"Minion Pro",
+Arial,
+"Arial Unicode MS",
+Helvetica,
+"TITUS Cyberbit Basic",
+Gentium,
+"New Athena Unicode",
+"Georgia Greek", 
+"Comic Sans MS", 
+///////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////
+font-family: 
+"Inconsolata", 
+"Consolas", 
+"Droid Sans Mono", 
+"Lucida Console", 
+"Liberation Mono", 
+"Monaco", 
+"Courier 10 Pitch", 
+"Courier New", 
+"DejaVu Sans Mono", 
+"Courier", 
+monospace, sans-serif;
+//////////////////////////////////////////////////////////////// */
+
+BODY {
+  background-color: #e0eef6; /* nice light blue, used in old apend */
+  background-color: #ffffff;
+  color: #002050;
+  color: #000060;
+  margin-left: 10%;
+  margin-right: 9%;
+  padding: 0em; /*to appease Microsoft IE*/
+  letter-spacing: 0.1pt;
+  word-spacing: 0.4pt;
+  word-spacing: 0.5pt;
+  hyphens: none;
+}
+/*
+ figures/digits (not all font-families have this..)
+ font-variant-numeric: oldstyle-nums;
+ font-variant-numeric: proportional-nums;"
+*/
+h1 {
+   font-size: 2.1em; /*42px; default is 2em*/
+   margin-top: 2.0em;
+   margin-bottom: 1em;
+/* programming-challenges bgcolor=#7ed5f7; */
+   color: #5080ff;
+   color: #3080e0;  /* light blue exactly as navig bg */
+   color: #ff6633;
+   color: #2040a0;  /* dark blue exactly as navig bg */
+   color: #1020b0;
+   color: #102080;  /* darker blue more subdued */
+}
+h2 {
+   font-size: 1.5em; /*30px; default is 1.5em*/
+   margin-top: 2.5em;
+   margin-bottom: 1em;
+   color: #70b0ff; /* pale blue: was like that for a long time */
+   color: #ff6633;
+   color: #ff8040;
+   color: #d05010;
+   color: #5080ff;
+   color: #de0051;
+   color: #d04060; /* sort of magenta, as in the figures of arrays */
+   color: #c02060; /* more towards purple */
+/* padding: 0em 0.1em 0em 0.15em;*/
+/* background: #f0e0e0;*/
+/* background: #fdf6f6;*/
+}
+/******* Nice, but jarring
+h2.bg {
+   background-color: #b0d0ff;
+   padding: 0em;
+   margin-top: 2em;
+   margin-bottom: 0.5em;
+   margin-left: 0em;
+   margin-right: 0em;
+}
+********************/
+h3 {
+   font-size: 1.2em; /*24px; default is 1.17em*/
+   margin-top: 2.0em;
+   margin-bottom: 0.0em;
+/* color: #5080ff; not bad */
+   color: #de0051; /* bordeaux */
+   color: #4080ff;
+   color: #3050c0; /* light blue */ 
+}
+/* nao funciona...
+h3.inline {
+   display: inline;
+   color: #3050c0;
+}
+*/
+h4 {
+  margin-top: 1.5em;
+  margin-bottom: 0.0em;
+  margin-bottom: -0.5em; /* appendices */
+  color: #1020a0; /* appendices: dark blue */
+  color: #3050c0;
+  color: #c02060; /* purple like h2 */
+}
+div.minitoc {
+  margin: 2.5em 0em 2em 0em;
+  font-size: 0.85em; /*17px*/
+}
+div.minitoc ul {
+  margin-top: 0.0em;
+}
+div.minitoc li {
+  margin-top: 0.0em;
+  white-space: nowrap;
+  hyphens: none;
+}
+p.extratop { 
+  margin-top: 2.0em;
+  margin-top: 1.5em;
+}
+span.paragraph { /* inline h4 */
+  font-size: 1.10em; /*22px*/
+  font-size: 1.05em; /*21px*/
+  font-weight: bold;
+  color: #0000c0; /* dark blue */
+  color: #3050c0; /* light blue */ 
+  color: #c02060; /* like h2 */
+}
+
+.medium {
+   font-size: 0.95em; /*19px*/
+}
+.small {
+   font-size: 0.80em; /*18px*/
+}
+span.large {
+   font-size: 1.05em; /*21px*/
+}
+em {
+  font-style: oblique;
+  font-style: italic;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////
+Browsers make monospace font smaller than it should be.
+But different browsers shrink the monospace font differently.
+See "Fixing browser broken monospace font handling"
+http://code.stephenmorley.org/html-and-css/fixing-browsers-broken-monospace-font-handling/
+
+How to fix this?
+You may choose one of these solutions (but do not apply both simultaneously).
+
+SOLUTION 1:
+  Specify font-size in absolute units (i.e., pixels) rather than 
+  relative units (i.e., % or em).
+
+  Seems to produce acceptable (not perfect) results in Firefox,
+  Explorer and Chrome.
+
+  "None of the major browsers reduce the text size within an element 
+  that has its font size specified in absolute units (such as pixels). 
+  It is possible to disable font scaling entirely by setting 
+  an absolute font size on the body element. 
+  However, absolute units harm accessibility and so should not be used."
+
+SOLUTION 2:
+  Add this to your .css:
+    pre,
+    code,
+    kbd,
+    samp,
+    tt {
+      font-family: monospace, monospace; 
+      font-size: 1em;
+    }
+  "The 'font-family' line restores the normal text size in Mozilla Firefox,
+  Google Chrome [NOT TRUE!], and Safari.
+  The 'font-size' line restores the normal text size in Internet Explorer
+  and Opera."
+
+  "Internet Explorer and Opera also do not shrink text within an element 
+  that has its font size specified in relative units (such as ems). 
+  This feature is used in the solution above, where the font size is set
+  to 1em -- the value it would otherwise have been if the browser 
+  had not shrunk the text."
+
+  Seems to produce acceptable (not perfect) results in Firefox,
+  and Explorer, but NOT in Chrome.  Maybe it shoud be 
+      font-family: monospace, serif;
+
+See https://meyerweb.com/eric/thoughts/2010/page/3/
+Fixed Monospace Sizing
+
+https://en.wikipedia.org/wiki/User:Davidgothberg/Test59
+///////////////////////////////////////////////////////////////////////////// */
+code, kbd, pre {
+/* if no font-family specified:
+      mobile: larger in Chrome, too small in Firefox;
+      desktop: ok in Firefox, small in Chrome
+   Courier New: 
+     mobile: ok (even Chrome!) (sans-serif) 
+     desktop: too light and a little large on Firefox (serif)
+   Courier: 
+     mobile: ok but THE '-' IS TOO SHORT (sans serif)
+     desktop: THE '-' IS TOO SHORT (serif)
+   Courier 10 Pitch: 
+     mobile: OK (but IE does not have it)
+     desktop: heavier (which is good) in Firefox, OK in Chrome
+   Monospace: 
+      mobile: good serif font on Google Chrome;
+      desktop:
+*/
+  font-family: "Courier New", "DejaVu Sans Mono", "Roboto Mono", "Courier 10 Pitch", "Lucida Console", "Liberation Mono", "Letter Gothic", "Monaco", "Noto Mono", "Noto Sans Mono", monospace, monospace;
+  font-family: "Courier New"; /*bold is wider than normal!*/
+  font-family: "DejaVu Sans Mono"; /*bold same width as normal but may not have 16.5px*/
+  font-family: monospace, monospace; /*defaults to DejaVu Sans Mono Firefox Linux Mint but something else on Firefox Android*/
+  font-size: 1.0em; /*em, not rem; will be modified later*/
+  hyphens: none;
+}
+kbd {
+  white-space: nowrap;
+  white-space: pre; /*preserves white space; wraps on newline only*/
+  font-style: normal; /*for kbd in italic environment*/
+/*color: #000000; do not specify color in classless kbd!*/
+  font-size: 0.925em; /*18.5px*/
+  font-size: 0.90em; /*18px*/
+}
+kbd.small { 
+  font-size: 0.85em; /*17px*/
+}
+kbd.big { 
+  font-size: 1.0em; /*20px*/
+}
+kbd.wrap { 
+  white-space: normal;
+  hyphens: none;
+}
+kbd.ws {
+  word-spacing: -0.3em;
+}
+kbd.xws {
+  word-spacing: -0.40em;
+}
+.ls05 {
+  letter-spacing: 0.5pt;
+}
+.ls07 {
+  letter-spacing: 0.7pt;
+}
+.ls1 {
+  letter-spacing: 1pt;
+}
+.ls2 {
+  letter-spacing: 2pt;
+}
+.ls3 {
+  letter-spacing: 3pt;
+}
+pre {
+  color: #000000;
+  font-size: 0.825em; /*16.5px*/
+  line-height: 1.4; /*default is 1.2*/
+  letter-spacing: 0pt;
+  word-spacing: 0pt;
+}
+pre.large {
+  font-size: 1.05em; /*21px*/
+}
+pre.small {
+  font-size: 0.80em; /*16px*/
+}
+pre.xsmall {
+  font-size: 0.70em; /*14px*/
+}
+pre.sp {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+pre.ind { /*code*/
+  margin-left: 2.7rem;
+  margin-right: 2em;
+}
+pre.hlt { /*important code*/
+/*white-space: pre;*/
+  background-color: #ffffd6;
+  margin: 1.4em 2rem 1.4em 2.3rem; /*left: 2.3=2.7-padding*/
+  padding: 0.4rem;
+  line-height: 1.4;
+}
+pre.terminal {
+  background-color: #e8e8e8;
+  background-color: #f0f0f0;
+  margin: 1.8em 1.0rem 1.8em 2.0rem; /*left: 2.2=2.7-padding*/
+  padding: 0.3em 0.5rem 0.3em 0.5rem;
+/*width: 85%;*/
+/*font-style: normal;*/
+  font-size: 0.85em; /*17px*/
+  border: 1px solid #b0b0b0; /*gray, silver?*/
+  border: 1px solid #d0d0d0;
+}
+pre.wide { /* like Roberts1 */
+/*white-space: pre-wrap;*/ /* Whitespace is preserved. Text will wrap when necessary and on line breaks */ 
+  word-spacing: 0.3em; /*0.2 is +- like kbd*/ 
+/*ATTENTION: nottfont already has letter-spacing 1.5px*/
+  border: 0px solid black; /*scaffold*/
+}
+pre.manpage { /* appendices/xxxx.h.html */
+  white-space: pre;
+  width: 36em; /*was 38em*/
+  margin: 1em 1em 1em 2em;
+  padding: 1em 1em 1em 1em;
+  border: 0px solid black;
+  border-top: 0px solid black;
+  border-bottom: 0px solid black;
+  font-size: 0.80em; /*16px*/
+  background-color: white;
+}
+.comm { /*comments and documentation in code*/
+  color: #d04020;
+  color: #f08060;
+  color: #e06040; /*old*/
+  color: #d00000; /*new*/
+}
+.it { 
+  font-style: italic;
+}
+.comm kbd { /*the rest of comm is italic*/
+  font-style: normal; 
+  font-size: 1em; /*to undo size of pre*/
+}
+.comm a:link {
+   color: #b07080;
+   color: #d00080;
+}
+.comm a:visited {
+   color: #b07080;
+   color: #d00080;
+}
+.comm a:hover {
+   color: red;
+   text-decoration: underline;
+}
+.comm a:focus {
+   color: red;
+   text-decoration: underline;
+}
+.nottfont { /*used in pre*/
+/*font-family: normal; no! */
+  font-family: "DejaVu Serif", "Book Antiqua", "Century Schoolbook L", "TeXGyrePagella", "Garamond", Bookman, "URW Bookman L", "Cambria", Palatino, serif;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+}
+.badlayout { /*only once, in code-layout.html*/
+  font-family: "DejaVu Serif", "Book Antiqua", "Century Schoolbook L", "TeXGyrePagella", "Garamond", Bookman, "URW Bookman L", "Cambria", Palatino, serif;
+  font-size: 0.95em; /*19px*/
+}
+.hide {
+   background-color: #d0ffd0;
+}
+.smallcaps {
+   font-variant: small-caps;
+}
+span.underl { 
+  text-decoration: underline;
+}
+span.bar {
+  text-decoration: overline;
+}
+span.highlight {
+  color: #000000;
+  background-color: #ffffb0;
+/*white-space: nowrap;*/
+}
+span.tecla {
+   padding: 0px 1.5px 0px 1.5px;
+   border: 0px solid gray;
+}
+span.nw {
+  white-space: nowrap;
+  hyphens: none;
+}
+span.littlebox {
+  white-space: nowrap;
+  border:1px solid #c0c0c0;
+  padding:0px 2px 0px 2px;
+}
+span.invis {
+   visibility: hidden;
+}
+.blood { /*in text and in code*/
+  color: #d00000;
+}
+.darkblood {
+  color: #a00000;
+}
+.blue {
+   color: blue;
+}
+.lgray {
+   color: gray;
+   color: silver;
+   color: #a0a0a0;
+}
+.purple { /*table header*/
+   color: #c02060; /* like h2 */
+}
+
+/*** OLD
+sup {
+  font-size: 0.75em;
+  vertical-align: 0.5em;
+  padding-left: 0.1em;
+}
+sub {
+  font-size: 0.82em;
+  vertical-align: -0.3em; default is ca.-0.4em
+}
+***/
+
+sup, sub {
+/* 
+https://css-tricks.com/snippets/css/prevent-superscripts-and-subscripts-from-affecting-line-height/
+*/
+  vertical-align: baseline; /*baseline top super*/
+  position: relative;
+  top: -0.4em;
+  line-height: 0; /*add for sup when font is too big */
+  border: 0px solid black; /*scaffold*/
+}
+sup {
+  font-size: 0.85em; /*17px*/
+  padding-left: 0px; /*global letter-spacing is no help?*/
+  top: -0.5em; /*CSS tricks*/
+}
+sup.small { /*for decimal digits*/
+  font-size: 0.80em; /*16px*/
+  padding-left: 0px; /*global letter-spacing is no help?*/
+}
+kbd sup {
+  font-size: 0.8108em; /*0.8108 x 0.925 x 20px = 15px*/
+  padding-left: 0.0em;
+}
+sub {
+  font-size: 0.85em; /*17px*/
+  top: 0.3em; /*CSS tricks*/
+}
+sub.small { /*for decimal digits*/
+  font-size: 0.65em; /*13px*/
+}
+kbd sub {
+  font-size: 0.9189em; /*0.9189 x 0.925 x 20px = 17px*/
+  padding-left: 0.0em;
+}
+
+a:link {
+   color: #0000ff;
+   text-decoration: underline;
+   text-decoration: none;
+}
+a:visited {
+   /* color: #4000ff; */
+   color: #0000e8;
+   /*text-decoration: underline;*/
+   text-decoration: none;
+}
+a:hover, a:focus { /* Must come after :link and :visited */
+   color: red;
+   text-decoration: underline;
+}
+a:active {
+   color: red;
+   text-decoration: underline;
+}
+a:link kbd {
+   color: #0000ff;
+}
+a:visited kbd {
+   color: #0000e8;
+}
+a:hover kbd {
+   color: red;
+}
+a:focus kbd {
+   color: red;
+}
+a:active kbd {
+   color: red;
+   text-decoration: underline;
+}
+abbr:hover, abbr:focus { 
+  color: red;         
+  text-decoration: underline;
+}
+abbr:active { 
+  color: black;         
+}
+acronym {
+  color: blue;
+  /* text-decoration: underline; */
+}
+acronym:hover, acronym:focus {
+  color: red;
+  text-decoration: underline;
+}
+
+/*----- begin navigation panel menu -----*/
+p.navigation { 
+   margin-top: -0.1em;
+   margin-bottom: 2.0em;
+   padding: 0.25em 0em 0.18em 0em;
+   /* background: #4060c0; */
+   /* background: #6060d0; purple; out of question */
+   /* background: #003357; */
+   /* background: #4060c0; */
+   /* background: #205080; */
+   /* background: #5080ff; */ /* too brilliant */
+   /* background: #3080e0; */
+   background-color: #2040a0;
+   color: #ffffff; 
+   text-align: center;
+   font-size: 0.80em; /*16px*/
+/* font-weight: bold;*/
+   border-bottom: 1px solid  #2050a0;
+}
+a.navig:link {
+   color: white;
+   /* color: #ddb0ff; */
+   text-decoration: none;
+}
+a.navig:visited {
+   color: white;
+   /* color: #000820; */
+   /* color: #ddddff; */
+   text-decoration: none;
+}
+a.navig:hover, a.navig:focus {
+  color: #ddb0ff;
+  color: #ffc0c0;
+  color: yellow;
+}
+a.navig:active {
+  color: #ddb0ff;
+  color: #ffc0c0;
+  color: red;
+}
+p.center {
+   text-align: center;
+   margin-left: 2.7em; /*48.6px*/
+   margin-right: 2.7em;
+}
+p.indent { /*same as pre.ind*/
+  margin-left: 2.7rem; /*48.6px*/
+  margin-right: 2em;
+}
+p.right {
+   text-align: right;
+}
+p.box { /*only in appendices/unicode.html*/
+  background-color: #f0f0f0;
+  margin: 2em 0.5rem 1.8em 2rem; /*some rem*/
+  padding: 0.3em 0.5rem 0.3em 0.5rem; /*some rem*/
+/*font-style: normal;*/
+  border: 1px solid #c0c0c0;
+}
+p.boxyellow { /*only in appendices/unicode.html*/
+  background-color: #ffffb0;
+  margin: 1.5em 0.5rem 1.5em 2rem; /*some rem*/
+  padding: 0.3em 0.5rem 0.3em 0.5rem; /*some rem*/
+/*font-style: normal;*/
+}
+p.caption { /*only in private parts*/
+  text-align: center;
+  font-size: 0.85em; /*17px*/
+  margin-top: 1.0em;
+  margin-bottom: 4.0em;
+/*margin-left: auto;*/
+/*margin-right: auto;*/
+  margin-left: 20%;
+  margin-right: 20%;
+/*width: 28rem;*/
+}
+p.fig {
+  text-align: center;
+  margin-top: 2.5em;
+  margin-bottom: 3.0em;
+  font-size: 0.90em; /*18px*/
+  border: 0px solid black; /*scaffold*/
+}
+p.figright {
+  text-align: right;
+  margin-top: 3.0em;
+  margin-bottom: 0.0em;
+  font-size: 0.90em; /*18px*/
+  border: 0px solid black;  /*scaffold*/
+}
+p.fig-float {
+  float: right;
+  margin: 0.5em 0.0em 1.5em 1.5em;
+  border: 0px solid black;  /*scaffold*/
+}
+p.fig-float-left {
+  float: left;
+  margin: 0.5em 1.5em 1.5em 0em;
+  border: 0px solid black;  /*scaffold*/
+}
+blockquote { 
+  margin: 1em 2.0em 1em 2.5em;
+}
+ul.square { 
+  list-style-type: square;
+}
+ul.circle { 
+  list-style-type: circle;
+}
+ul.none { 
+  list-style-type: none;
+}
+ul.enum { 
+  margin-left: 3em;
+  margin-top: -0.1em;
+  margin-bottom: 0.1em;
+  font-size: 0.95em;
+  font-size: 0.90em;
+}
+ol.lower-latin {
+  list-style-type: lower-latin;
+}
+ol.upper-latin {
+  list-style-type: upper-latin;
+}
+li ul { 
+  margin-top: 0.3em;
+  margin-bottom: 0em;
+  list-style-type: disc;
+  list-style-type: circle;
+}
+li p { 
+  margin-top: 0.5em;
+}
+li p.indent { 
+  margin: 0.5em 0rem 0.5em 2.7rem; /*some rem*/
+}
+li p.center {
+  text-align: center;
+  margin: 0.5em 2.7rem 0.5em 2.7rem; /*some rem*/
+}
+dfn {
+/*color: #000000;*/
+  /* color: #aa0000; */ /* red */
+  background-color: #ffffb0;
+/*padding: 0em 0.2em 0em 0.2em; não fica good in the começo de line... */
+/*font-style: normal; */
+/*font-weight: bold; */
+  font-style: italic;
+}
+span.dfnnoitalic {
+   color: #000000;
+   /*color: #aa0000;*/
+   /*font-weight: bold;*/
+   padding-left: 0.4em;
+   padding-right: 0.4em;
+   background-color: #ffffb0;
+}
+.graynote { /*comments in text*/
+   color: gray;
+   color: #a0a0c0;
+}
+.graynote a:link {
+   color: #8080ff;
+}
+.graynote a:visited {
+   color: #8080ff;
+}
+.graynote a:hover {
+   color: red;
+   text-decoration: underline;
+}
+.graynote a:focus {
+   color: red;
+   text-decoration: underline;
+}
+.graynote a:active {
+   color: red;
+   text-decoration: underline;
+}
+.graynote kbd {
+  color: #6060a0;
+}
+.graynote a:link kbd {
+  color: #5050ff;
+}
+.graynote a:visited kbd {
+   color: #5050ff;
+}
+.graynote a:hover kbd {
+   color: red;
+}
+.graynote a:focus kbd {
+   color: red;
+}
+.graynote a:active kbd {
+   color: red;
+   text-decoration: underline;
+}
+div.epigrafes {
+  margin-top: 0em;
+  margin-bottom: 3em;
+  font-size: 0.775em; /*15.5px*/
+  text-align: right;
+  color: #2040c0;
+  border: 0px solid black; /*scaffold*/
+}
+span.epigrafesignature { 
+  color: black;
+}
+a.translate:link {
+  color: #2040c0; /* ordinary epigrafe color*/
+}
+a.translate:visited {
+   color: #2040c0; /* ordinary epigrafe color*/
+}
+a.translate:hover, a.translate:focus { 
+   color: red;
+/* text-decoration: underline;*/
+}
+a.translate:active {
+   color: red;
+   text-decoration: underline;
+}
+
+li.space {
+  margin-top: 0.1em;
+}
+li.sspace {
+  margin-top: 0.4em;
+}
+li.ssspace {
+  margin-top: 1em;
+}
+li.xspace {
+  margin-top: 2em;
+}
+
+div.tA {
+   margin-top: 0.5em;
+}
+div.bA {
+   margin-bottom: 0.5em;
+}
+div.tB {
+   margin-top: 1.0em;
+}
+div.bB {
+   margin-bottom: 1.0em;
+}
+div.tBB {
+   margin-top: 1.5em;
+}
+div.bBB {
+   margin-bottom: 1.5em;
+}
+div.tC {
+   margin-top: 2.0em;
+}
+div.bC {
+   margin-bottom: 2.0em;
+}
+div.tCC {
+   margin-top: 3.0em;
+}
+div.bCC {
+   margin-bottom: 3.0em;
+}
+div.tD {
+   margin-top: 4.0em;
+}
+div.bD {
+   margin-bottom: 4.0em;
+}
+div.tDD {
+   margin-top: 5.0em;
+}
+div.bDD {
+   margin-bottom: 5.0em;
+}
+div.tE {
+   margin-top: 6.0em;
+}
+div.bE {
+   margin-bottom: 6.0em;
+}
+table.container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  border-collapse: separate;
+  border-spacing: 1px 1px; /*horiz vertical*/
+  border: 0px solid black; /*scaffold*/
+  hyphens: none;
+}
+table.container tr {
+  vertical-align: middle;
+  border: 0px solid black; /*scaffold*/
+}
+table.container td {
+  vertical-align: middle;
+  border: 0px solid black; /*scaffold*/
+}
+
+table.myarray {
+  margin-left: auto;
+  margin-right: auto;
+/*border-spacing: 1px 1px;*/ /*horiz, vertical*/
+/*border-collapse: separate;*/
+  border-collapse: collapse;
+  font-size: 0.85em; /*17px*/
+  border: 0px solid black; /*scaffold*/
+  hyphens: none;
+}
+table.myarray tr.indices {
+  border: 0px solid black; /*scaffold*/
+}
+table.myarray tr.indices td {
+  text-align: center;
+/*vertical-align: middle;*/
+  border: 0px solid black; /*scaffold*/
+}
+table.myarray tr.boxes {
+  border: 0px solid black; /*scaffold*/
+}
+table.myarray tr.boxes td {
+  padding: 0.00em 0em 0.00em 0em;
+  width: 2.0rem;
+  width: 1.90rem; 
+  text-align: center;
+/*vertical-align: middle;*/
+  border: 1px solid #808080;
+}
+table.myarray tr.boxes td.bnk {
+  background-color: #ffffff; 
+  border: 0px; /*erases default border*/
+}
+table.myarray tr.boxes td.narrow {
+  width: 1.5rem;
+}
+table.myarray tr.boxes td.narroww {
+  width: 1.15rem;
+}
+table.myarray tr.caption {
+/*font-size already set in table.myarray*/
+  border: 0px solid black; /*scaffold*/
+}
+table.myarray tr.caption td {
+  text-align: center;
+  padding-top: 0.40em;
+  vertical-align: top;
+  background-color: white;
+  border: 0px solid black; /*scaffold*/
+}
+table.myarray tr.caption td kbd {
+  font-size: 0.9539em; /*0.9539 x 0.925 x 0.85 x 20px = 15px*/
+  color: #000000;
+}
+table.myarray tr.color { /*exceptional thing in radixsort.html*/
+  color: #b08080;
+  color: #c04040;
+}
+
+tr.left { 
+  text-align: left;
+}
+tr.center { 
+  text-align: center;
+}
+tr.right { 
+  text-align: right;
+}
+td.left, th.left { 
+  text-align: left;
+}
+td.center, th.center { 
+  text-align: center;
+}
+td.right, th.right { 
+  text-align: right;
+}
+td.bnk { /*blank*/
+  background-color: #ffffff; 
+  border: 0px solid black; /*erase default border*/
+}
+td.yel {
+  background-color: #ffffd6; 
+                                 }
+td.lgy {/*lightgray*/
+  background-color: #e0e0e0;
+}
+td.gry {
+  background-color: #aaaaaa;
+  background-color: #b0b0b0;
+  background-color: #d0d0d0;
+}
+td.blk { /*black*/
+  background-color: #808080;
+}
+td.mag { /*magenta*/
+  background-color: #e080e0;
+  background-color: #f4b0f0; 
+  background-color: #f8c0f4;
+}
+td.lmag { /*light magenta*/
+  background-color: #ffc8f8;
+}
+td.grn { /*green*/
+  background-color: #a0e0e0;
+  background-color: #c0f0c0;
+  background-color: #d0ffd0;
+}
+td.blu { /*blue*/
+  background-color: #a0a0e8;
+  background-color: #b0c0f0;
+}
+td.ocr { /*ocre*/
+  background-color: #e8a0a0;
+  background-color: #f8c0a8;
+}
+td.orn { /*orange*/
+  background-color: #ffc0a0;
+}
+td.lrn { /*light orangy*/
+  background-color: #f0c0c0;
+}
+td.wht { /*white*/
+  background-color: #ffffff;
+}
+tr.hspacer0 { 
+  height: 0.0em;
+}
+tr.hspacer1 { 
+  height: 0.1em;
+}
+tr.hspacer2 { 
+  height: 0.2em;
+}
+tr.hspacer3 { 
+  height: 0.3em;
+}
+tr.hspacer5 { 
+  height: 0.5em;
+}
+
+table.trivial {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.90em; /*18px*/
+  border: 0px solid black; /*scaffold*/
+  hyphens: none;
+}
+table.trivial tr.center td { 
+  padding: 0.2em 0.2rem 0.2em 0.2rem; /*some rem*/
+  white-space: nowrap;
+}
+table.trivial tr.right td { 
+  padding: 0.0em 0.0rem 0.0em 0.5rem; /*some rem*/
+  white-space: nowrap;
+}
+
+table.simple {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: separate;
+  border-spacing: 8px 0px; /*horiz vertical*/
+  border: 0px solid black; /*scaffold*/
+  hyphens: none;
+}
+table.simple tr { 
+  font-size: 0.925em; /*18.5px*/
+}
+table.simple tr td { 
+  padding: 0em 0rem 0em 0rem; /*some rem*/
+  white-space: nowrap;
+  border-bottom: 0px solid black; /*scaffold*/
+}
+table.simple tr.head { 
+  font-size: 0.90em; /*18px*/
+  vertical-align: bottom;
+  line-height: normal; /*this is the default, +-120%*/
+  line-height: 0.98;
+}
+table.simple tr.head th { 
+  padding: 0.0em 0.0rem 0.3em 0.0rem; /*some rem*/
+/*background-color: #e0e0f0;*/
+  font-weight: normal;
+  text-align: left;
+  white-space: nowrap;
+  border-bottom: 1px solid black;
+}
+
+table.encoding { 
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 9px 0px; /*horiz vertical*/
+/*font-family: normal;*/ /* &ldquo; is different*/
+  font-size: 0.95em; /*19px*/
+  border: 0px solid black; /*scaffold*/
+  hyphens: none;
+}
+table.encoding tr {
+  vertical-align: middle;
+  border: 0px solid black; /*scaffold*/
+}
+table.encoding td {
+  padding: 0.0em 0.0rem 0.0em 0rem; /*some rem*/
+  vertical-align: middle;
+  white-space: nowrap;
+/*text-align: left;*/
+  border: 0px solid black; /*scaffold*/
+}
+
+table.matrix {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: separate;
+  border-spacing: 2px 2px; /*horiz, vertical*/
+  border: 0px solid black; /*scaffold*/
+  hyphens: none;
+}
+table.matrix td { 
+  padding: 0em 0.3em 0em 0.3em;
+  white-space: nowrap;
+/*width: 25px;*/
+  font-size: 0.90em; /*18px*/
+  text-align: center;
+  vertical-align: middle;
+  background-color: #d8d8d8;
+  background-color: #f0f0f0;
+  border: 0px solid black; /*scaffold*/
+}
+table.matrix td.label { 
+  font-size: 0.75em; /*15px*/
+  background-color: #ffffff;
+  border: 0px solid black; /*scaffold*/
+}
+table.matrix td.label kbd { 
+  font-size: 0.975em; /*19.5px*/
+  color: #000000;
+}
+
+table.myheap {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+/*border-spacing: 0px 8px;*/ /*horiz, vertical*/
+  font-size: 0.85em; /*17px*/
+  border: 0px solid black; /*scaffold*/
+  hyphens: none;
+}
+table.myheap tr { 
+  border: 0px solid black; /*scaffold*/
+}
+table.myheap td { 
+/*width: 1em;*/
+  padding-top: 0.00em;
+  padding-bottom: 0.00em;
+  text-align: center;
+  vertical-align: middle;
+  border: 0px solid black; /*scaffold*/
+}
+table.myheap td.gry { 
+  background-color: #c8c8c8;
+  background-color: #e8e8e8;
+  border: 1px solid black;
+}
+table.myheap td.wspacer { 
+  width: 0.65em;
+  background-color: #ffffff;
+}
+
+table.strmatch {
+  margin-left: auto;
+  margin-right: auto;
+/*border-collapse: collapse;*/
+  border-collapse: separate;
+  border-spacing: 1px 0px; /*horiz, vertical*/
+  font-size: 0.85em; /*17px*/
+  border: 0px solid black; /*scaffold*/
+  hyphens: none;
+}
+table.strmatch tr.indices { 
+  border: 0px solid black; /*scaffold*/
+}
+table.strmatch tr.indices td {
+  padding: 0em 0em 0em 0em;
+  text-align: center;
+  vertical-align: bottom;
+  background-color: white;
+  border: 0px solid black; /*scaffold*/
+}
+table.strmatch tr.boxes { 
+  border: 0px solid black; /*scaffold*/
+}
+table.strmatch tr.boxes td { 
+  padding: 0.0em 0em 0.0em 0em;
+  width: 1.1em;
+  text-align: center;
+  vertical-align: middle;
+  border: 0px solid black; /*scaffold*/
+}
+
+img.noborder {
+  vertical-align: baseline;
+  vertical-align: middle;
+  vertical-align: bottom;
+  vertical-align: top;
+  border: 0px solid black;
+}
+img.border {
+  vertical-align: baseline;
+  vertical-align: middle;
+  vertical-align: bottom;
+  vertical-align: top;
+  border: 1px solid #d0d0d0;
+}
+img.attention {
+  height: 13px;
+}
+img.h14 { 
+  height: 14px;
+  height: 0.9em;
+}
+img.h30 { 
+  height: 30px;
+  height: 1.9em;
+}
+img.h35 { 
+  height: 35px;
+  height: 2.3em;
+}
+img.h48 { 
+  height: 48px;
+  height: 2.5em;
+}
+img.h50 { 
+  height: 50px;
+  height: 2.6em;
+}
+img.h60 {
+  height: 60px;
+  height: 3.4em;
+}
+img.h65 {
+  height: 65px;
+  height: 3.8em;
+}
+img.h70 {
+  height: 70px;
+  height: 3.7em;
+}
+img.h78 { 
+  height: 78px;
+  height: 4.6em;
+}
+img.h100 { 
+  height: 100px;
+  height: 5.0em;
+}
+img.h110 { 
+  height: 110px;
+  height: 5.5em;
+}
+img.h120 { 
+  height: 120px;
+  height: 5.7em;
+}
+img.h130 { 
+  height: 130px;
+  height: 6.2em;
+}
+img.h140 { 
+  height: 140px;
+  height: 6.7em;
+}
+img.h150 { 
+  height: 150px;
+  height: 7.1em;
+}
+img.h155 { 
+  height: 155px;
+  height: 7.4em;
+}
+img.h160 { 
+  height: 160px;
+  height: 7.6em;
+}
+img.h165 { 
+  height: 165px;
+  height: 7.8em;
+}
+img.h170 { 
+  height: 170px;
+  height: 8.1em;
+}
+img.h180 {
+  height: 180px;
+  height: 8.5em;
+}
+img.h185 { 
+  height: 185px;
+  height: 8.8em;
+}
+img.h190 { 
+  height: 190px;
+  height: 9.0em;
+}
+img.h200 { 
+  height: 200px;
+  height: 9.5em;
+}
+img.h210 { 
+  height: 210px;
+  height: 10.0em;
+}
+img.h230 {
+  height: 230px;
+  height: 11.0em;
+}
+img.h250 {
+  height: 250px;
+  height: 12.0em;
+}
+img.h370 {
+  height: 370px;
+  height: 17.5em;
+}
+img.h400 {
+  height: 400px;
+  height: 19.0em;
+}
+img.h430 {
+  height: 430px;
+  height: 20.0em;
+}
+img.cartoon {
+  opacity: 0.5;
+}
+img.cartoon:hover, img.cartoon:focus {
+  opacity: 1.0;
+}
+
+h2.exr {
+  color: #de0051;
+  color: #606080;
+  color: #5080ff;
+  color: #70b0ff;
+  color: #404080;
+  color: #6070a0;
+  color: #a0a0a8;
+  color: #9090b0;
+/*background: #e4f0f8;*/ /*same as div.exr*/
+/*background: #f4f8ff;*/ /*same as div.exr*/
+}
+h3.exr {
+   margin-top: 0rem; /*rem*/
+   margin-bottom: 0rem; /*rem*/
+   color: #606080;
+   color: #404080;
+   color: #6070a0;
+}
+div.exr {
+/*margin-top: 4rem;*/
+/*margin-bottom: 2rem;*/
+/*background-color: #e4f0f8;*/ /*way too dark*/
+/*background-color: #f4f8ff;*/ /*too light for Monica*/
+/*background-color: #f4f8ff;*/ /*too light for Monica*/
+/*background-color: #e8f4f8;*/
+/*padding: 1px 15px 5px 10px;*/
+  color: #808088;
+  color: #707078;
+  color: #606090; /*like footer*/
+  font-size: 0.90em; /*18px, like q-and-a and footer*/
+}
+div.exr dfn { 
+  color: #606070;
+  background: #ffffc0;
+  font-style: italic;
+}
+div.exr kbd, pre { 
+  color: #707080; /* darker than div.exr */
+  color: #606070; /* darker than div.exr */
+  color: #505060; /* darker than div.exr */
+}
+div.exr pre .comm {
+  color: #e08060; /*dimmer than outside .exr*/
+}
+div.exr pre .comm kbd {
+  font-style: normal; 
+  color: #e08060;
+}
+div.exr a:link {
+   color: #8080ff;
+   color: #2020ff;
+}
+div.exr a:visited {
+   color: #8080ff;
+   color: #2020ff;
+}
+div.exr a:hover {
+   color: red;
+   text-decoration: underline;
+}
+div.exr a:focus {
+   color: red;
+   text-decoration: underline;
+}
+div.exr a:active {
+   color: red;
+   text-decoration: underline;
+}
+div.exr a:link kbd {
+   color: #5050d0;
+}
+div.exr a:visited kbd {
+   color: #5050d0;
+}
+div.exr a:hover kbd {
+   color: red;
+}
+div.exr a:focus kbd {
+   color: red;
+}
+div.exr a:active kbd {
+   color: red;
+}
+li.exr {
+   margin-top: 0.7em;
+}
+li.exr p { 
+   margin-top: 0.4em;
+}
+li.exr blockquote { 
+   margin-top: 0.4em;
+   margin-bottom: 0em;
+}
+li.exr ul { 
+   margin-top: 0.3em;
+   margin-bottom: 0em;
+}
+li.exr ol { 
+   margin-top: 0.3em;
+   margin-bottom: 0em;
+}
+li.exr li { 
+   margin-top: 0em;
+   margin-bottom: 0em;
+}
+li.exr pre.ind { 
+  margin-left: 1.7rem; /*rem*/
+}
+
+table.precedence {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: separate;
+  border-spacing: 12px 2px;
+  border: 0px solid black;
+  hyphens: none;
+}
+table.precedence tr { 
+  vertical-align: middle;
+  border: 0px solid black;
+}
+table.precedence td { 
+  padding: 0em 0em 0em 0em;
+  white-space: nowrap;
+}
+table.precedence td.col2 { 
+  text-align: center;
+  padding: 0em 0.6em 0em 0.6em;
+  height: 1.7em;
+  vertical-align: middle;
+/*border-top: 1px solid black;*/
+  background-color: #c5d2ec;
+  background-color: #d8e0ff;
+  background-color: #ffffff;
+  background-color: #e0eef6; 
+}
+table.precedence td.col2 kbd { 
+  font-size: 1.025em; /*20.5px*/
+}
+table.precedence td.col3 { 
+  font-size: 0.95em; /*19px*/
+  text-align: left;
+}
+
+table.precedenceexample {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: separate;
+  border-spacing: 12px 6px; /*horiz, vertical*/
+  border: 0px solid black; /*scaffold*/
+  hyphens: none;
+}
+table.precedenceexample tr {
+  font-size: 1em;
+}
+table.precedenceexample td {
+  padding: 0em 0em 0em 0em;
+  white-space: nowrap;
+  border-bottom: 0px solid black;
+}
+table.precedenceexample tr.head {
+  font-size: 0.95em; /*19px*/
+  vertical-align: bottom;
+/*line-height: normal;*/ /*this is the default, +-120%*/
+  line-height: 0.98;
+}
+table.precedenceexample th {
+  padding: 0.0em 0.0em 0.3em 0.0em;
+  font-weight: normal;
+  text-align: left;
+  white-space: nowrap;
+  border-bottom: 1px solid black;
+}
+
+div.q-and-a {
+  margin-top: 3.0em;
+  margin-bottom: 0em;
+  font-size: 0.90em; /*18px*/
+  color: #808088;
+  color: #606070;
+  color: #406040;
+}
+div.q-and-a h3 {
+  margin-top: 0.5em;
+  color: #c04010;
+  color: #d07030;
+  color: #d87838;
+  color: #c0a070;
+  color: #808080;
+  color: #406040;
+}
+div.q-and-a ul {
+  margin-top: 0.0em;
+}
+div.q-and-a li {
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+}
+div.q-and-a li ul {
+  margin-top: 0rem; /*rem*/
+  margin-bottom: 0rem; /*rem*/
+}
+div.q-and-a li li {
+  margin-top: 0rem; /*rem*/
+  margin-bottom: 0rem; /*rem*/
+}
+div.q-and-a p {
+  margin-top: 0.4rem; /*rem*/
+  margin-bottom: 0.2rem; /*rem*/
+}
+div.q-and-a kbd {
+  color: #505070;
+  color: #606070; /*like div.exr pre and kbd*/
+}
+div.q-and-a pre {
+  color: #505070;
+  color: #606070; /*like div.exr pre and kbd*/
+}
+div.q-and-a a:link {
+   color: #8080ff; /*like div.exr a*/
+}
+div.q-and-a a:visited {
+   color: #8080ff; /*like div.exr a*/
+}
+div.q-and-a a:hover {
+   color: red; /*like div.exr a*/
+   text-decoration: underline; /*like div.exr a*/
+}
+div.q-and-a a:focus {
+   color: red; /*like div.exr a*/
+   text-decoration: underline; /*like div.exr a*/
+}
+div.q-and-a a:active {
+   color: red; /*like div.exr a*/
+   text-decoration: underline; /*like div.exr a*/
+}
+div.q-and-a a:link kbd {
+   color: #5050d0; /*like div.exr a*/
+}
+div.q-and-a a:visited kbd {
+   color: #5050d0; /*like div.exr a*/
+}
+div.q-and-a a:hover kbd {
+   color: red; /*like div.exr a*/
+}
+div.q-and-a a:focus kbd {
+   color: red; /*like div.exr a*/
+}
+div.q-and-a a:active kbd {
+   color: red;
+   text-decoration: underline;
+}
+div.footer {
+  margin-top: 2.5em;
+  margin-bottom: 30em;
+  color: #606090; 
+  font-size: 0.90em; /*18px same as div.exr and a-and-a*/
+  line-height: normal;
+}
+div.footer ul {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+div.footer li {
+  margin-top: 0em;
+}
+div.footer p {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+div.footer p.validator {
+  margin-top: 0em;
+  text-align: right;
+}
+div.footer img.r {
+  border: 0;
+/*width:  77px;*/
+/*height: 28px;*/
+  width:  65px;
+/*height: 23px;*/
+  padding-left: 0.5em;
+/*float:  right;*/
+  text-align: right;
+}
+div.footer img.tidy { 
+  border: 0;
+/*height: 16px;*/
+/*width:  39px;*/
+/*height: 0.86em;*/
+  width:  2.60em;
+  padding-left: 0.2em;
+/*float: right;*/
+}
+div.footer img.w3 { 
+  border: 0;
+/*height: 31px;*/
+/*width:  88px;*/
+/*height: 25px;*/
+/*width:  63px;*/
+  height: 1.37em;
+  width:  3.69em;
+  padding-left: 0.2em;
+/*float: right;*/
+}
+div.clear {
+  clear: both;
+}
+
+/*************
+q { 
+  quotes: &#34; &#34; ; 
+  quotes: &quot; &quot; ; 
+  quotes: &#171; &#187; ; 
+  quotes: &#8220;  &#8221; ;
+  open-quote: &amp;#8220;;
+  close-quote: &amp;#8221;;
+} 
+q:before {
+  content: &#8220;;
+  content: open-quote;
+} 
+q:after {
+  content: &#8221;;
+  content: close-quote;
+} 
+*****************/
+
+div.solu {
+  margin: 1em 0em 0em 1.5em;
+  padding: 0.3em 0.5em 0.3em 0.7em;
+  color: #0000a0;
+  border: 1px solid #d4e8d4;
+  background-color: #f0fff8;
+  background-color: #e4e0ff;
+  background-color: #f4f8ff; /* too light on some monitors */
+  background-color: #e8f8e8; /* darker */
+}
+
+h1.afterhtml { 
+  margin-top: -10em;
+}
+
+table.ascii { /*and iso-latin-1*/
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: separate;
+  border-spacing: 18px 0px; /*horiz, vertical*/
+  border: 0px solid black; /*scaffold*/
+  hyphens: none;
+}
+table.ascii tr.head { 
+  font-size: 0.80em; /*16px*/
+  vertical-align: bottom;
+}
+table.ascii tr.tail { 
+  font-size: 0.80em; /*16px*/
+  vertical-align: top;
+}
+table.ascii th.dec { /*decimal header*/
+  white-space: nowrap;
+  text-align: right;
+  border-bottom: 0px solid black;
+}
+table.ascii th.bin { /*binary*/
+  white-space: nowrap;
+  text-align: left;
+  border-bottom: 0px solid black;
+}
+table.ascii th.hex { /*heaxadecimal*/
+  white-space: nowrap;
+  text-align: left;
+  border-bottom: 0px solid black;
+}
+table.ascii th.uni { /*unicode*/
+  white-space: nowrap;
+  text-align: left;
+  border-bottom: 0px solid black;
+}
+table.ascii th.ch { /*character*/
+  white-space: nowrap;
+  text-align: center;
+  border-bottom: 0px solid black;
+  padding: 0px 4px 0px 4px;
+}
+table.ascii th.obs { /*observation*/
+  white-space: nowrap;
+  text-align: left;
+  border-bottom: 0px solid black;
+  padding-left: 0.5em;
+}
+table.ascii td { 
+  vertical-align: middle;
+  white-space: nowrap;
+}
+table.ascii td.dec { /*decimal column*/
+  text-align: right;
+  font-size: 0.95em; /*19px*/
+}
+table.ascii td.bin { /*binary, in kbd*/
+  text-align: left;
+  font-size: 0.90em; /*18px*/
+}
+table.ascii td.hex { /*hexadecimal, in kbd*/
+  text-align: left;
+  font-size: 0.95em; /*19px*/
+}
+table.ascii td.uni { /*Unicode*/
+  text-align: left;
+  font-size: 0.95em; /*19px*/
+}
+table.ascii td.ch { /*blank*/
+  text-align: center;
+  font-size: 0.95em; /*19px*/
+}
+table.ascii td.ch1 { /*pink characters*/
+  text-align: center;
+  font-size: 0.95em; /*19px*/
+  background-color: #ffc0c0;
+}
+table.ascii td.ch2 { /*green characters*/
+  text-align: center;
+  font-size: 0.95em; /*19px*/
+  background-color: #c0ffff;
+}
+table.ascii td.obs { 
+  text-align: left;
+  font-size: 0.90em; /*18px*/
+  padding-left: 0.5em;
+}
+
+audio.my {
+  margin-top: 1.1em;
+  margin-bottom: 1em;
+  margin-left: 0em;
+  margin-right: -2em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  padding-left: 0em;
+  background-color: yellow;
+  background-color: white;
+  color: red;
+  width: 15em;
+  height: 1.3em;
+/*font-size: 1em; no! */
+}
+
+
+/***************************
+@media print { 
+  body { 
+    margin-left: 1%;
+    margin-right: 1%;
+    font-size: 85%;
+  }
+}
+@media (max-width: 500px) {
+  body { 
+    margin-left: 1%;
+    margin-right: 1%;
+    font-size: 100%;
+  }
+}
+*****************************/
+
+

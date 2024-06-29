@@ -14,18 +14,18 @@ time:
 
 clean:
 	@echo "Cleaning..."
-	rm $(EXEC) || true
+	@rm $(EXEC) || true
 # @find . -type f ! \( -name "*.c" -o -name "*.h" -o -name "*.txt" -o -name "Makefile" \) -exec rm -f {} +
 
 compile:
 	@echo "Compiling..."
-	$(CC) -o $(EXEC) $(SRC) -lcurl
+	@$(CC) -o $(EXEC) $(SRC) -lcurl
 # -fsanitize=address
 
 run:
 	@echo "Running..."
-	$(EXEC) | tee -a $(OUTPUT_FILE) $(IGNORE)
-	@rm $(EXEC)
+	@$(EXEC) | tee -a $(OUTPUT_FILE) $(IGNORE)
+# @rm $(EXEC)
 
 
 # @./main

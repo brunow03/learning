@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <unistd.h>  // Para usar usleep()
 
+#include "./include/queue.h"
 #include "./include/binarytrees.h"
 #include "./include/stringmatching.h"
 #include "./include/mergesort.h"
@@ -264,8 +265,11 @@ int main(int argc, char const *argv[])
 
 	tree myTree = initializeBinaryTree();
 
-	initializeBinaryTree();
-	leftrootright (myTree);
+	// User fills binary tree
+	fillbinarytree(myTree);
+	
+	// Print it pretty
+	prettyprintbinarytree(myTree);
 
 	free(myTree);
 
