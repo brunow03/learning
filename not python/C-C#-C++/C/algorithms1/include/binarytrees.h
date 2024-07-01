@@ -20,7 +20,7 @@ typedef struct recordt {
 */
 
 tree initializeBinaryTree(void);
-node* create_node(void);
+node* create_node(int val);
 void fillbinarytree(tree r);
 void leftrootright (tree r);
 void rootleftright(tree r);

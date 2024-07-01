@@ -56,6 +56,7 @@ void leftrightroot(tree r){
 // Breadth-firt travaersal
 
 // User filled binary tree in root left right order
+/*
 void fillbinarytree(tree r){
 	if (r == NULL)
 	{
@@ -68,22 +69,23 @@ void fillbinarytree(tree r){
 		rootleftright (r->rght);
 
 	}
-}
+}*/
 
-node *createNode() {
+node *create_node(int val) {
     node *newNode = (node *)malloc(sizeof(node));
     if (newNode != NULL) {
+    	newNode->contents = val;
         newNode->lft = NULL;
         newNode->rght = NULL;
     }
     return newNode;
 }
-
+/*
 tree initializeBinaryTree() {
     // Create nodes for the tree structure
     node *root = createNode();
     return root; // Return the root of the binary tree
-}
+}*/
 
 void numberofnodes (tree r, int *n) {
 	if (r != NULL) {
