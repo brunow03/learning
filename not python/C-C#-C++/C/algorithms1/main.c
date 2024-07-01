@@ -262,12 +262,45 @@ int main(int argc, char const *argv[])
 
 	printf("Binary tree part\n");
 	printf("\n");
+	tree myTree;
+	myTree = create_node(1);
+	myTree->lft = create_node(2);
+    myTree->rght = create_node(3);
+    myTree->lft->lft = create_node(4);
+    myTree->lft->rght = create_node(5);
+    myTree->rght->rght = create_node(6);
+    myTree->lft->lft->lft = create_node(7);
+    myTree->rght->rght->lft = create_node(8);
+    myTree->rght->rght->rght = create_node(9);
+    myTree->lft->lft->rght = create_node(10);
+    myTree->lft->rght->lft = create_node(11);
+    myTree->lft->rght->rght = create_node(12);
+    myTree->rght->rght->rght->lft = create_node(13);
+    myTree->rght->rght->rght->rght = create_node(14);
+    myTree->lft->lft->lft->lft = create_node(15);
+    myTree->lft->lft->lft->rght = create_node(16);
+    myTree->lft->rght->lft->lft = create_node(17);
+    myTree->lft->rght->lft->rght = create_node(INT_MAX);
+    myTree->lft->rght->rght->lft = create_node(19);
+    myTree->lft->rght->rght->rght = create_node(20);
+    myTree->rght->rght->rght->lft->lft = create_node(21);
+    myTree->rght->rght->rght->lft->rght = create_node(22);
+    myTree->rght->rght->rght->rght->lft = create_node(23);
+    myTree->rght->rght->rght->rght->rght = create_node(24);
 
-	tree myTree = initializeBinaryTree();
+	/*
+	tree myTree;
 
-	// User fills binary tree
-	fillbinarytree(myTree);
-	
+	myTree = create_node(1);
+    myTree->lft = create_node(2);
+    myTree->rght = create_node(3);
+    myTree->lft->lft = create_node(4);
+    myTree->lft->rght = create_node(5);
+    myTree->rght->rght = create_node(6);
+    myTree->lft->lft->lft = create_node(7);
+    myTree->rght->rght->lft = create_node(8);
+    myTree->rght->rght->rght = create_node(9);
+    */
 	// Print it pretty
 	prettyprintbinarytree(myTree);
 
