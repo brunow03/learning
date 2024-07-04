@@ -55,7 +55,7 @@ int main(int argc, char const *argv[])
 		n = read(newsockfd, buffer, 255);
 
 		if (n < 0)
-			error();
+			error("Error");
 	}
 
 
