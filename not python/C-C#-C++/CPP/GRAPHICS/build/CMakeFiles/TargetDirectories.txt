@@ -1,0 +1,3 @@
+/home/bruno/Documents/git/learning/not python/C-C#-C++/CPP/GRAPHICS/build/CMakeFiles/MyExecutable.dir
+/home/bruno/Documents/git/learning/not python/C-C#-C++/CPP/GRAPHICS/build/CMakeFiles/edit_cache.dir
+/home/bruno/Documents/git/learning/not python/C-C#-C++/CPP/GRAPHICS/build/CMakeFiles/rebuild_cache.dir
