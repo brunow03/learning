@@ -1,0 +1,5 @@
+/home/bruno/Documents/git/learning/not python/C-C#-C++/CPP/widget/build/CMakeFiles/Application.dir
+/home/bruno/Documents/git/learning/not python/C-C#-C++/CPP/widget/build/CMakeFiles/edit_cache.dir
+/home/bruno/Documents/git/learning/not python/C-C#-C++/CPP/widget/build/CMakeFiles/rebuild_cache.dir
+/home/bruno/Documents/git/learning/not python/C-C#-C++/CPP/widget/build/src/CMakeFiles/edit_cache.dir
+/home/bruno/Documents/git/learning/not python/C-C#-C++/CPP/widget/build/src/CMakeFiles/rebuild_cache.dir
