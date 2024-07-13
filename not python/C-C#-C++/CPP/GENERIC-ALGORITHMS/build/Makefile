@@ -117,41 +117,89 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named GenericAlgorithms
+# Target rules for targets named Application
 
 # Build rule for target.
-GenericAlgorithms: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GenericAlgorithms
-.PHONY : GenericAlgorithms
+Application: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Application
+.PHONY : Application
 
 # fast build rule for target.
-GenericAlgorithms/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GenericAlgorithms.dir/build.make CMakeFiles/GenericAlgorithms.dir/build
-.PHONY : GenericAlgorithms/fast
+Application/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Application.dir/build.make CMakeFiles/Application.dir/build
+.PHONY : Application/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/genericalgorithms.o: src/genericalgorithms.cpp.o
+.PHONY : src/genericalgorithms.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GenericAlgorithms.dir/build.make CMakeFiles/GenericAlgorithms.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/genericalgorithms.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Application.dir/build.make CMakeFiles/Application.dir/src/genericalgorithms.cpp.o
+.PHONY : src/genericalgorithms.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/genericalgorithms.i: src/genericalgorithms.cpp.i
+.PHONY : src/genericalgorithms.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GenericAlgorithms.dir/build.make CMakeFiles/GenericAlgorithms.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/genericalgorithms.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Application.dir/build.make CMakeFiles/Application.dir/src/genericalgorithms.cpp.i
+.PHONY : src/genericalgorithms.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/genericalgorithms.s: src/genericalgorithms.cpp.s
+.PHONY : src/genericalgorithms.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GenericAlgorithms.dir/build.make CMakeFiles/GenericAlgorithms.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/genericalgorithms.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Application.dir/build.make CMakeFiles/Application.dir/src/genericalgorithms.cpp.s
+.PHONY : src/genericalgorithms.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Application.dir/build.make CMakeFiles/Application.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Application.dir/build.make CMakeFiles/Application.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Application.dir/build.make CMakeFiles/Application.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+src/test.o: src/test.cpp.o
+.PHONY : src/test.o
+
+# target to build an object file
+src/test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Application.dir/build.make CMakeFiles/Application.dir/src/test.cpp.o
+.PHONY : src/test.cpp.o
+
+src/test.i: src/test.cpp.i
+.PHONY : src/test.i
+
+# target to preprocess a source file
+src/test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Application.dir/build.make CMakeFiles/Application.dir/src/test.cpp.i
+.PHONY : src/test.cpp.i
+
+src/test.s: src/test.cpp.s
+.PHONY : src/test.s
+
+# target to generate assembly for a file
+src/test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Application.dir/build.make CMakeFiles/Application.dir/src/test.cpp.s
+.PHONY : src/test.cpp.s
 
 # Help Target
 help:
@@ -161,10 +209,16 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... GenericAlgorithms"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Application"
+	@echo "... src/genericalgorithms.o"
+	@echo "... src/genericalgorithms.i"
+	@echo "... src/genericalgorithms.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/test.o"
+	@echo "... src/test.i"
+	@echo "... src/test.s"
 .PHONY : help
 
 

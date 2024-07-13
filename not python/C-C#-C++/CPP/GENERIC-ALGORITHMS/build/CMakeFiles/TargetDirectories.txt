@@ -1,3 +1,5 @@
-/home/bruno/Documents/git/learning/not python/C-C#-C++/CPP/GENERIC-ALGORITHMS/build/CMakeFiles/GenericAlgorithms.dir
+/home/bruno/Documents/git/learning/not python/C-C#-C++/CPP/GENERIC-ALGORITHMS/build/CMakeFiles/Application.dir
 /home/bruno/Documents/git/learning/not python/C-C#-C++/CPP/GENERIC-ALGORITHMS/build/CMakeFiles/edit_cache.dir
 /home/bruno/Documents/git/learning/not python/C-C#-C++/CPP/GENERIC-ALGORITHMS/build/CMakeFiles/rebuild_cache.dir
+/home/bruno/Documents/git/learning/not python/C-C#-C++/CPP/GENERIC-ALGORITHMS/build/src/CMakeFiles/edit_cache.dir
+/home/bruno/Documents/git/learning/not python/C-C#-C++/CPP/GENERIC-ALGORITHMS/build/src/CMakeFiles/rebuild_cache.dir

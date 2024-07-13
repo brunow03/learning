@@ -1,2 +1,2 @@
-# Empty dependencies file for GenericAlgorithms.
+# Empty dependencies file for Application.
 # This may be replaced when dependencies are built.

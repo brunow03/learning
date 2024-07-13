@@ -1,5 +1,5 @@
-CMakeFiles/GenericAlgorithms.dir/main.cpp.o: \
- /home/bruno/Documents/git/learning/not\ python/C-C\#-C++/CPP/GENERIC-ALGORITHMS/main.cpp \
+CMakeFiles/Application.dir/src/main.cpp.o: \
+ /home/bruno/Documents/git/learning/not\ python/C-C\#-C++/CPP/GENERIC-ALGORITHMS/src/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/algorithm \
  /usr/include/c++/11/utility \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -158,4 +158,10 @@ CMakeFiles/GenericAlgorithms.dir/main.cpp.o: \
  /usr/include/c++/11/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
- /usr/include/c++/11/bits/fstream.tcc
+ /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/functional \
+ /usr/include/c++/11/tuple /usr/include/c++/11/array \
+ /usr/include/c++/11/bits/uses_allocator.h \
+ /usr/include/c++/11/bits/invoke.h /usr/include/c++/11/bits/refwrap.h \
+ /usr/include/c++/11/bits/std_function.h \
+ /home/bruno/Documents/git/learning/not\ python/C-C\#-C++/CPP/GENERIC-ALGORITHMS/include/genericalgorithms.hpp \
+ /home/bruno/Documents/git/learning/not\ python/C-C\#-C++/CPP/GENERIC-ALGORITHMS/include/test.hpp
