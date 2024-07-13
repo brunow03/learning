@@ -1,11 +1,4 @@
-#include <algorithm>
-#include <vector>
-#include <iostream>
-#include <fstream>
-#include <string>
 
-int main(int argc, char const *argv[])
-{
 	std::vector<int> v{1,2,3,3,4,5,3,6,42,25,3,36,1,2,3,4,5,6,3};
 	int val = 3;
 	std::cout << "Count return: " << std::count(v.begin(), v.end(), val) << std::endl;
@@ -24,7 +17,5 @@ int main(int argc, char const *argv[])
 		std::cout << "Error opening file." << std::endl;
 		return 1;
 	}
-	
 	std::cout << ".PHONY count: " << std::count(s.begin(), s.end(), ".PHONY") << std::endl;
-	return 0;
-}
+	
