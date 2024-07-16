@@ -1,3 +1,5 @@
-/home/bruno/Documents/git/learning/not python/C-C#-C++/CPP/GRAPHICS/build/CMakeFiles/MyExecutable.dir
+/home/bruno/Documents/git/learning/not python/C-C#-C++/CPP/GRAPHICS/build/CMakeFiles/RUN.dir
 /home/bruno/Documents/git/learning/not python/C-C#-C++/CPP/GRAPHICS/build/CMakeFiles/edit_cache.dir
 /home/bruno/Documents/git/learning/not python/C-C#-C++/CPP/GRAPHICS/build/CMakeFiles/rebuild_cache.dir
+/home/bruno/Documents/git/learning/not python/C-C#-C++/CPP/GRAPHICS/build/src/CMakeFiles/edit_cache.dir
+/home/bruno/Documents/git/learning/not python/C-C#-C++/CPP/GRAPHICS/build/src/CMakeFiles/rebuild_cache.dir

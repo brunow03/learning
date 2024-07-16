@@ -1,0 +1,5 @@
+/home/bruno/Documents/git/learning/not python/C-C#-C++/C/graphs/build/CMakeFiles/GRAPHS.dir
+/home/bruno/Documents/git/learning/not python/C-C#-C++/C/graphs/build/CMakeFiles/edit_cache.dir
+/home/bruno/Documents/git/learning/not python/C-C#-C++/C/graphs/build/CMakeFiles/rebuild_cache.dir
+/home/bruno/Documents/git/learning/not python/C-C#-C++/C/graphs/build/src/CMakeFiles/edit_cache.dir
+/home/bruno/Documents/git/learning/not python/C-C#-C++/C/graphs/build/src/CMakeFiles/rebuild_cache.dir

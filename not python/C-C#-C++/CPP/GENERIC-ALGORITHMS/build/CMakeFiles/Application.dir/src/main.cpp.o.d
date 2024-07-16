@@ -169,4 +169,10 @@ CMakeFiles/Application.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/std_function.h /usr/include/c++/11/iterator \
  /usr/include/c++/11/bits/stream_iterator.h \
  /home/bruno/Documents/git/learning/not\ python/C-C\#-C++/CPP/GENERIC-ALGORITHMS/include/genericalgorithms.hpp \
- /home/bruno/Documents/git/learning/not\ python/C-C\#-C++/CPP/GENERIC-ALGORITHMS/include/test.hpp
+ /home/bruno/Documents/git/learning/not\ python/C-C\#-C++/CPP/GENERIC-ALGORITHMS/include/test.hpp \
+ /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
+ /usr/include/c++/11/bits/stl_map.h \
+ /usr/include/c++/11/bits/stl_multimap.h \
+ /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/set \
+ /usr/include/c++/11/bits/stl_set.h \
+ /usr/include/c++/11/bits/stl_multiset.h

@@ -117,41 +117,65 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named MyExecutable
+# Target rules for targets named RUN
 
 # Build rule for target.
-MyExecutable: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyExecutable
-.PHONY : MyExecutable
+RUN: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RUN
+.PHONY : RUN
 
 # fast build rule for target.
-MyExecutable/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/build
-.PHONY : MyExecutable/fast
+RUN/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RUN.dir/build.make CMakeFiles/RUN.dir/build
+.PHONY : RUN/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/learning.o: src/learning.cpp.o
+.PHONY : src/learning.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/learning.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RUN.dir/build.make CMakeFiles/RUN.dir/src/learning.cpp.o
+.PHONY : src/learning.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/learning.i: src/learning.cpp.i
+.PHONY : src/learning.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/learning.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RUN.dir/build.make CMakeFiles/RUN.dir/src/learning.cpp.i
+.PHONY : src/learning.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/learning.s: src/learning.cpp.s
+.PHONY : src/learning.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/learning.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RUN.dir/build.make CMakeFiles/RUN.dir/src/learning.cpp.s
+.PHONY : src/learning.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RUN.dir/build.make CMakeFiles/RUN.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RUN.dir/build.make CMakeFiles/RUN.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RUN.dir/build.make CMakeFiles/RUN.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -161,10 +185,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... MyExecutable"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... RUN"
+	@echo "... src/learning.o"
+	@echo "... src/learning.i"
+	@echo "... src/learning.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 
