@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/GRAPHS.dir/src/main.c.o CMakeFiles/GRAPHS.dir/src/graphs.c.o -o GRAPHS 
