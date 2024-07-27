@@ -1,0 +1,3 @@
+/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/build/CMakeFiles/RUN.dir
+/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/build/CMakeFiles/edit_cache.dir
+/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/build/CMakeFiles/rebuild_cache.dir
