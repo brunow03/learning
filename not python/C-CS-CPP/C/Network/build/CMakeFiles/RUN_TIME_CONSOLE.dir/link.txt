@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/RUN_TIME_CONSOLE.dir/src/time_console.c.o -o RUN_TIME_CONSOLE 
