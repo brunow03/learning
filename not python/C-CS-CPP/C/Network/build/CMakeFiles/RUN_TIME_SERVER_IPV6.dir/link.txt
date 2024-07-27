@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/RUN_TIME_SERVER_IPV6.dir/src/time_server_ipv6.c.o -o RUN_TIME_SERVER_IPV6 

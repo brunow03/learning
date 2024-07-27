@@ -1,0 +1,9 @@
+/home/bruno/Git/learning/not python/C-CS-CPP/C/Network/build/CMakeFiles/RUN_UNIX_LIST.dir
+/home/bruno/Git/learning/not python/C-CS-CPP/C/Network/build/CMakeFiles/RUN_SOCK_INIT.dir
+/home/bruno/Git/learning/not python/C-CS-CPP/C/Network/build/CMakeFiles/RUN_TIME_CONSOLE.dir
+/home/bruno/Git/learning/not python/C-CS-CPP/C/Network/build/CMakeFiles/RUN_TIME_SERVER.dir
+/home/bruno/Git/learning/not python/C-CS-CPP/C/Network/build/CMakeFiles/RUN_TIME_SERVER_IPV6.dir
+/home/bruno/Git/learning/not python/C-CS-CPP/C/Network/build/CMakeFiles/RUN_TIME_SERVE_TOUPPER_FORK_SOURCES.dir
+/home/bruno/Git/learning/not python/C-CS-CPP/C/Network/build/CMakeFiles/RUN_TCP_CLIENT_SOURCES.dir
+/home/bruno/Git/learning/not python/C-CS-CPP/C/Network/build/CMakeFiles/edit_cache.dir
+/home/bruno/Git/learning/not python/C-CS-CPP/C/Network/build/CMakeFiles/rebuild_cache.dir
