@@ -1,0 +1,15 @@
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/TypeConversions/bin/Debug/net8.0/TypeConversions
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/TypeConversions/bin/Debug/net8.0/TypeConversions.deps.json
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/TypeConversions/bin/Debug/net8.0/TypeConversions.runtimeconfig.json
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/TypeConversions/bin/Debug/net8.0/TypeConversions.dll
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/TypeConversions/bin/Debug/net8.0/TypeConversions.pdb
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/TypeConversions/obj/Debug/net8.0/TypeConversions.GeneratedMSBuildEditorConfig.editorconfig
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/TypeConversions/obj/Debug/net8.0/TypeConversions.AssemblyInfoInputs.cache
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/TypeConversions/obj/Debug/net8.0/TypeConversions.AssemblyInfo.cs
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/TypeConversions/obj/Debug/net8.0/TypeConversions.csproj.CoreCompileInputs.cache
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/TypeConversions/obj/Debug/net8.0/TypeConversions.sourcelink.json
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/TypeConversions/obj/Debug/net8.0/TypeConversions.dll
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/TypeConversions/obj/Debug/net8.0/refint/TypeConversions.dll
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/TypeConversions/obj/Debug/net8.0/TypeConversions.pdb
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/TypeConversions/obj/Debug/net8.0/TypeConversions.genruntimeconfig.cache
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/TypeConversions/obj/Debug/net8.0/ref/TypeConversions.dll
