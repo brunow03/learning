@@ -1,0 +1,3 @@
+/home/bruno/Git/learning/OPENCV/build/CMakeFiles/OPENCV.dir
+/home/bruno/Git/learning/OPENCV/build/CMakeFiles/edit_cache.dir
+/home/bruno/Git/learning/OPENCV/build/CMakeFiles/rebuild_cache.dir
