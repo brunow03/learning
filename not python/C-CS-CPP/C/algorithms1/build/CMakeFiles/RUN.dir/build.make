@@ -69,24 +69,10 @@ include CMakeFiles/RUN.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/RUN.dir/flags.make
 
-CMakeFiles/RUN.dir/src/aside.c.o: CMakeFiles/RUN.dir/flags.make
-CMakeFiles/RUN.dir/src/aside.c.o: ../src/aside.c
-CMakeFiles/RUN.dir/src/aside.c.o: CMakeFiles/RUN.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/RUN.dir/src/aside.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/RUN.dir/src/aside.c.o -MF CMakeFiles/RUN.dir/src/aside.c.o.d -o CMakeFiles/RUN.dir/src/aside.c.o -c "/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/src/aside.c"
-
-CMakeFiles/RUN.dir/src/aside.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RUN.dir/src/aside.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/src/aside.c" > CMakeFiles/RUN.dir/src/aside.c.i
-
-CMakeFiles/RUN.dir/src/aside.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RUN.dir/src/aside.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/src/aside.c" -o CMakeFiles/RUN.dir/src/aside.c.s
-
 CMakeFiles/RUN.dir/src/binarytrees.c.o: CMakeFiles/RUN.dir/flags.make
 CMakeFiles/RUN.dir/src/binarytrees.c.o: ../src/binarytrees.c
 CMakeFiles/RUN.dir/src/binarytrees.c.o: CMakeFiles/RUN.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/RUN.dir/src/binarytrees.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/RUN.dir/src/binarytrees.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/RUN.dir/src/binarytrees.c.o -MF CMakeFiles/RUN.dir/src/binarytrees.c.o.d -o CMakeFiles/RUN.dir/src/binarytrees.c.o -c "/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/src/binarytrees.c"
 
 CMakeFiles/RUN.dir/src/binarytrees.c.i: cmake_force
@@ -100,7 +86,7 @@ CMakeFiles/RUN.dir/src/binarytrees.c.s: cmake_force
 CMakeFiles/RUN.dir/src/general_sort.c.o: CMakeFiles/RUN.dir/flags.make
 CMakeFiles/RUN.dir/src/general_sort.c.o: ../src/general_sort.c
 CMakeFiles/RUN.dir/src/general_sort.c.o: CMakeFiles/RUN.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/RUN.dir/src/general_sort.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/RUN.dir/src/general_sort.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/RUN.dir/src/general_sort.c.o -MF CMakeFiles/RUN.dir/src/general_sort.c.o.d -o CMakeFiles/RUN.dir/src/general_sort.c.o -c "/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/src/general_sort.c"
 
 CMakeFiles/RUN.dir/src/general_sort.c.i: cmake_force
@@ -114,7 +100,7 @@ CMakeFiles/RUN.dir/src/general_sort.c.s: cmake_force
 CMakeFiles/RUN.dir/src/hashing.c.o: CMakeFiles/RUN.dir/flags.make
 CMakeFiles/RUN.dir/src/hashing.c.o: ../src/hashing.c
 CMakeFiles/RUN.dir/src/hashing.c.o: CMakeFiles/RUN.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/RUN.dir/src/hashing.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/RUN.dir/src/hashing.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/RUN.dir/src/hashing.c.o -MF CMakeFiles/RUN.dir/src/hashing.c.o.d -o CMakeFiles/RUN.dir/src/hashing.c.o -c "/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/src/hashing.c"
 
 CMakeFiles/RUN.dir/src/hashing.c.i: cmake_force
@@ -128,7 +114,7 @@ CMakeFiles/RUN.dir/src/hashing.c.s: cmake_force
 CMakeFiles/RUN.dir/src/heapsort.c.o: CMakeFiles/RUN.dir/flags.make
 CMakeFiles/RUN.dir/src/heapsort.c.o: ../src/heapsort.c
 CMakeFiles/RUN.dir/src/heapsort.c.o: CMakeFiles/RUN.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/RUN.dir/src/heapsort.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/RUN.dir/src/heapsort.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/RUN.dir/src/heapsort.c.o -MF CMakeFiles/RUN.dir/src/heapsort.c.o.d -o CMakeFiles/RUN.dir/src/heapsort.c.o -c "/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/src/heapsort.c"
 
 CMakeFiles/RUN.dir/src/heapsort.c.i: cmake_force
@@ -142,7 +128,7 @@ CMakeFiles/RUN.dir/src/heapsort.c.s: cmake_force
 CMakeFiles/RUN.dir/src/linked_list.c.o: CMakeFiles/RUN.dir/flags.make
 CMakeFiles/RUN.dir/src/linked_list.c.o: ../src/linked_list.c
 CMakeFiles/RUN.dir/src/linked_list.c.o: CMakeFiles/RUN.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/RUN.dir/src/linked_list.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/RUN.dir/src/linked_list.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/RUN.dir/src/linked_list.c.o -MF CMakeFiles/RUN.dir/src/linked_list.c.o.d -o CMakeFiles/RUN.dir/src/linked_list.c.o -c "/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/src/linked_list.c"
 
 CMakeFiles/RUN.dir/src/linked_list.c.i: cmake_force
@@ -156,7 +142,7 @@ CMakeFiles/RUN.dir/src/linked_list.c.s: cmake_force
 CMakeFiles/RUN.dir/src/main.c.o: CMakeFiles/RUN.dir/flags.make
 CMakeFiles/RUN.dir/src/main.c.o: ../src/main.c
 CMakeFiles/RUN.dir/src/main.c.o: CMakeFiles/RUN.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/RUN.dir/src/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/RUN.dir/src/main.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/RUN.dir/src/main.c.o -MF CMakeFiles/RUN.dir/src/main.c.o.d -o CMakeFiles/RUN.dir/src/main.c.o -c "/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/src/main.c"
 
 CMakeFiles/RUN.dir/src/main.c.i: cmake_force
@@ -170,7 +156,7 @@ CMakeFiles/RUN.dir/src/main.c.s: cmake_force
 CMakeFiles/RUN.dir/src/mergesort.c.o: CMakeFiles/RUN.dir/flags.make
 CMakeFiles/RUN.dir/src/mergesort.c.o: ../src/mergesort.c
 CMakeFiles/RUN.dir/src/mergesort.c.o: CMakeFiles/RUN.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/RUN.dir/src/mergesort.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/RUN.dir/src/mergesort.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/RUN.dir/src/mergesort.c.o -MF CMakeFiles/RUN.dir/src/mergesort.c.o.d -o CMakeFiles/RUN.dir/src/mergesort.c.o -c "/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/src/mergesort.c"
 
 CMakeFiles/RUN.dir/src/mergesort.c.i: cmake_force
@@ -184,7 +170,7 @@ CMakeFiles/RUN.dir/src/mergesort.c.s: cmake_force
 CMakeFiles/RUN.dir/src/queue.c.o: CMakeFiles/RUN.dir/flags.make
 CMakeFiles/RUN.dir/src/queue.c.o: ../src/queue.c
 CMakeFiles/RUN.dir/src/queue.c.o: CMakeFiles/RUN.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/RUN.dir/src/queue.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/RUN.dir/src/queue.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/RUN.dir/src/queue.c.o -MF CMakeFiles/RUN.dir/src/queue.c.o.d -o CMakeFiles/RUN.dir/src/queue.c.o -c "/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/src/queue.c"
 
 CMakeFiles/RUN.dir/src/queue.c.i: cmake_force
@@ -198,7 +184,7 @@ CMakeFiles/RUN.dir/src/queue.c.s: cmake_force
 CMakeFiles/RUN.dir/src/quicksort.c.o: CMakeFiles/RUN.dir/flags.make
 CMakeFiles/RUN.dir/src/quicksort.c.o: ../src/quicksort.c
 CMakeFiles/RUN.dir/src/quicksort.c.o: CMakeFiles/RUN.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/RUN.dir/src/quicksort.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/RUN.dir/src/quicksort.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/RUN.dir/src/quicksort.c.o -MF CMakeFiles/RUN.dir/src/quicksort.c.o.d -o CMakeFiles/RUN.dir/src/quicksort.c.o -c "/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/src/quicksort.c"
 
 CMakeFiles/RUN.dir/src/quicksort.c.i: cmake_force
@@ -212,7 +198,7 @@ CMakeFiles/RUN.dir/src/quicksort.c.s: cmake_force
 CMakeFiles/RUN.dir/src/radixsort.c.o: CMakeFiles/RUN.dir/flags.make
 CMakeFiles/RUN.dir/src/radixsort.c.o: ../src/radixsort.c
 CMakeFiles/RUN.dir/src/radixsort.c.o: CMakeFiles/RUN.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/RUN.dir/src/radixsort.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/RUN.dir/src/radixsort.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/RUN.dir/src/radixsort.c.o -MF CMakeFiles/RUN.dir/src/radixsort.c.o.d -o CMakeFiles/RUN.dir/src/radixsort.c.o -c "/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/src/radixsort.c"
 
 CMakeFiles/RUN.dir/src/radixsort.c.i: cmake_force
@@ -226,7 +212,7 @@ CMakeFiles/RUN.dir/src/radixsort.c.s: cmake_force
 CMakeFiles/RUN.dir/src/randarray.c.o: CMakeFiles/RUN.dir/flags.make
 CMakeFiles/RUN.dir/src/randarray.c.o: ../src/randarray.c
 CMakeFiles/RUN.dir/src/randarray.c.o: CMakeFiles/RUN.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/RUN.dir/src/randarray.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/RUN.dir/src/randarray.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/RUN.dir/src/randarray.c.o -MF CMakeFiles/RUN.dir/src/randarray.c.o.d -o CMakeFiles/RUN.dir/src/randarray.c.o -c "/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/src/randarray.c"
 
 CMakeFiles/RUN.dir/src/randarray.c.i: cmake_force
@@ -240,7 +226,7 @@ CMakeFiles/RUN.dir/src/randarray.c.s: cmake_force
 CMakeFiles/RUN.dir/src/stacks.c.o: CMakeFiles/RUN.dir/flags.make
 CMakeFiles/RUN.dir/src/stacks.c.o: ../src/stacks.c
 CMakeFiles/RUN.dir/src/stacks.c.o: CMakeFiles/RUN.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/RUN.dir/src/stacks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/RUN.dir/src/stacks.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/RUN.dir/src/stacks.c.o -MF CMakeFiles/RUN.dir/src/stacks.c.o.d -o CMakeFiles/RUN.dir/src/stacks.c.o -c "/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/src/stacks.c"
 
 CMakeFiles/RUN.dir/src/stacks.c.i: cmake_force
@@ -254,7 +240,7 @@ CMakeFiles/RUN.dir/src/stacks.c.s: cmake_force
 CMakeFiles/RUN.dir/src/stringmatching.c.o: CMakeFiles/RUN.dir/flags.make
 CMakeFiles/RUN.dir/src/stringmatching.c.o: ../src/stringmatching.c
 CMakeFiles/RUN.dir/src/stringmatching.c.o: CMakeFiles/RUN.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/RUN.dir/src/stringmatching.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/RUN.dir/src/stringmatching.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/RUN.dir/src/stringmatching.c.o -MF CMakeFiles/RUN.dir/src/stringmatching.c.o.d -o CMakeFiles/RUN.dir/src/stringmatching.c.o -c "/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/src/stringmatching.c"
 
 CMakeFiles/RUN.dir/src/stringmatching.c.i: cmake_force
@@ -267,7 +253,6 @@ CMakeFiles/RUN.dir/src/stringmatching.c.s: cmake_force
 
 # Object files for target RUN
 RUN_OBJECTS = \
-"CMakeFiles/RUN.dir/src/aside.c.o" \
 "CMakeFiles/RUN.dir/src/binarytrees.c.o" \
 "CMakeFiles/RUN.dir/src/general_sort.c.o" \
 "CMakeFiles/RUN.dir/src/hashing.c.o" \
@@ -285,7 +270,6 @@ RUN_OBJECTS = \
 # External object files for target RUN
 RUN_EXTERNAL_OBJECTS =
 
-RUN: CMakeFiles/RUN.dir/src/aside.c.o
 RUN: CMakeFiles/RUN.dir/src/binarytrees.c.o
 RUN: CMakeFiles/RUN.dir/src/general_sort.c.o
 RUN: CMakeFiles/RUN.dir/src/hashing.c.o
@@ -301,7 +285,7 @@ RUN: CMakeFiles/RUN.dir/src/stacks.c.o
 RUN: CMakeFiles/RUN.dir/src/stringmatching.c.o
 RUN: CMakeFiles/RUN.dir/build.make
 RUN: CMakeFiles/RUN.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Linking C executable RUN"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Linking C executable RUN"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RUN.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -72,7 +72,7 @@ int cellheight(cell *lst, int k){
 	    k--;
 	}
 
-	height = 0;assss
+	height = 0;
 	while(p->next != NULL){
 		p = p->next;
 		height++;

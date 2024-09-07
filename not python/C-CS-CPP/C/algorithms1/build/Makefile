@@ -129,30 +129,6 @@ RUN/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RUN.dir/build.make CMakeFiles/RUN.dir/build
 .PHONY : RUN/fast
 
-src/aside.o: src/aside.c.o
-.PHONY : src/aside.o
-
-# target to build an object file
-src/aside.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RUN.dir/build.make CMakeFiles/RUN.dir/src/aside.c.o
-.PHONY : src/aside.c.o
-
-src/aside.i: src/aside.c.i
-.PHONY : src/aside.i
-
-# target to preprocess a source file
-src/aside.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RUN.dir/build.make CMakeFiles/RUN.dir/src/aside.c.i
-.PHONY : src/aside.c.i
-
-src/aside.s: src/aside.c.s
-.PHONY : src/aside.s
-
-# target to generate assembly for a file
-src/aside.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RUN.dir/build.make CMakeFiles/RUN.dir/src/aside.c.s
-.PHONY : src/aside.c.s
-
 src/binarytrees.o: src/binarytrees.c.o
 .PHONY : src/binarytrees.o
 
@@ -474,9 +450,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... RUN"
-	@echo "... src/aside.o"
-	@echo "... src/aside.i"
-	@echo "... src/aside.s"
 	@echo "... src/binarytrees.o"
 	@echo "... src/binarytrees.i"
 	@echo "... src/binarytrees.s"

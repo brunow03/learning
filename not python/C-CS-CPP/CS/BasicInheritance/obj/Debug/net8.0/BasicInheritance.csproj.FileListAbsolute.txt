@@ -1,0 +1,15 @@
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/BasicInheritance/bin/Debug/net8.0/BasicInheritance
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/BasicInheritance/bin/Debug/net8.0/BasicInheritance.deps.json
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/BasicInheritance/bin/Debug/net8.0/BasicInheritance.runtimeconfig.json
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/BasicInheritance/bin/Debug/net8.0/BasicInheritance.dll
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/BasicInheritance/bin/Debug/net8.0/BasicInheritance.pdb
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/BasicInheritance/obj/Debug/net8.0/BasicInheritance.GeneratedMSBuildEditorConfig.editorconfig
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/BasicInheritance/obj/Debug/net8.0/BasicInheritance.AssemblyInfoInputs.cache
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/BasicInheritance/obj/Debug/net8.0/BasicInheritance.AssemblyInfo.cs
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/BasicInheritance/obj/Debug/net8.0/BasicInheritance.csproj.CoreCompileInputs.cache
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/BasicInheritance/obj/Debug/net8.0/BasicInheritance.sourcelink.json
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/BasicInheritance/obj/Debug/net8.0/BasicInheritance.dll
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/BasicInheritance/obj/Debug/net8.0/refint/BasicInheritance.dll
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/BasicInheritance/obj/Debug/net8.0/BasicInheritance.pdb
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/BasicInheritance/obj/Debug/net8.0/BasicInheritance.genruntimeconfig.cache
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/BasicInheritance/obj/Debug/net8.0/ref/BasicInheritance.dll

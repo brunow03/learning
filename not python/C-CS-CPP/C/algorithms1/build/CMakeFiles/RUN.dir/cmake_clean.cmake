@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/RUN.dir/src/aside.c.o"
-  "CMakeFiles/RUN.dir/src/aside.c.o.d"
   "CMakeFiles/RUN.dir/src/binarytrees.c.o"
   "CMakeFiles/RUN.dir/src/binarytrees.c.o.d"
   "CMakeFiles/RUN.dir/src/general_sort.c.o"
