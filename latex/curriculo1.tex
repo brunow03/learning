@@ -1,0 +1,122 @@
+%%%%%%
+% Bruno Thiago Leite Agutoli - curriculum vitae
+% Edited using vim and texmaker
+% Uses LaTeX and moderncv
+%%%%%%
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[grey]{classic}
+
+\usepackage[utf8]{inputenc} % character encoding
+\usepackage[T1]{fontenc}
+\usepackage[scale=0.8]{geometry} % adjust the page margins
+\usepackage{datenumber,fp}
+ 
+\PassOptionsToPackage{pdftex, 
+	colorlinks=true, 
+	urlcolor=cyan, 
+	linkcolor=cyan, 
+	filecolor=cyan, 
+	citecolor=cyan}{hyperref}
+ 
+\AtBeginDocument{\setlength{\maketitlenamewidth}{11,5cm}}
+\AtBeginDocument{\recomputelengths}
+
+% personal data
+\firstname{\fontsize{30}{40}\selectfont Bruno Thiago}
+\familyname{\fontsize{30}{40}\selectfont Leite Agutoli}
+\title{Curriculum Vitae}
+\address{Rua Tita Ruffo, 309}{SÃ£o Mateus - SÃ£o Paulo, SP \\ CEP 03965-000}
+\phone{+55 (11) \hspace{1 mm}  2015-4543 }
+\mobile{+55 (11) 96954-8272}
+\email{bruno.agutoli@gmail.com}
+\github{github.com/agutoli}
+\linkedin{linkedin.com/in/agutoli}
+% \photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file;
+
+% --------------------------------------
+% CONTENT
+% --------------------------------------
+
+\begin{document}
+\maketitle
+
+\section{Sobre}
+\cvcomputer
+{\textbf{Idade}}{26 anos}
+{\textbf{Estado civil}}{Solteiro}
+\cvcomputer
+{\textbf{Fumante}}{NÃ£o}
+{\textbf{Filhos}}{NÃ£o}
+{}{}
+
+\section{FormaÃ§\~{a}o Acad\^{e}mica}
+\cventry{Janeiro 2009 -- Julho 2011}{GestÃ£o em TÃ©cnologia da InformaÃ§Ã£o}{}{Universidade Paulista, UNIP}{}{}
+
+\section{Habilidades TÃ©cnicas}
+\cvcomputer
+{\textbf{OS's}}{Linux, Windows}
+{\textbf{Linguagens}}{PHP, Python, Nodejs, C/C++, HTML/CSS, JavaScript}
+\cvcomputer
+{\textbf{Ferramentas}}{vim, git, cvs/svn, zsh/bash}
+{\textbf{Frameworks}}{Zend, Django, Express.js, Backbone, jQuery, Bootstrap}
+\cvcomputer
+{\textbf{Softwares}}{MySQL, Apache2, SQLite, Solr, Apache MQ, Gunicorn, Nginx }
+{}{}
+
+% --------------------------------------
+% WORK EX
+% --------------------------------------
+
+\section{ExperiÃªncia Profissional}
+
+\cventry{Julho 2012 -- Atualmente}{Desenvolvedor WEB}{}{Editora Globo S.A}{}{AnÃ¡lise e desenvolvimento de Websites, aplicativos mobile para IOS e Android, estimativas baseadas em metodologias Ã¡geis tais como XP e Scrum.}
+
+\cventry{MarÃ§o 2012 -- Julho 2012}{Analista Programador Pleno}{}{FundaÃ§Ã£o CÃ¡sper LÃ­bero}{}{\textbf{\underline{CoordenaÃ§Ã£o TÃ©cnica}} de equipe, manutenÃ§Ã£o e desenvolvimento de novas plataformas para o portal Gazeta Esportiva.Net, participaÃ§Ã£o em reuniÃµes para viabilizaÃ§Ã£o de eventuais projetos solicitados pelas demais Ã¡reas da FCL. }
+
+\cventry{Abril 2011 -- MarÃ§o 2012}{Programador de Sistemas SÃªnior}{}{FundaÃ§Ã£o CÃ¡sper LÃ­bero}{}{ManutenÃ§Ã£o e desenvolvimento de novas plataformas para o portal Gazeta Esportiva.Net, Gazeta Press, Radio Gazeta, Faculdade CÃ¡sper LÃ­bero e outros relacionados. }
+
+\cventry{Agosto 2010 -- Abril 2011}{Programador de Sistemas Pleno}{}{FundaÃ§Ã£o CÃ¡sper LÃ­bero}{}{Desenvolvimento de Websites e sistemas internos.}
+
+\cventry{MarÃ§o 2009 -- Agosto 2010}{Programador de Sistemas Jr}{}{FundaÃ§Ã£o CÃ¡sper LÃ­bero}{}{Desenvolvimento de Websites e sistemas internos.}
+
+\cventry{Dezembro 2007 -- MarÃ§o 2009}{Analista Administrativo}{}{FundaÃ§Ã£o CÃ¡sper LÃ­bero}{}{CoordenaÃ§Ã£o de equipe, tratamento de ocorrÃªncias de troca, entrega, defeito de fabricaÃ§Ã£o, devoluÃ§Ã£o, conversÃ£o de vendas entre outras tarefas relacionadas.}
+
+\cventry{Outubro 2007 -- Dezembro 2007}{Assistente Administrativo}{}{FundaÃ§Ã£o CÃ¡sper LÃ­bero}{}{Monitoria de ligaÃ§Ãµes e de qualidade, suporte aos operadores de telemarketing, administraÃ§\~{a}o de presenÃ§a e das planilhas de monitoria.}
+
+\cventry{Setembro 2007 -- Outubro 2007}{Operador de Telemarketing TÃ©cnico}{}{FundaÃ§Ã£o CÃ¡sper LÃ­bero}{}{Envio de boleto de cobranÃ§a aos clientes, validaÃ§\~{a}o de vendas, atendimento ativo e receptivo. }
+
+\cventry{Setembro 2006 -- Setembro 2007}{Operador de Telemarketing}{}{FundaÃ§Ã£o CÃ¡sper LÃ­bero}{}{Atender usuÃ¡rios, oferecer serviÃ§os e produtos, fazer serviÃ§os de cobranÃ§a e cadastramento de clientes. }
+
+\section{Cursos de EspecializaÃ§\~{a}o}
+
+\cventry{Dezembro 2012}{Memcached, Gearman e Sphinx}{}{Elton Luis Minetto}{}{DuraÃ§Ã£o 8 horas}
+\cventry{Maio 2011}{GestÃ£o EstratÃ©gica de TI - ITIL}{}{FundaÃ§Ã£o Bradesco}{}{DuraÃ§Ã£o 12 horas}
+\cventry{MarÃ§o 2011}{Modelagem de Dados}{}{FundaÃ§Ã£o Bradesco}{}{DuraÃ§Ã£o 16 horas}
+\cventry{Fevereiro 2009}{IntroduÃ§Ã£o Ã  ProgramaÃ§Ã£o OO}{}{Impacta Treinamentos}{}{DuraÃ§Ã£o 40 horas}
+\cventry{Dezembro 2008}{IntroduÃ§Ã£o Ã  LÃ³gica de ProgramaÃ§Ã£o}{}{Impacta Treinamentos}{}{DuraÃ§Ã£o 40 horas}
+
+\section{Projetos Open Source}
+\cventry{Colaborador}{jCrop}{}{Plugin jQuery que faz "crop" de imagens}{}
+{\href{https://github.com/tapmodo/Jcrop}{https://github.com/tapmodo/Jcrop}}
+
+\cventry{Autor}{jquery-innerframe.js}{}{Plugin que permite executar qualquer script dentro de um iframe evitando atrapalhar o carregamento da p\'{a}gina principal}{}
+{\href{https://github.com/agutoli/jquery-innerframe.js}{https://github.com/agutoli/jquery-innerframe.js}}
+
+\cventry{Autor}{Image\_Iptc}{}{Biblioteca feita para manipular IPTC ou EXIF de imagens JPG}{}
+{\href{https://github.com/agutoli/Image\_Iptc}{https://github.com/agutoli/Image\_Iptc}}
+
+
+\section{Idiomas}
+\cvitem{InglÃªs}{intermediÃ¡rio (Boa leitura e escrita)}
+
+% --------------------------------------
+% INTERESTS HOBBIES
+% --------------------------------------
+\section{Interesses e Hobbies}
+
+\cvitem{IndispensÃ¡vel}{Estar com a minha noiva, fam\'{i}lia e amigos. }
+\cvitem{Descontrair}{Assistir sÃ©ries e documentÃ¡rios.}
+\cvitem{Prazer}{Conhecer novas tÃ©cnologias, aprender algo novo.}
+\cvitem{NecessÃ¡rio}{Praticar esportes como correr, jogar futebol.}
+% --------------------------------------
+\end{document}

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BasicConsoleIO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e96eddd285407a48f6772b0311bfbf44f40e1cb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+32e27c1595e6dfb39f05f0877df20db2c3343d2c")]
 [assembly: System.Reflection.AssemblyProductAttribute("BasicConsoleIO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BasicConsoleIO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

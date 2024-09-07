@@ -1,9 +1,483 @@
 #include "learning.hpp"
 #include <iostream>
 #include <opencv2/opencv.hpp>
+#include <cv.h>
+#include "stdafx.h"
+#include <highgui.h>
+#include "opencv2/imgproc/imgproc.hpp"
+#include "opencv2/highgui/highgui.hpp"
+// /home/bruno/Videos/855213-hd_1920_1080_24fps.mp4
+// /home/bruno/Pictures/60e5dc69f199e.jpg
+
 
 using namespace std;
 using namespace cv;
+
+static void CallBackFunc(int event, int x, int y, int flags, void* userdata) {
+	if  ( event == EVENT_LBUTTONDOWN )
+	{
+		cout << "Left button of the mouse is clicked - position (" << x << ", " << y << ")" << endl;
+	}
+	else if  ( event == EVENT_RBUTTONDOWN )
+	{
+		cout << "Right button of the mouse is clicked - position (" << x << ", " << y << ")" << endl;
+	}
+	else if  ( event == EVENT_MBUTTONDOWN )
+	{
+		cout << "Middle button of the mouse is clicked - position (" << x << ", " << y << ")" << endl;
+	}
+	else if ( event == EVENT_MOUSEMOVE )
+	{
+		cout << "Mouse move over the window - position (" << x << ", " << y << ")" << endl;
+	}
+}
+
+void mouseDetection(void) {
+	// Read image from file 
+	Mat img = imread("MyPic.JPG");
+
+	//if fail to read the image
+	if ( img.empty() ) 
+	{ 
+		cout << "Error loading the image" << endl;
+		return; 
+	}
+
+	//Create a window
+	namedWindow("My Window", 1);
+
+	//set the callback function for any mouse event
+	setMouseCallback("My Window", CallBackFunc, NULL);
+
+	//show the image
+	imshow("My Window", img);
+
+	// Wait until user press some key
+	waitKey(0);
+}
+
+static void MyCallbackForBrightness(int iValueForBrightness, void *userData) {
+	Mat dst;
+	int iValueForContrast = *( static_cast<int*>(userData) );
+
+	//Calculating brightness and contrast value
+	int iBrightness = iValueForBrightness - 50;
+	double dContrast = iValueForContrast / 50.0;
+
+	//Calculated contrast and brightness value
+	cout << "MyCallbackForBrightness : Contrast=" << dContrast << ", Brightness=" << iBrightness << endl;
+
+	//adjust the brightness and contrast
+	src.convertTo(dst, -1, dContrast, iBrightness); 
+
+	//show the brightness and contrast adjusted image
+	imshow("My Window", dst);
+}
+
+static void MyCallbackForContrast(int iValueForContrast, void *userData) {
+	Mat dst;
+	int iValueForBrightness = *( static_cast<int*>(userData) );
+
+	//Calculating brightness and contrast value
+	int iBrightness = iValueForBrightness - 50;
+	double dContrast = iValueForContrast / 50.0;
+
+	//Calculated contrast and brightness value
+	cout << "MyCallbackForContrast : Contrast=" << dContrast << ", Brightness=" << iBrightness << endl;
+
+	//adjust the brightness and contrast
+	src.convertTo(dst, -1, dContrast, iBrightness); 
+
+	//show the brightness and contrast adjusted image
+	imshow("My Window", dst);
+}
+
+void trackbarWithCallback(void) {
+	// Read original image 
+	src = imread("MyPic.JPG");
+
+	//if fail to read the image
+	if (src.data == false) 
+	{ 
+		cout << "Error loading the image" << endl;
+		return; 
+	}
+
+	// Create a window
+	namedWindow("My Window", 1);
+
+	int iValueForBrightness = 50;
+	int iValueForContrast = 50;
+
+	//Create track bar to change brightness
+	createTrackbar("Brightness", "My Window", &iValueForBrightness, 100, MyCallbackForBrightness, &iValueForContrast);
+
+	//Create track bar to change contrast
+	createTrackbar("Contrast", "My Window", &iValueForContrast, 100, MyCallbackForContrast, &iValueForBrightness);
+  
+	imshow("My Window", src);
+
+	// Wait until user press some key
+	waitKey(0);
+}
+
+void trackbar(void) {
+	// Read original image 
+	Mat src = imread("MyPic.JPG");
+	
+	//if fail to read the image
+	if (!src.data) 
+	{ 
+		cout << "Error loading the image" << endl;
+		return; 
+	}
+	
+	// Create a window
+	namedWindow("My Window", 1);
+	
+	//Create trackbar to change brightness
+	int iSliderValue1 = 50;
+	createTrackbar("Brightness", "My Window", &iSliderValue1, 100);
+	
+	//Create trackbar to change contrast
+	int iSliderValue2 = 50;
+	createTrackbar("Contrast", "My Window", &iSliderValue2, 100);
+
+	while (true)
+	{
+		//Change the brightness and contrast of the image (For more infomation http://opencv-srf.blogspot.com/2013/07/change-contrast-of-image-or-video.html)
+		Mat dst;
+		
+		int iBrightness  = iSliderValue1 - 50;
+		double dContrast = iSliderValue2 / 50.0;
+		src.convertTo(dst, -1, dContrast, iBrightness); 
+		
+		//show the brightness and contrast adjusted image
+		imshow("My Window", dst);
+		
+		// Wait until user press some key for 50ms
+		int iKey = waitKey(50);
+		
+		//if user press 'ESC' key
+		if (iKey == 27)
+		{
+			break;
+		}
+	}
+}
+
+void imageDilation(void) {
+	//display the original image
+	IplImage* img = cvLoadImage("/home/bruno/Pictures/60e5dc69f199e.jpg");
+	cvNamedWindow("MyWindow");
+	cvShowImage("MyWindow", img);
+	
+	//dilate and display the dilated image
+	cvDilate(img, img, 0, 2);
+	cvNamedWindow("Dilated");
+	cvShowImage("Dilated", img);
+	cvWaitKey(0);
+	
+	//cleaning up
+	cvDestroyWindow("MyWindow");
+	cvDestroyWindow("Dilated");
+	cvReleaseImage(&img);
+}
+
+void videoErosion(void) {
+	//open the video file for reading
+    VideoCapture cap("/home/bruno/Videos/855213-hd_1920_1080_24fps.mp4");
+
+    // if not success, exit program
+    if (cap.isOpened() == false)
+    {
+        cout << "Cannot open the video file" << endl;
+        cin.get(); //wait for any key press
+        return;
+    }
+
+
+
+    //Define names of the window
+    String window_name_of_original_video = "Original Video";
+    String window_name_of_video_eroded_with_5x5_kernel = "Video eroded with 5 x 5 kernel";
+
+    // Create a window with above names
+    namedWindow(window_name_of_original_video, WINDOW_NORMAL);
+    namedWindow(window_name_of_video_eroded_with_5x5_kernel, WINDOW_NORMAL);
+
+    while (true)
+    {
+        Mat frame;
+        bool bSuccess = cap.read(frame); // read a new frame from video 
+        if (bSuccess == false)
+        {
+            cout << "Found the end of the video" << endl;
+            break;
+        }
+
+        //erode the frame with 5x5 kernel
+        Mat frame_eroded_with_5x5_kernel;
+        erode(frame, frame_eroded_with_5x5_kernel, getStructuringElement(MORPH_RECT, Size(5, 5)));
+
+        //show the frames in the created windows
+        imshow(window_name_of_original_video, frame);
+        imshow(window_name_of_video_eroded_with_5x5_kernel, frame_eroded_with_5x5_kernel);
+
+        //wait for for 10 ms until any key is pressed.  
+        //If the 'Esc' key is pressed, break the while loop.
+        //If the any other key is pressed, continue the loop 
+        //If any key is not pressed withing 10 ms, continue the loop
+        if (waitKey(10) == 27)
+        {
+            cout << "Esc key is pressed by user. Stoppig the video" << endl;
+            break;
+        }
+    }
+}
+
+void imageErosion(void) {
+	// Read the image file
+    Mat image = imread("/home/bruno/Pictures/60e5dc69f199e.jpg");
+
+    // Check for failure
+    if (image.empty())
+    {
+        cout << "Could not open or find the image" << endl;
+        cin.get(); //wait for any key press
+        return;
+    }
+
+    //Erode the image with 3x3 kernel
+    Mat image_eroded_with_3x3_kernel;
+    erode(image, image_eroded_with_3x3_kernel, getStructuringElement(MORPH_RECT, Size(3, 3)));
+
+    //Erode the image with 5x5 kernel
+    Mat image_eroded_with_5x5_kernel;
+    erode(image, image_eroded_with_5x5_kernel, getStructuringElement(MORPH_RECT, Size(5, 5)));
+
+    //Define names of the windows
+    String window_name = "Lotus";
+    String window_name_eroded_with_3x3_kernel = "Lotus eroded with 3 x 3 kernel";
+    String window_name_eroded_with_5x5_kernel = "Lotus eroded with 5 x 5 kernel";
+
+    // Create windows with above names
+    namedWindow(window_name);
+    namedWindow(window_name_eroded_with_3x3_kernel);
+    namedWindow(window_name_eroded_with_5x5_kernel);
+
+    // Show our images inside the created windows.
+    imshow(window_name, image);
+    imshow(window_name_eroded_with_3x3_kernel, image_eroded_with_3x3_kernel);
+    imshow(window_name_eroded_with_5x5_kernel, image_eroded_with_5x5_kernel);
+
+    waitKey(0); // Wait for any keystroke in the window
+
+    destroyAllWindows(); //destroy all opened windows
+}
+
+void imageInvert(void) {
+	//display the original image
+	IplImage* img = cvLoadImage("/home/bruno/Pictures/60e5dc69f199e.jpg");
+	cvNamedWindow("MyWindow");
+	cvShowImage("MyWindow", img);
+
+	//invert and display the inverted image
+	cvNot(img, img);
+	cvNamedWindow("Inverted");
+	cvShowImage("Inverted", img);
+
+	cvWaitKey(0);
+      
+	//cleaning up
+	cvDestroyWindow("MyWindow");
+	cvDestroyWindow("Inverted");
+	cvReleaseImage(&img);
+}
+
+void imageGaussianBlur(void) {
+	// Read the image file
+    Mat image = imread("/home/bruno/Pictures/60e5dc69f199e.jpg");
+
+    // Check for failure
+    if (image.empty())
+    {
+        cout << "Could not open or find the image" << endl;
+        cin.get(); //wait for any key press
+        return;
+    }
+
+    //Blur the image with 3x3 Gaussian kernel
+    Mat image_blurred_with_3x3_kernel;
+    GaussianBlur(image, image_blurred_with_3x3_kernel, Size(3, 3), 0);
+
+    //Blur the image with 5x5 Gaussian kernel
+    Mat image_blurred_with_5x5_kernel;
+    GaussianBlur(image, image_blurred_with_5x5_kernel, Size(5, 5), 0);
+
+    //Define names of the windows
+    String window_name = "Lotus";
+    String window_name_blurred_with_3x3_kernel = "Lotus Blurred with 3 x 3 Gaussian Kernel";
+    String window_name_blurred_with_5x5_kernel = "Lotus Blurred with 5 x 5 Gaussian Kernel";
+
+    // Create windows with above names
+    namedWindow(window_name);
+    namedWindow(window_name_blurred_with_3x3_kernel);
+    namedWindow(window_name_blurred_with_5x5_kernel);
+
+    // Show our images inside the created windows.
+    imshow(window_name, image);
+    imshow(window_name_blurred_with_3x3_kernel, image_blurred_with_3x3_kernel);
+    imshow(window_name_blurred_with_5x5_kernel, image_blurred_with_5x5_kernel);
+
+    waitKey(0); // Wait for any keystroke in the window
+
+    destroyAllWindows(); //destroy all opened windows
+}
+
+void videoGaussianBlur(void) {
+	//open the video file for reading
+    VideoCapture cap("/home/bruno/Videos/855213-hd_1920_1080_24fps.mp4");
+
+    // if not success, exit program
+    if (cap.isOpened() == false)
+    {
+        cout << "Cannot open the video file" << endl;
+        cin.get(); //wait for any key press
+        return;
+    }
+
+
+
+    //Define names of the window
+    String window_name_of_original_video = "Original Video";
+    String window_name_of_video_blurred_with_5x5_kernel = "Video Blurred with 5 x 5 Gaussian Kernel";
+
+    // Create a window with above names
+    namedWindow(window_name_of_original_video, WINDOW_NORMAL);
+    namedWindow(window_name_of_video_blurred_with_5x5_kernel, WINDOW_NORMAL);
+
+    while (true)
+    {
+        Mat frame;
+        bool bSuccess = cap.read(frame); // read a new frame from video 
+        if (bSuccess == false)
+        {
+            cout << "Found the end of the video" << endl;
+            break;
+        }
+
+        //Blur the frame with 5x5 Gaussian kernel
+        Mat frame_blurred_with_5x5_kernel;
+        GaussianBlur(frame, frame_blurred_with_5x5_kernel, Size(5, 5), 0);
+
+        //show the frames in the created windows
+        imshow(window_name_of_original_video, frame);
+        imshow(window_name_of_video_blurred_with_5x5_kernel, frame_blurred_with_5x5_kernel);
+
+        //wait for for 10 ms until any key is pressed.  
+        //If the 'Esc' key is pressed, break the while loop.
+        //If the any other key is pressed, continue the loop 
+        //If any key is not pressed withing 10 ms, continue the loop
+        if (waitKey(10) == 27)
+        {
+            cout << "Esc key is pressed by user. Stoppig the video" << endl;
+            break;
+        }
+    }
+}
+
+void homogenousBlurImage(void) {
+	// Read the image file
+    Mat image = imread("/home/bruno/Pictures/60e5dc69f199e.jpg");
+
+    // Check for failure
+    if (image.empty())
+    {
+        cout << "Could not open or find the image" << endl;
+        cin.get(); //wait for any key press
+        return;
+    }
+
+    //Blur the image with 3x3 kernel
+    Mat image_blurred_with_3x3_kernel;
+    blur(image, image_blurred_with_3x3_kernel, Size(3, 3));
+
+    //Blur the image with 5x5 kernel
+    Mat image_blurred_with_5x5_kernel;
+    blur(image, image_blurred_with_5x5_kernel, Size(5, 5));
+
+    //Define names of the windows
+    String window_name = "The Guitar"; 
+    String window_name_blurred_with_3x3_kernel = "The Guitar Blurred with 3 x 3 Kernel";
+    String window_name_blurred_with_5x5_kernel = "The Guitar Blurred with 5 x 5 Kernel";
+
+    // Create windows with above names
+    namedWindow(window_name);
+    namedWindow(window_name_blurred_with_3x3_kernel);
+    namedWindow(window_name_blurred_with_5x5_kernel);
+
+    // Show our images inside the created windows.
+    imshow(window_name, image); 
+    imshow(window_name_blurred_with_3x3_kernel, image_blurred_with_3x3_kernel);
+    imshow(window_name_blurred_with_5x5_kernel, image_blurred_with_5x5_kernel);
+
+    waitKey(0); // Wait for any keystroke in the window
+
+    destroyAllWindows(); //destroy all opened windows
+}
+
+void homogenousBlurVideo(void) {
+	//open the video file for reading
+    VideoCapture cap("/home/bruno/Videos/855213-hd_1920_1080_24fps.mp4");
+
+    // if not success, exit program
+    if (cap.isOpened() == false)
+    {
+        cout << "Cannot open the video file" << endl;
+        cin.get(); //wait for any key press
+        return;
+    }
+
+
+
+    //Define names of the window
+    String window_name_of_original_video = "Original Video";
+    String window_name_of_video_blurred_with_5x5_kernel = "Video Blurred with 5 x 5 Kernel";
+
+    // Create a window with above names
+    namedWindow(window_name_of_original_video, WINDOW_NORMAL);
+    namedWindow(window_name_of_video_blurred_with_5x5_kernel, WINDOW_NORMAL);
+
+    while (true)
+    {
+        Mat frame;
+        bool bSuccess = cap.read(frame); // read a new frame from video 
+        if (bSuccess == false)
+        {
+            cout << "Found the end of the video" << endl;
+            break;
+        }
+
+        //Blur the frame with 5x5 kernel
+        Mat frame_blurred_with_5x5_kernel;
+        blur(frame, frame_blurred_with_5x5_kernel, Size(5, 5));
+
+        //show the frames in the created windows
+        imshow(window_name_of_original_video, frame);
+        imshow(window_name_of_video_blurred_with_5x5_kernel, frame_blurred_with_5x5_kernel);
+
+        //wait for for 10 ms until any key is pressed.  
+        //If the 'Esc' key is pressed, break the while loop.
+        //If the any other key is pressed, continue the loop 
+        //If any key is not pressed withing 10 ms, continue the loop
+        if (waitKey(10) == 27)
+        {
+            cout << "Esc key is pressed by user. Stoppig the video" << endl;
+            break;
+        }
+    }
+}
 
 void changeContrastImage(void) {
 	// Read the image file

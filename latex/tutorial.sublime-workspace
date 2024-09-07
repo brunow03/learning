@@ -1,0 +1,435 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"chan",
+				"changeContrastImage"
+			],
+			[
+				"iostr",
+				"I-iostream"
+			],
+			[
+				"F",
+				"FormatNumericalData"
+			],
+			[
+				"ar",
+				"arg"
+			],
+			[
+				"w",
+				"WriteLine"
+			],
+			[
+				"for",
+				"foreach\tForEach"
+			],
+			[
+				"TC",
+				"TCP_CLIENT_SOURCES"
+			],
+			[
+				"pri",
+				"printf\tprintf …"
+			],
+			[
+				"stdi",
+				"stdio.h"
+			],
+			[
+				"UNI",
+				"UNIX_LIST_SOURCES"
+			],
+			[
+				"add_exe",
+				"add_executable"
+			],
+			[
+				"AD",
+				"add_definitions"
+			],
+			[
+				"MES",
+				"message\tbuiltin"
+			],
+			[
+				"mesa",
+				"message\tbuiltin"
+			],
+			[
+				"mes",
+				"message\tbuiltin"
+			],
+			[
+				"mai",
+				"main\tmain()"
+			],
+			[
+				"FIL",
+				"file"
+			],
+			[
+				"s",
+				"set\tbuiltin"
+			],
+			[
+				"INCL",
+				"include_directories"
+			],
+			[
+				"pr",
+				"printf\tprintf …"
+			],
+			[
+				"ch",
+				"node_char"
+			],
+			[
+				"g",
+				"g_graphList"
+			],
+			[
+				"fo",
+				"for\tFor Loop"
+			],
+			[
+				"g_",
+				"g_graphList"
+			],
+			[
+				"Gr",
+				"GraphList"
+			],
+			[
+				"visit_li",
+				"visit_list"
+			],
+			[
+				"vis",
+				"visit_list_bfs"
+			],
+			[
+				"visit_",
+				"visit_list"
+			],
+			[
+				"G",
+				"GraphList"
+			],
+			[
+				"f",
+				"for\tFor Loop"
+			],
+			[
+				"print",
+				"printf\tprintf …"
+			],
+			[
+				"fr",
+				"for\tFor Loop"
+			],
+			[
+				"is",
+				"isempty_queue"
+			],
+			[
+				"MAX",
+				"MAXV"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"isnta",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"isntal",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 118.0,
+		"history":
+		[
+			"h",
+			"--h",
+			"-h",
+			"--help",
+			"help",
+			"make",
+			"ls"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/src/main.c",
+		"/home/bruno/Git/learning/latex/main.c",
+		"/home/bruno/Git/learning/latex/curriculo1.tex",
+		"/home/bruno/Git/learning/latex/cv3.tex",
+		"/home/bruno/Git/learning/latex/cv2.tex",
+		"/home/bruno/Git/learning/latex/cv4.tex",
+		"/home/bruno/Git/learning/latex/tutorial/first.tex",
+		"/home/bruno/Git/learning/latex/tutorial/cv1.tex",
+		"/home/bruno/Git/learning/OPENCV/CMakeLists.txt",
+		"/home/bruno/Git/learning/OPENCV/include/learning.hpp",
+		"/home/bruno/Git/learning/OPENCV/src/main.cpp",
+		"/home/bruno/Git/learning/OPENCV/src/learning.cpp",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/NEURONS/src/main.c",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/NEURONS/CMakeLists.txt",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/graphs/CMakeLists.txt",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/Network/include/chap05.h",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/Network/include/chap04.h",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/Network/src/unix_list.c",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/Network/src/udp_serve_toupper_simple.c",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/Network/src/udp_serve_toupper.c",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/Network/src/udp_sendto.c",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/Network/src/udp_recvfrom.c",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/Network/src/udp_client.c",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/Network/src/time_server_ipv6.c",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/Network/src/time_server.c",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/Network/src/time_console.c",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/Network/src/tcp_serve_toupper_fork.c",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/Network/src/tcp_client.c",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/Network/src/sock_init.c",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/Network/src/networks.c",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/Network/src/main.c",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/Network/src/lookup.c",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/Network/src/dns_query.c",
+		"/home/bruno/Documents/computação/cropper.py",
+		"/home/bruno/Games/snes/bsnes-115/ruby/GNUmakefile",
+		"/home/bruno/Games/snes/bsnes-115/ruby/input/input.hpp",
+		"/home/bruno/Games/snes/bsnes-115/ruby/video/xshm.cpp",
+		"/home/bruno/Games/snes/bsnes-115/ruby/input/keyboard/quartz.cpp",
+		"/home/bruno/Games/snes/bsnes-115/README.md",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/CS/BasicDataTypes/Program.cs",
+		"/home/bruno/Git/LSP-OmniSharp/sublime-package.json",
+		"/home/bruno/.config/sublime-text/Packages/User/LSP.sublime-settings",
+		"/home/bruno/.config/sublime-text/Packages/LSP/LSP.sublime-settings",
+		"/home/bruno/Git/LSP-OmniSharp/README.md",
+		"/home/bruno/.config/sublime-text/Packages/User/OmniSharpSublime.sublime-settings",
+		"/home/bruno/.nuget/NuGet/NuGet.Config",
+		"/home/bruno/.config/sublime-text/Packages/OmniSharp/build.sh",
+		"/home/bruno/.config/sublime-text/Packages/OmniSharp/omnisharp-roslyn/global.json",
+		"/home/bruno/.config/sublime-text/Packages/OmniSharp/OmniSharpSublime.sublime-settings",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/CS/BasicConsoleIO/Program.cs",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/CS/SimpleCSharpApp/Program.cs",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/CS/SimpleCSharpApp/obj/project.nuget.cache",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/CS/SimpleCSharpApp/obj/SimpleCSharpApp.csproj.nuget.dgspec.json",
+		"/home/bruno/Git/learning/FORTRAN/matrix.f90",
+		"/home/bruno/Git/learning/julia-programming/agent_based_model.jl",
+		"/home/bruno/Git/learning/julia-programming/factorial.jl",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/Network/include/chap03.h",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/Network/CMakeLists.txt",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/Network/src/CMakeLists.txt",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/Network/include/networks.h",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/Network/src/time_server_dual.c",
+		"/home/bruno/catkin_ws/src/talker.py",
+		"/home/bruno/catkin_ws/src/CMakeLists.txt",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/graphs/include/graphs.h",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/graphs/src/graphs.c",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/graphs/src/main.c",
+		"/home/bruno/Documents/temp/manifest.json",
+		"/home/bruno/Documents/mytheme/manifest.json",
+		"/home/bruno/snap/firefox/common/.mozilla/firefox/xirodgli.default/prefs.js",
+		"/home/bruno/snap/firefox/common/.mozilla/firefox/xirodgli.default/extensions.json",
+		"/home/bruno/snap/firefox/common/.mozilla/firefox/xirodgli.default/extensions/{9fd56529-f621-4820-8128-f0bbbdbd8a73}.xpi",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/include/binarytrees.h",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/src/binarytrees.c",
+		"/home/bruno/Git/learning/not python/C-CS-CPP/C/algorithms1/src/aside.c"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.CppYCM.2":
+	{
+		"height": 0.0
+	},
+	"output.CppYCM.3":
+	{
+		"height": 0.0
+	},
+	"output.LSP Log Panel":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.diagnostics":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "tutorial.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 245.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
