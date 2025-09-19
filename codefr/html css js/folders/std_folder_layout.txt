@@ -1,0 +1,56 @@
+# Standard Web Project Folder Structure
+
+```
+project-root/
+├── css/
+│   ├── style.css
+│   ├── reset.css
+│   ├── layout.css
+│   ├── components.css
+│   └── utilities/
+├── js/
+│   ├── main.js
+│   ├── components.js
+│   ├── modules/
+│   └── utils/
+├── images/
+│   ├── icons/
+│   ├── backgrounds/
+│   └── content/
+├── fonts/
+├── vendor/
+│   └── bootstrap/
+├── index.html
+└── README.md
+```
+
+## Explanation of Folders:
+
+- **css/**: Contains all stylesheets
+  - `style.css` - Main stylesheet
+  - `reset.css` - CSS reset/normalization
+  - `layout.css` - Layout-specific styles
+  - `components.css` - Component-specific styles
+  - `utilities/` - Helper/utility CSS classes
+
+- **js/**: Contains all JavaScript files
+  - `main.js` - Main application logic
+  - `components.js` - UI components
+  - `modules/` - Modular JavaScript files
+  - `utils/` - Helper functions and utilities
+
+- **images/**: Contains all image assets
+  - `icons/` - Icon images
+  - `backgrounds/` - Background images
+  - `content/` - Content images
+
+- **fonts/**: Contains custom font files
+
+- **vendor/**: Contains third-party libraries
+  - `bootstrap/` - Example third-party framework
+
+- **Root files**:
+  - `index.html` - Main HTML file
+  - `README.md` - Project documentation
+
+This structure helps maintain organization as projects grow in size and complexity.
