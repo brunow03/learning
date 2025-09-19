@@ -1,5 +1,0 @@
-/home/bruno/Git/learning/not python/C-CS-CPP/C/NEURONS/build/CMakeFiles/RUN_NEURONS.dir
-/home/bruno/Git/learning/not python/C-CS-CPP/C/NEURONS/build/CMakeFiles/edit_cache.dir
-/home/bruno/Git/learning/not python/C-CS-CPP/C/NEURONS/build/CMakeFiles/rebuild_cache.dir
-/home/bruno/Git/learning/not python/C-CS-CPP/C/NEURONS/build/src/CMakeFiles/edit_cache.dir
-/home/bruno/Git/learning/not python/C-CS-CPP/C/NEURONS/build/src/CMakeFiles/rebuild_cache.dir

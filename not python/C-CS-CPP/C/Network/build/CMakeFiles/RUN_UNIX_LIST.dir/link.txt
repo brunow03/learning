@@ -1,1 +1,0 @@
-/usr/bin/cc CMakeFiles/RUN_UNIX_LIST.dir/src/unix_list.c.o -o RUN_UNIX_LIST 

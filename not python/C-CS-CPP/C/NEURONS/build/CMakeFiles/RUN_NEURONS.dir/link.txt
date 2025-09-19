@@ -1,1 +1,0 @@
-/usr/bin/cc CMakeFiles/RUN_NEURONS.dir/src/main.c.o -o RUN_NEURONS 

@@ -1,1 +1,0 @@
-/usr/bin/cc CMakeFiles/RUN.dir/src/main.c.o CMakeFiles/RUN.dir/src/networks.c.o CMakeFiles/RUN.dir/src/sock_init.c.o CMakeFiles/RUN.dir/src/unix_list.c.o -o RUN  -lpthread 

@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/Application.dir/src/main.cpp.o CMakeFiles/Application.dir/src/genericalgorithms.cpp.o CMakeFiles/Application.dir/src/test.cpp.o -o Application 

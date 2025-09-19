@@ -1,1 +1,0 @@
-/usr/bin/cc CMakeFiles/RUN_TIME_SERVER.dir/src/time_server.c.o -o RUN_TIME_SERVER 
