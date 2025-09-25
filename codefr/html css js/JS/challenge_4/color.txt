@@ -1,0 +1,5 @@
+#0278ae - blue
+#ffd66b - yellow
+#e94560 - red 
+#61b15a - green
+#fff - white

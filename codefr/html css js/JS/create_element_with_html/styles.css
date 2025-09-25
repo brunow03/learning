@@ -1,0 +1,43 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	background-color: beige;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+table, table thead th, table tbody tr td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 20%;
+	background:	dodgerblue;
+	padding: 10px;
+
+}
+
+button {
+	width: 100%;
+	margin: 10px;
+
+}
+
+input {
+	margin: 2px;
+}
+
+.container2 {
+	background: lightsalmon;
+	margin: 10px;
+}

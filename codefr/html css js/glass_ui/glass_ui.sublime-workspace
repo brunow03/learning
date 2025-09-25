@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"getE",
+				"getElementsByClassName"
+			],
+			[
+				"innet",
+				"innerHTML"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"in",
+				"innerHTML"
+			],
+			[
 				"border",
 				"border-radius"
 			],
@@ -222,10 +238,6 @@
 			[
 				"ac",
 				"action"
-			],
-			[
-				"in",
-				"input"
 			],
 			[
 				"inu",
@@ -502,58 +514,284 @@
 			[
 				"sta",
 				"state_box"
-			],
-			[
-				"zip",
-				"zipcode_box"
-			],
-			[
-				"dis",
-				"discount_code_label"
-			],
-			[
-				"clear",
-				"clear_fields_button"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "index.html",
+			"file": "/home/bruno/Git/Learning/codefr/html css js/JS/challenge_4/index.html",
 			"settings":
 			{
-				"buffer_size": 839,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "js/app.js",
-			"settings":
-			{
-				"buffer_size": 0,
+				"buffer_size": 272,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			},
 			"undo_stack":
 			[
 				[
-					3,
+					1,
+					1,
+					"insert",
+					{
+						"characters": "!"
+					},
+					"AQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					2,
+					1,
+					"emmet_expand_abbreviation",
+					{
+						"tab": true
+					},
+					"AgAAAAAAAAAAAAAAAAAAAAAAAAABAAAAIQAAAAAAAAAAwQAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					5,
+					1,
+					"insert",
+					{
+						"characters": "\nlink"
+					},
+					"BQAAAIcAAAAAAAAAiQAAAAAAAAAAAAAAiQAAAAAAAACKAAAAAAAAAAAAAACKAAAAAAAAAIsAAAAAAAAAAAAAAIsAAAAAAAAAjAAAAAAAAAAAAAAAjAAAAAAAAACNAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAhwAAAAAAAACHAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					6,
+					1,
+					"emmet_expand_abbreviation",
+					{
+						"tab": true
+					},
+					"AgAAAIkAAAAAAAAAiQAAAAAAAAAEAAAAbGlua4kAAAAAAAAAqAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAjQAAAAAAAACNAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					7,
+					1,
+					"insert",
+					{
+						"characters": "styles"
+					},
+					"BgAAAKYAAAAAAAAApwAAAAAAAAAAAAAApwAAAAAAAACoAAAAAAAAAAAAAACoAAAAAAAAAKkAAAAAAAAAAAAAAKkAAAAAAAAAqgAAAAAAAAAAAAAAqgAAAAAAAACrAAAAAAAAAAAAAACrAAAAAAAAAKwAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAApgAAAAAAAACmAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					8,
+					1,
+					"insert_completion",
+					{
+						"completion": "lsp_select_completion {\"index\":2,\"session_name\":\"LSP-html\"}",
+						"format": "command",
+						"keep_prefix": true,
+						"must_insert": false,
+						"query_change_id":
+						[
+							6,
+							7,
+							1
+						],
+						"trigger": "styles.css"
+					},
+					"BwAAAKsAAAAAAAAAqwAAAAAAAAABAAAAc6oAAAAAAAAAqgAAAAAAAAABAAAAZakAAAAAAAAAqQAAAAAAAAABAAAAbKgAAAAAAAAAqAAAAAAAAAABAAAAeacAAAAAAAAApwAAAAAAAAABAAAAdKYAAAAAAAAApgAAAAAAAAABAAAAc6YAAAAAAAAAsAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAArAAAAAAAAACsAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					11,
+					1,
+					"insert",
+					{
+						"characters": "\n\n"
+					},
+					"AwAAANwAAAAAAAAA3gAAAAAAAAAAAAAA3gAAAAAAAADgAAAAAAAAAAAAAADdAAAAAAAAAN0AAAAAAAAAAQAAAAk",
+					"AQAAAAAAAAABAAAA3AAAAAAAAADcAAAAAAAAAAAAAAAAMHhA"
+				],
+				[
+					13,
+					1,
+					"reindent",
+					null,
+					"AQAAAN0AAAAAAAAA3gAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA3QAAAAAAAADdAAAAAAAAAAAAAAAAAEJA"
+				],
+				[
+					14,
+					1,
+					"insert",
+					{
+						"characters": "s"
+					},
+					"AgAAAN4AAAAAAAAA3wAAAAAAAAAAAAAA4AAAAAAAAADgAAAAAAAAAAEAAAAJ",
+					"AQAAAAAAAAABAAAA3gAAAAAAAADeAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					15,
+					1,
+					"left_delete",
+					null,
+					"AQAAAN4AAAAAAAAA3gAAAAAAAAABAAAAcw",
+					"AQAAAAAAAAABAAAA3wAAAAAAAADfAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					16,
+					1,
+					"insert",
+					{
+						"characters": "source"
+					},
+					"BgAAAN4AAAAAAAAA3wAAAAAAAAAAAAAA3wAAAAAAAADgAAAAAAAAAAAAAADgAAAAAAAAAOEAAAAAAAAAAAAAAOEAAAAAAAAA4gAAAAAAAAAAAAAA4gAAAAAAAADjAAAAAAAAAAAAAADjAAAAAAAAAOQAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA3gAAAAAAAADeAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					18,
 					1,
 					"delete_word",
 					{
 						"forward": false
 					},
-					"AQAAAAAAAAAAAAAAAAAAAAAAAAAVAAAAYWxlcnQoIkhlbGxvIFdvcmxkISIp",
-					"AQAAAAAAAAABAAAAFQAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+					"AQAAAN4AAAAAAAAA3gAAAAAAAAAGAAAAc291cmNl",
+					"AQAAAAAAAAABAAAA5AAAAAAAAADkAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					19,
+					1,
+					"insert",
+					{
+						"characters": "script"
+					},
+					"BgAAAN4AAAAAAAAA3wAAAAAAAAAAAAAA3wAAAAAAAADgAAAAAAAAAAAAAADgAAAAAAAAAOEAAAAAAAAAAAAAAOEAAAAAAAAA4gAAAAAAAAAAAAAA4gAAAAAAAADjAAAAAAAAAAAAAADjAAAAAAAAAOQAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA3gAAAAAAAADeAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					20,
+					1,
+					"emmet_expand_abbreviation",
+					{
+						"tab": true
+					},
+					"AgAAAN4AAAAAAAAA3gAAAAAAAAAGAAAAc2NyaXB03gAAAAAAAADvAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA5AAAAAAAAADkAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					22,
+					1,
+					"insert",
+					{
+						"characters": " sr"
+					},
+					"AwAAAOUAAAAAAAAA5gAAAAAAAAAAAAAA5gAAAAAAAADnAAAAAAAAAAAAAADnAAAAAAAAAOgAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA5QAAAAAAAADlAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					23,
+					1,
+					"insert_completion",
+					{
+						"completion": "src=\"$1\"",
+						"format": "snippet",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "src"
+					},
+					"AgAAAOYAAAAAAAAA5gAAAAAAAAACAAAAc3LmAAAAAAAAAOwAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA6AAAAAAAAADoAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					24,
+					1,
+					"insert_completion",
+					{
+						"completion": "lsp_select_completion {\"index\":0,\"session_name\":\"LSP-html\"}",
+						"format": "command",
+						"keep_prefix": true,
+						"must_insert": true,
+						"query_change_id":
+						[
+							20,
+							23,
+							2
+						],
+						"trigger": "app.js"
+					},
+					"AQAAAOsAAAAAAAAA8QAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA6wAAAAAAAADrAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					30,
+					1,
+					"insert",
+					{
+						"characters": "Challenge"
+					},
+					"CQAAALsAAAAAAAAAvAAAAAAAAAAIAAAARG9jdW1lbnS8AAAAAAAAAL0AAAAAAAAAAAAAAL0AAAAAAAAAvgAAAAAAAAAAAAAAvgAAAAAAAAC/AAAAAAAAAAAAAAC/AAAAAAAAAMAAAAAAAAAAAAAAAMAAAAAAAAAAwQAAAAAAAAAAAAAAwQAAAAAAAADCAAAAAAAAAAAAAADCAAAAAAAAAMMAAAAAAAAAAAAAAMMAAAAAAAAAxAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAuwAAAAAAAADDAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					31,
+					1,
+					"insert",
+					{
+						"characters": " 3"
+					},
+					"AgAAAMQAAAAAAAAAxQAAAAAAAAAAAAAAxQAAAAAAAADGAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxAAAAAAAAADEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					32,
+					1,
+					"left_delete",
+					null,
+					"AQAAAMUAAAAAAAAAxQAAAAAAAAABAAAAMw",
+					"AQAAAAAAAAABAAAAxgAAAAAAAADGAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					33,
+					1,
+					"insert",
+					{
+						"characters": "=4"
+					},
+					"AgAAAMUAAAAAAAAAxgAAAAAAAAAAAAAAxgAAAAAAAADHAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxQAAAAAAAADFAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					34,
+					2,
+					"left_delete",
+					null,
+					"AgAAAMYAAAAAAAAAxgAAAAAAAAABAAAANMUAAAAAAAAAxQAAAAAAAAABAAAAPQ",
+					"AQAAAAAAAAABAAAAxwAAAAAAAADHAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					35,
+					1,
+					"insert",
+					{
+						"characters": "4"
+					},
+					"AQAAAMUAAAAAAAAAxgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxQAAAAAAAADFAAAAAAAAAAAAAAAAAPC/"
 				]
 			]
 		},
 		{
-			"file": "css/style.css",
+			"file": "/home/bruno/Git/Learning/codefr/html css js/JS/challenge_4/styles.css",
 			"settings":
 			{
-				"buffer_size": 1999,
+				"buffer_size": 0,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/bruno/Git/Learning/codefr/html css js/JS/challenge_4/app.js",
+			"settings":
+			{
+				"buffer_size": 0,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -574,20 +812,20 @@
 				"Live Server: Start"
 			],
 			[
-				"insta",
-				"Package Control: Install Package"
+				"live",
+				"Live Server: Start"
 			],
 			[
 				"li",
 				"Live Server: Start"
 			],
 			[
-				"color",
-				"Color Helper: Picker"
+				"insta",
+				"Package Control: Install Package"
 			],
 			[
-				"live",
-				"Live Server: Start"
+				"color",
+				"Color Helper: Picker"
 			],
 			[
 				"instal",
@@ -690,6 +928,15 @@
 	],
 	"file_history":
 	[
+		"/home/bruno/Git/Learning/codefr/html css js/JS/using variables/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/using variables/app.js",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/using variables/styles.css",
+		"/home/bruno/Git/Learning/codefr/html css js/javascript_output/styles.css",
+		"/home/bruno/Git/Learning/codefr/html css js/javascript_output/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/javascript_output/app.js",
+		"/home/bruno/Git/Learning/codefr/html css js/glass_ui/css/style.css",
+		"/home/bruno/Git/Learning/codefr/html css js/glass_ui/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/glass_ui/js/app.js",
 		"/home/bruno/Git/Learning/codefr/html css js/glass_ui/img/flower1.jpg",
 		"/home/bruno/Git/learning/codefr/html css js/glass_ui/css/style.css",
 		"/home/bruno/Git/learning/codefr/html css js/glass_ui/index.html",
@@ -820,6 +1067,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"h1",
 			"10px"
 		],
 		"highlight": true,
@@ -844,19 +1092,20 @@
 			[
 				{
 					"buffer": 0,
-					"file": "index.html",
+					"file": "/home/bruno/Git/Learning/codefr/html css js/JS/challenge_4/index.html",
+					"selected": true,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 839,
+						"buffer_size": 272,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								248,
-								248
+								272,
+								272
 							]
 						],
 						"settings":
@@ -879,9 +1128,26 @@
 							],
 							"color_helper.box_height": 18,
 							"color_helper.color_scheme": "ayu-dark.sublime-color-scheme",
-							"color_helper.refresh": true,
+							"color_helper.refresh": false,
+							"color_helper.scan":
+							{
+								"allow_scanning": true,
+								"color_class":
+								[
+									{
+										"class": "css-level-4",
+										"scopes": ""
+									}
+								],
+								"color_trigger": "(?xi)\n(?:\n    \\b(?<![-#&$])(?:\n        color\\((?!\\s*-)|(?:hsla?|(?:ok)?(?:lch|lab)|hwb|rgba?)\\(\n) |\n\\b(?<![-#&$])[\\w]{3,}(?![(-])\\b|(?<![&])\\#)\n",
+								"current_ext": ".html",
+								"current_syntax": "HTML/HTML",
+								"enabled": true,
+								"last_updated": 1758655525.89,
+								"scanning": "meta.declaration-list.css -support.type.property-name.css -comment -string,meta.property-value.css -comment -string,meta.value.css -comment -string,meta.tag.inline.any.html string.quoted -constant.character.entity.html,meta.tag.any.html meta.attribute-with-value.style.html"
+							},
 							"lsp_active": true,
-							"lsp_uri": "file:///home/bruno/Git/Learning/codefr/html%20css%20js/glass_ui/index.html",
+							"lsp_uri": "file:///home/bruno/Git/Learning/codefr/html%20css%20js/JS/challenge_4/index.html",
 							"show_definitions": false,
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"tab_size": 4,
@@ -891,14 +1157,13 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"stack_multiselect": false,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "js/app.js",
-					"selected": true,
+					"file": "/home/bruno/Git/Learning/codefr/html css js/JS/challenge_4/styles.css",
 					"semi_transient": false,
 					"settings":
 					{
@@ -924,53 +1189,29 @@
 								{
 									"rhs_empty": true,
 									"selector": "punctuation.accessor"
-								},
-								{
-									"characters": ".\"'/@<",
-									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
-									"server": "LSP-typescript"
 								}
 							],
 							"color_helper.box_height": 18,
 							"color_helper.color_scheme": "ayu-dark.sublime-color-scheme",
-							"color_helper.refresh": false,
-							"color_helper.scan":
-							{
-								"allow_scanning": true,
-								"color_class":
-								[
-									{
-										"class": "css-level-4",
-										"scopes": ""
-									}
-								],
-								"color_trigger": "(?xi)\n(?:\n    \\b(?<![-#&$])(?:\n        color\\((?!\\s*-)|(?:hsla?|(?:ok)?(?:lch|lab)|hwb|rgba?)\\(\n) |\n\\b(?<![-#&$])[\\w]{3,}(?![(-])\\b|(?<![&])\\#)\n",
-								"current_ext": ".js",
-								"current_syntax": "JavaScript/JavaScript",
-								"enabled": true,
-								"last_updated": 1758552221.51,
-								"scanning": "string.quoted"
-							},
-							"lsp_active": true,
-							"lsp_uri": "file:///home/bruno/Git/Learning/codefr/html%20css%20js/glass_ui/js/app.js",
-							"show_definitions": false,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+							"color_helper.refresh": true,
+							"lsp_uri": "file:///home/bruno/Git/Learning/codefr/html%20css%20js/JS/challenge_4/styles.css",
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"stack_multiselect": false,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "css/style.css",
+					"file": "/home/bruno/Git/Learning/codefr/html css js/JS/challenge_4/app.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1999,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -983,30 +1224,24 @@
 						],
 						"settings":
 						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								}
+							],
 							"color_helper.box_height": 18,
 							"color_helper.color_scheme": "ayu-dark.sublime-color-scheme",
-							"color_helper.refresh": false,
-							"color_helper.scan":
-							{
-								"allow_scanning": true,
-								"color_class":
-								[
-									{
-										"class": "css-level-4",
-										"scopes": ""
-									}
-								],
-								"color_trigger": "(?xi)\n(?:\n    \\b(?<![-#&$])(?:\n        color\\((?!\\s*-)|(?:hsla?|(?:ok)?(?:lch|lab)|hwb|rgba?)\\(\n) |\n\\b(?<![-#&$])[\\w]{3,}(?![(-])\\b|(?<![&])\\#)\n",
-								"current_ext": ".css",
-								"current_syntax": "CSS/CSS",
-								"enabled": true,
-								"last_updated": 1758552221.51,
-								"scanning": "meta.declaration-list.css -support.type.property-name.css -comment -string,meta.property-value.css -comment -string,meta.value.css -comment -string,meta.tag.inline.any.html string.quoted -constant.character.entity.html,meta.tag.any.html meta.attribute-with-value.style.html"
-							},
-							"lsp_uri": "file:///home/bruno/Git/Learning/codefr/html%20css%20js/glass_ui/css/style.css",
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": false
+							"color_helper.refresh": true,
+							"lsp_active": true,
+							"lsp_uri": "file:///home/bruno/Git/Learning/codefr/html%20css%20js/JS/challenge_4/app.js",
+							"show_definitions": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1120,7 +1355,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 228.0,
 	"status_bar_visible": true,
 	"template_settings":

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 class="text-center bg-info p-2 text-white h4">Robot Card Maker</h1>
+    <div class="container">
+        
+        <div class="row">
+            
+            <div class="col-sm-3">
+
+                <div class="mb-3 mb-4">
+                    <label for="robotImage" class="form-label">Upload Pic</label>
+                    <input type="file" id="robotImage" class="form-control">
+                </div>
+        
+                <div class="mb-3">
+                    <label for="setName" class="form-label">Robot Name</label>
+                    <input type="text" class="form-control" id="setName" placeholder="Enter robot name">
+                </div>
+               
+                <button type="button" class="btn btn-outline-primary" id="btnMakeRobot">Add Product</button>
+
+            </div>
+
+            <div class="col-sm-9">
+                <div class="row parentElement">
+                  
+                    <div class="card m-2 mb-4" style="width: 10rem;">
+                        <img src="robots/2023-05-28_12h30_38.png" class="card-img-top py-2" alt="robot picture">
+                        <div class="card-body">
+                            <h5 class="card-title robotName text-center">PR-42657</h5>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+          
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        
+        const parentElement = document.querySelector(".parentElement");
+        const robotImage = document.querySelector("#robotImage");
+        const setName = document.querySelector("#setName");
+        const btnMakeRobot = document.querySelector("#btnMakeRobot");
+ 
+
+
+        class robotCard {
+
+            constructor(parentElement) {
+                this.parentElement = parentElement;
+                // this.picture = picture;
+            }
+
+            createRobotCard() {
+
+                let card = document.createElement('div');
+                card.classList.add('card','m-2','mb-4');
+                card.style.width = '10rem';
+
+                let image = document.createElement('img');
+                image.src = "robots/sample.png";
+                image.classList.add('card-img-top', 'py-2');
+                image.alt = "Robot picture";
+
+                card.appendChild(image);
+         
+                this.parentElement.appendChild(card);
+
+            }
+        }
+
+        btnMakeRobot.addEventListener("click", () => {
+            const newRoboCard = new robotCard(parentElement);
+            newRoboCard.createRobotCard();
+
+        })
+
+
+
+
+
+
+     
+
+
+      
+
+
+        
+    </script>
+  
+</body>
+</html>

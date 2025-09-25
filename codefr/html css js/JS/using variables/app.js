@@ -14,5 +14,5 @@ let btn1 = document.querySelector("#myBtn");
 
 btn1.addEventListener('click', function() {
 	alert("You clicked me!");
-	title.innerHTML = my_textbox.value;
+	// title.innerHTML = my_textbox.value;
 });

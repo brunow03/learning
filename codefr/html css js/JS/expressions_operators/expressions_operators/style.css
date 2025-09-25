@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+.container #displayArea {
+    background-color: rgb(31,31,31);
+    color: white;
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+
+    text-align: center;
+    font-size: 16px;
+
+}
+
+#myBtn {
+    background-color: rgb(47, 112, 233);
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background-color: rgb(69, 123, 221);
+}
