@@ -1,0 +1,42 @@
+p locals() -> dictionary with all the values
+s -> step
+p -> print
+q -> quit
+python -m ipdb <program>
+l -> list
+restart ->
+c -> continue
+p arr
+b -> breakpoint
+
+=========================================================
+
+gdb --args sleep 20
+run
+sudo strace ls -l > /dev/null
+
+=========================================================
+
+pyflakes <program>
+mypy
+writegood <file>
+time curl https://comillas.edu &> /dev/null
+
+sudo perf stat stress -c 1
+
+sudo perf record stress -c 1
+
+sudo perf report
+
+Flamegraph
+
+call graph
+
+htop
+
+stress -c 4
+
+du -h videos/
+
+hyperfine --warmup 3 'fd -e jpg' 'find . -iname "*.jpg"'
+
