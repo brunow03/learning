@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+
+	<friendsList>
+
+		<friend gender="male">
+			<name>Alex</name>
+			<age>25</age>
+		</friend>
+
+		<friend gender="female">
+			<name>Mary</name>
+			<age>35</age>
+
+		</friend>
+
+		<friend gender="female">
+			<name>Rachel</name>
+			<age>28</age>
+
+		</friend>
+
+		<bestFried gender="female">
+			<name>Ana</name>
+			<age>19</age>
+
+		</bestFried>
+
+	</friendsList>
+
+	<f:table xmlns:f="">
+		<f:name></f:name>
+		<f:width></f:width>
+		<f:length></f:length>
+	</f:table>
+
+</root>

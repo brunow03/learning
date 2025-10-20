@@ -1,0 +1,27 @@
+XML formatter
+XML schema generator
+
+Root
+XML Prolog
+Tags
+Attributes
+Nesting
+Entity Reference
+&gt;
+&lt;
+&amp;
+&quot;
+&apos;
+Comments
+name conflict in XML can be resolved by using a prefix
+xmlns
+namespaces
+wizdler
+DocumentObjectModel -> represents the content of xml or html document as tree structure
+-> xmlDoc.getElementsByTagName("title)[0].childNodes[0].nodeValue;
+-> It represents the page  in a tree structure so that programs can read, access and change the document structure, style, and content
+
+XPath -> a query language for navigating in XML documents
+/bookstore/book[2]/author/text()
+
+-> generate XPATH

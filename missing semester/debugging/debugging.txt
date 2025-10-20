@@ -1,0 +1,41 @@
+l(ist) - Displays 11 lines around the current line or continue the previous listing.
+s(tep) - Execute the current line, stop at the first possible occasion.
+n(ext) - Continue execution until the next line in the current function is reached or it returns.
+b(reak) - Set a breakpoint (depending on the argument provided).
+p(rint) - Evaluate the expression in the current context and print its value. There’s also pp to display using pprint instead.
+r(eturn) - Continue execution until the current function returns.
+q(uit) - Quit the debugger.
+=========================================================
+
+gdb --args sleep 20
+run
+sudo strace ls -l > /dev/null
+
+=========================================================
+
+pyflakes <program>
+mypy
+writegood <file>
+time curl https://comillas.edu &> /dev/null
+
+sudo perf stat stress -c 1
+
+sudo perf record stress -c 1
+
+sudo perf report
+
+Flamegraph
+
+call graph
+
+htop
+
+stress -c 4
+
+du -h videos/
+
+hyperfine --warmup 3 'fd -e jpg' 'find . -iname "*.jpg"'
+
+https://labex.io/pt/tutorials/comptia-identifying-malware-indicators-on-linux-592887
+https://hackers-arise.com/linux-basics-for-hackers-the-linux-logging-system/
+
