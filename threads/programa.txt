@@ -1,0 +1,33 @@
+Ementa
+
+	Concorrência, necessidade e implementação; Controle de processos e threads; Técnicas de otimização; Análise de desempenho; Paralelização fork-join; OpenMP; MPI; CUDA; Nuvem
+ 
+Objetivos
+
+	Familiarizar o aluno com os conceitos e termos básicos de sistemas paralelos, implementação e uso de concorrência, apresentar os tipos de arquitetura mais usados, descrever o suporte necessário para a programação de tais sistemas e apresentar algumas aplicações.
+
+Conteúdo Programático
+
+	-> Conceitos básicos: processos, threads, interrupções, escalonamento
+
+	-> Problemas de programação concorrente: deadlock, alocação de recursos,
+
+	-> Leitura e escrita concorrente, exclusão mútua, consenso.
+
+	-> Programação concorrente em UNIX. Semáforos, mutexes e monitores.
+
+	-> Otimização sequencial: uso eficiente da memória, unit stride, blocking;
+
+	-> Instruções vetoriais e super escalares, opções de otimização.
+
+	-> Profiling e modelagem de desempenho
+
+	-> Controle de processos e paralelização fork-join
+
+	-> Memória compartilhada e introdução ao OpenMP
+
+	-> Memória distribuída e MPI
+
+	-> Programação em GPUs, CUDA e novas tecnologias
+
+	-> Computação  paralela na nuvem
