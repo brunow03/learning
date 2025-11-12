@@ -13,7 +13,7 @@ print(base.head())
 
 y = base.iloc[:,7].values
 X = base.drop(base.columns[7], axis=1).values
-print(X)
+print(X)	
 
 labelencoder = LabelEncoder()
 for i in range(X.shape[1]):
