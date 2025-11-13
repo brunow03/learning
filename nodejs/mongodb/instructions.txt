@@ -1,0 +1,3 @@
+brunomendes003_db_user 
+
+mongodb+srv://brunomendes003_db_user:z4G8Q99VKCw4RYhZ@cluster0.mtk7d1s.mongodb.net/?appName=Cluster0
