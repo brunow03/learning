@@ -1,0 +1,2 @@
+/home/bruno/Git/Learning/unit_testing/gtest_tu/bin/CMakeFiles/edit_cache.dir
+/home/bruno/Git/Learning/unit_testing/gtest_tu/bin/CMakeFiles/rebuild_cache.dir

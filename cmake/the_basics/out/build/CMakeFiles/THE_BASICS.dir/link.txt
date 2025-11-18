@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/THE_BASICS.dir/main.cpp.o -o THE_BASICS 

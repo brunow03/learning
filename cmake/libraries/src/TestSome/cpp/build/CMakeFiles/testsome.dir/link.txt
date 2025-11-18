@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/testsome.dir/main.cpp.o -o testsome  -lmearlymath 
