@@ -1,0 +1,25 @@
+# sublime
+*.sublime-workspace
+*.sublime-project
+
+# dependencies
+/learning_venv
+/books
+/IA/CursoIA
+/IA/IA_venv
+/banco_de_dados/stuff
+__pycache__
+django_venv
+events
+
+# executables
+*.out
+*.run
+*.o
+*.so
+*.dylib
+*.cfg
+*.log
+
+*.zip
+
