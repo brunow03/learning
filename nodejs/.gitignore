@@ -1,0 +1,14 @@
+# Ignore a folder
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore environment variables
+.env
+
+# Ignore build output
+dist/
+
+# Ignore local IDE/editor settings
+.vscode/
