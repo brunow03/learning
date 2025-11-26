@@ -1,0 +1,15 @@
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/FunWithStringBuilder/bin/Debug/net8.0/FunWithStringBuilder
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/FunWithStringBuilder/bin/Debug/net8.0/FunWithStringBuilder.deps.json
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/FunWithStringBuilder/bin/Debug/net8.0/FunWithStringBuilder.runtimeconfig.json
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/FunWithStringBuilder/bin/Debug/net8.0/FunWithStringBuilder.dll
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/FunWithStringBuilder/bin/Debug/net8.0/FunWithStringBuilder.pdb
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/FunWithStringBuilder/obj/Debug/net8.0/FunWithStringBuilder.GeneratedMSBuildEditorConfig.editorconfig
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/FunWithStringBuilder/obj/Debug/net8.0/FunWithStringBuilder.AssemblyInfoInputs.cache
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/FunWithStringBuilder/obj/Debug/net8.0/FunWithStringBuilder.AssemblyInfo.cs
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/FunWithStringBuilder/obj/Debug/net8.0/FunWithStringBuilder.csproj.CoreCompileInputs.cache
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/FunWithStringBuilder/obj/Debug/net8.0/FunWithStringBuilder.sourcelink.json
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/FunWithStringBuilder/obj/Debug/net8.0/FunWithStringBuilder.dll
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/FunWithStringBuilder/obj/Debug/net8.0/refint/FunWithStringBuilder.dll
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/FunWithStringBuilder/obj/Debug/net8.0/FunWithStringBuilder.pdb
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/FunWithStringBuilder/obj/Debug/net8.0/FunWithStringBuilder.genruntimeconfig.cache
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/FunWithStringBuilder/obj/Debug/net8.0/ref/FunWithStringBuilder.dll

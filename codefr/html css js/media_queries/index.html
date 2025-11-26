@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Media Queries</title>
+
+	<style>
+		body {
+			margin: 20px;
+			text-align: center;
+		}
+
+		.box {
+			padding: 20px;
+			margin: 10px;
+		}
+
+		/*Large screens*/
+
+		@media screen and (min-width: 1200px) {
+			/*.container: 1em 2em;*/
+			.box {
+				background-color: dodgerblue;
+			}
+
+		}
+
+		/*Medium screens*/
+
+		@media screen and (max-width: 1199px) and (min-width: 768px) {
+			/*.container: 1em 2em;*/
+			.box {
+				background-color: mediumseagreen;
+			}
+			
+		}
+
+		/*Small screens*/
+
+		@media screen and (max-width: 767px) {
+			/*.container: 1em 2em;*/
+			.box {
+				background-color: tomato;
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+	
+	<h1>Media Queries</h1>
+
+	<div class="box">
+		<p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Dicta, modi.</p>
+	</div>
+
+</body>
+</html>

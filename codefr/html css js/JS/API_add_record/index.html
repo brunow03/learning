@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>API: Add A Record To A Database</title>
+</head>
+<body>
+
+	<style>
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			margin-top: 15px;
+			padding: 15px;
+		}
+	</style>
+	
+	<h2>API: Add A Record To A Database</h2>
+
+	<form id="myForm">
+
+		<input type="text" name="name" placeholder="Enter a name">
+		<br>
+		<br>
+		<input type="email" name="email" placeholder="Enter an email">
+		<br>
+		<br>
+		<button type="submit">Submit</button>
+
+	</form>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody id="dataHolder">
+			
+		</tbody>
+	</table>
+
+	<script>
+
+		const myForm = document.getElementById('myForm');
+		const dataHolder = document.getElementById('dataHolder');
+
+
+		fetch('https://api-db-31453-default-rtdb.firebaseio.com//users.json').then(resonse => response.json())
+		.then(data => {
+			for (const key in data) {
+				let tr = document.createElement('tr');
+				tr.innerHTML = `<td>${data[key].name}</td><td>${data[key].email}</td>`;
+				dataHolder.appendChild(tr);
+
+			}
+		}).catch(error => {
+    		console.log('Something went wrong:', error);  // Add error handling!
+		});
+
+		myForm.addEventListener('submit', (event) => {
+			event;preventDefault();
+
+			const formWithData = new FormData(myForm);
+
+			fetch('https://api-db-31453-default-rtdb.firebaseio.com//users.json', {
+				method: 'POST',
+				body: JSON.stringify(Object.fromEntries(formWithData)),
+				headers: {
+					'Content-Type':'application/json'
+				}
+			}).then(() => {
+				myForm.reset();
+				window.location.href = 'http://127.0.0.1:5000/confirm.html'
+			}).catch(error => {
+    			console.log('Something went wrong:', error);  // Add error handling!
+			});
+		})
+
+		
+		
+	</script>
+
+</body>
+</html>

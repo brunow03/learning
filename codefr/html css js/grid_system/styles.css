@@ -1,0 +1,38 @@
+.my-container {
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+}
+
+/*.my-container {
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+}*/
+
+.item {
+	min-height: 100px;
+	width: 100%;
+}
+
+.item1 {
+	grid-row: span 2;
+}
+
+.item2 {
+	grid-column: span 3;
+}
+
+.item5 {
+	grid-row: span 2;
+}
+
+.item6 {
+	grid-row: span 2;
+}
+
+.item7 {
+	grid-column: span 2;
+}

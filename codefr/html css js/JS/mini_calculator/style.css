@@ -1,0 +1,46 @@
+* {
+	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.container {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+.mybtns {
+	padding: 20px;
+
+}
+
+.mybtns button {
+	font-weight: bold;
+	padding: 5px;
+}
+
+input {
+	margin: 2px;
+	padding: 5px;
+	font-weight: bold;
+}
+
+.displayBox {
+	height: 100px;
+	width: 250px;
+	background: rgb(37, 37, 37);
+	margin: 10px;
+	border-radius: 5px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.displayBox h3 {
+	color: white;
+	font-size: 2rem;
+}
+

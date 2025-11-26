@@ -1,3 +1,0 @@
-/home/bruno/Git/Learning/cmake/libraries/src/TestSome/cpp/build/CMakeFiles/testsome.dir
-/home/bruno/Git/Learning/cmake/libraries/src/TestSome/cpp/build/CMakeFiles/edit_cache.dir
-/home/bruno/Git/Learning/cmake/libraries/src/TestSome/cpp/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Project Folder Structure</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .description {
+            color: #7f8c8d;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .folder-structure {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        
+        .folder-section {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .folder-title {
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .folder-list {
+            list-style-type: none;
+        }
+        
+        .folder-list li {
+            padding: 8px 5px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: background-color 0.3s;
+        }
+        
+        .folder-list li:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .folder-icon {
+            color: #ffc107;
+        }
+        
+        .file-icon {
+            color: #6c757d;
+        }
+        
+        .html-icon {
+            color: #e34f26;
+        }
+        
+        .css-icon {
+            color: #264de4;
+        }
+        
+        .js-icon {
+            color: #f7df1e;
+        }
+        
+        .img-icon {
+            color: #6f42c1;
+        }
+        
+        .folder-structure-diagram {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-top: 40px;
+        }
+        
+        .diagram-title {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        
+        .tree-view {
+            font-family: 'Fira Code', monospace;
+            line-height: 1.8;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        
+        .tree-item {
+            margin-left: 20px;
+        }
+        
+        .tree-folder {
+            color: #ffc107;
+            font-weight: bold;
+        }
+        
+        .tree-file {
+            color: #6c757d;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .folder-structure {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Standard Web Project Folder Structure</h1>
+            <p class="description">A well-organized folder structure is essential for maintaining a clean and scalable web project. Below is the typical structure for HTML, CSS, and JavaScript projects.</p>
+        </header>
+        
+        <div class="folder-structure">
+            <div class="folder-section">
+                <h2 class="folder-title"><i class="fas fa-folder-open"></i> Root Directory</h2>
+                <ul class="folder-list">
+                    <li><i class="fas fa-folder folder-icon"></i> css</li>
+                    <li><i class="fas fa-folder folder-icon"></i> js</li>
+                    <li><i class="fas fa-folder folder-icon"></i> images</li>
+                    <li><i class="fas fa-folder folder-icon"></i> fonts</li>
+                    <li><i class="fas fa-folder folder-icon"></i> vendor</li>
+                    <li><i class="fas fa-file html-icon"></i> index.html</li>
+                    <li><i class="fas fa-file file-icon"></i> README.md</li>
+                </ul>
+            </div>
+            
+            <div class="folder-section">
+                <h2 class="folder-title"><i class="fas fa-folder-open"></i> CSS Directory</h2>
+                <ul class="folder-list">
+                    <li><i class="fas fa-file css-icon"></i> style.css</li>
+                    <li><i class="fas fa-file css-icon"></i> reset.css</li>
+                    <li><i class="fas fa-file css-icon"></i> layout.css</li>
+                    <li><i class="fas fa-file css-icon"></i> components.css</li>
+                    <li><i class="fas fa-folder folder-icon"></i> utilities</li>
+                    <li><i class="fas fa-folder folder-icon"></i> themes</li>
+                </ul>
+            </div>
+            
+            <div class="folder-section">
+                <h2 class="folder-title"><i class="fas fa-folder-open"></i> JS Directory</h2>
+                <ul class="folder-list">
+                    <li><i class="fas fa-file js-icon"></i> main.js</li>
+                    <li><i class="fas fa-file js-icon"></i> components.js</li>
+                    <li><i class="fas fa-folder folder-icon"></i> modules</li>
+                    <li><i class="fas fa-folder folder-icon"></i> utils</li>
+                    <li><i class="fas fa-folder folder-icon"></i> lib</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="folder-structure-diagram">
+            <h2 class="diagram-title">Complete Folder Structure</h2>
+            <div class="tree-view">
+                <div class="tree-item tree-folder">project-root/</div>
+                <div class="tree-item tree-item">├── <span class="tree-folder">css/</span></div>
+                <div class="tree-item tree-item">│   ├── <span class="tree-file">style.css</span></div>
+                <div class="tree-item tree-item">│   ├── <span class="tree-file">reset.css</span></div>
+                <div class="tree-item tree-item">│   ├── <span class="tree-file">layout.css</span></div>
+                <div class="tree-item tree-item">│   ├── <span class="tree-file">components.css</span></div>
+                <div class="tree-item tree-item">│   └── <span class="tree-folder">utilities/</span></div>
+                <div class="tree-item tree-item">├── <span class="tree-folder">js/</span></div>
+                <div class="tree-item tree-item">│   ├── <span class="tree-file">main.js</span></div>
+                <div class="tree-item tree-item">│   ├── <span class="tree-file">components.js</span></div>
+                <div class="tree-item tree-item">│   ├── <span class="tree-folder">modules/</span></div>
+                <div class="tree-item tree-item">│   └── <span class="tree-folder">utils/</span></div>
+                <div class="tree-item tree-item">├── <span class="tree-folder">images/</span></div>
+                <div class="tree-item tree-item">│   ├── <span class="tree-folder">icons/</span></div>
+                <div class="tree-item tree-item">│   ├── <span class="tree-folder">backgrounds/</span></div>
+                <div class="tree-item tree-item">│   └── <span class="tree-folder">content/</span></div>
+                <div class="tree-item tree-item">├── <span class="tree-folder">fonts/</span></div>
+                <div class="tree-item tree-item">├── <span class="tree-folder">vendor/</span></div>
+                <div class="tree-item tree-item">│   └── <span class="tree-folder">bootstrap/</span></div>
+                <div class="tree-item tree-item">├── <span class="tree-file">index.html</span></div>
+                <div class="tree-item tree-item">└── <span class="tree-file">README.md</span></div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Organized folder structure helps maintainability and scalability of web projects</p>
+        </footer>
+    </div>
+</body>
+</html>

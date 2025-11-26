@@ -1,3 +1,0 @@
-/home/bruno/Git/Learning/cmake/the_basics/out/build/CMakeFiles/THE_BASICS.dir
-/home/bruno/Git/Learning/cmake/the_basics/out/build/CMakeFiles/edit_cache.dir
-/home/bruno/Git/Learning/cmake/the_basics/out/build/CMakeFiles/rebuild_cache.dir

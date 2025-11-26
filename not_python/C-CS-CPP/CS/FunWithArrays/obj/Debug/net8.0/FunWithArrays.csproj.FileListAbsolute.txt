@@ -1,0 +1,15 @@
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/FunWithArrays/bin/Debug/net8.0/FunWithArrays
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/FunWithArrays/bin/Debug/net8.0/FunWithArrays.deps.json
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/FunWithArrays/bin/Debug/net8.0/FunWithArrays.runtimeconfig.json
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/FunWithArrays/bin/Debug/net8.0/FunWithArrays.dll
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/FunWithArrays/bin/Debug/net8.0/FunWithArrays.pdb
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/FunWithArrays/obj/Debug/net8.0/FunWithArrays.GeneratedMSBuildEditorConfig.editorconfig
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/FunWithArrays/obj/Debug/net8.0/FunWithArrays.AssemblyInfoInputs.cache
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/FunWithArrays/obj/Debug/net8.0/FunWithArrays.AssemblyInfo.cs
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/FunWithArrays/obj/Debug/net8.0/FunWithArrays.csproj.CoreCompileInputs.cache
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/FunWithArrays/obj/Debug/net8.0/FunWithArrays.sourcelink.json
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/FunWithArrays/obj/Debug/net8.0/FunWithArrays.dll
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/FunWithArrays/obj/Debug/net8.0/refint/FunWithArrays.dll
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/FunWithArrays/obj/Debug/net8.0/FunWithArrays.pdb
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/FunWithArrays/obj/Debug/net8.0/FunWithArrays.genruntimeconfig.cache
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/FunWithArrays/obj/Debug/net8.0/ref/FunWithArrays.dll

@@ -1,0 +1,19 @@
+.draggable {
+	margin: 10px;
+	padding: 5px;
+	border: 2px dashed #000;
+	cursor: grab;
+	display: inline-block;
+}
+
+#dropzone {
+	width: 300px;
+	margin: 20px;
+	padding: 10px;
+}
+
+input {
+	padding: 20px;
+	font-size: large;
+}
+

@@ -1,0 +1,15 @@
+/home/bruno/Git/Learning/not_python/C-CS-CPP/CS/helloWorld/bin/Debug/net10.0/helloWorld
+/home/bruno/Git/Learning/not_python/C-CS-CPP/CS/helloWorld/bin/Debug/net10.0/helloWorld.deps.json
+/home/bruno/Git/Learning/not_python/C-CS-CPP/CS/helloWorld/bin/Debug/net10.0/helloWorld.runtimeconfig.json
+/home/bruno/Git/Learning/not_python/C-CS-CPP/CS/helloWorld/bin/Debug/net10.0/helloWorld.dll
+/home/bruno/Git/Learning/not_python/C-CS-CPP/CS/helloWorld/bin/Debug/net10.0/helloWorld.pdb
+/home/bruno/Git/Learning/not_python/C-CS-CPP/CS/helloWorld/obj/Debug/net10.0/helloWorld.GeneratedMSBuildEditorConfig.editorconfig
+/home/bruno/Git/Learning/not_python/C-CS-CPP/CS/helloWorld/obj/Debug/net10.0/helloWorld.AssemblyInfoInputs.cache
+/home/bruno/Git/Learning/not_python/C-CS-CPP/CS/helloWorld/obj/Debug/net10.0/helloWorld.AssemblyInfo.cs
+/home/bruno/Git/Learning/not_python/C-CS-CPP/CS/helloWorld/obj/Debug/net10.0/helloWorld.csproj.CoreCompileInputs.cache
+/home/bruno/Git/Learning/not_python/C-CS-CPP/CS/helloWorld/obj/Debug/net10.0/helloWorld.sourcelink.json
+/home/bruno/Git/Learning/not_python/C-CS-CPP/CS/helloWorld/obj/Debug/net10.0/helloWorld.dll
+/home/bruno/Git/Learning/not_python/C-CS-CPP/CS/helloWorld/obj/Debug/net10.0/refint/helloWorld.dll
+/home/bruno/Git/Learning/not_python/C-CS-CPP/CS/helloWorld/obj/Debug/net10.0/helloWorld.pdb
+/home/bruno/Git/Learning/not_python/C-CS-CPP/CS/helloWorld/obj/Debug/net10.0/helloWorld.genruntimeconfig.cache
+/home/bruno/Git/Learning/not_python/C-CS-CPP/CS/helloWorld/obj/Debug/net10.0/ref/helloWorld.dll

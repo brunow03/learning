@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript Map Method</title>
+</head>
+<body>
+	
+	<h1>JS Map Method</h1>
+
+	<ul id="holder">
+		
+	</ul>
+
+	<script>
+
+		let holder = document.querySelector("#holder");
+		
+		const users = [
+			{
+				name: "Bruno",
+				age: 29
+			},
+			{
+				name: "Albert",
+				age: 20
+			},
+			{
+				name: "Zizek",
+				age: 55
+			}
+		]
+
+		users.map((item) => {
+			
+			let li = document.createElement('li');
+			li.innerHTML = `<h3>Name: ${item.name}</h3><p>Age: ${item.age}</p>`;
+			holder.appendChild(li);
+
+
+
+
+			// console.log(item.name);
+			// console.log(item.age);
+		})
+
+	</script>
+</body>
+</html>

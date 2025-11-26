@@ -1,0 +1,54 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Type or Element Selector */
+  p {
+    font-size: 18px;
+  }
+  
+  /* Class Selector */
+  .example {
+    background-color: lightgray;
+  }
+  
+  /* ID Selector */
+  #uniqueID {
+    border: 2px solid blue;
+    padding: 10px;
+  }
+  
+  /* Descendant Selector */
+  div p {
+    margin: 10px;
+  }
+  
+  /* Child Selector */
+  ul > li {
+    list-style-type: square;
+  }
+  
+  /* Adjacent Sibling Selector */
+  h1 + p {
+    font-weight: bold;
+  }
+  
+  /* Attribute Selector */
+  input[type="text"] {
+    width: 200px;
+    padding: 5px;
+  }
+  
+  /* Pseudo-class */
+  a:hover {
+    color: red;
+  }
+  
+  /* Pseudo-element */
+  p::first-line {
+    text-transform: uppercase;
+  }
+  

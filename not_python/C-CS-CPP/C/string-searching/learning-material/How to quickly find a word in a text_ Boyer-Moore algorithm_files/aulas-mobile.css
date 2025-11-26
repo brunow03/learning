@@ -1,0 +1,281 @@
+/* ALGORITMOS/algorithms/chapters/aulas-mobile.css */
+HTML {
+  font-size: 15px;
+  width: 100%; /*to prevent "overflow" badges in inspect*/
+}
+body { 
+  margin-left: 2%;
+  margin-right: 1.5%;
+  hyphens: auto;
+}
+h1 {
+  margin-top: 1.5em;
+  hyphens: none;
+}
+h2, h3, h4 {
+  hyphens: none;
+}
+kbd {
+  font-size: 0.8666em; /*13px*/
+}
+pre {
+  font-size: 0.80em; /*12px*/
+}
+pre.large {
+  font-size: 0.8666em; /*13px*/
+}
+pre.small {
+  font-size: 0.7333em; /*11px*/
+}
+pre.xsmall {
+     font-size: 0.10px; /*0.0066em*/
+}
+pre.ind, p.indent { 
+  margin-left: 1.2rem;
+  margin-right: 0em;
+}
+pre.hlt {
+  margin: 1.0em 0.0rem 1.0em 0.9rem; /*left: 0.9=1.2-padding*/
+  padding: 0.3rem;
+}
+pre.terminal {
+  margin: 1.3em 1.0rem 1.3em 0.9rem; /*left: 0.9=1.2-padding*/
+  padding: 0.3em 0.3rem 0.3em 0.3rem;
+  font-size: 0.80em; /*12px*/
+}
+pre.nottfont {
+  font-size: 0.8666em; /*13px*/
+}
+pre.manpage {
+  margin: 1em 1em 1em 0em;
+  font-size: 0.7333em; /*11px*/
+}
+span.large {
+  font-size: 1.0em;
+}
+ul { 
+  margin-left: -0.5em;
+}
+li ul { 
+  margin-left: -1em;
+}
+ul.none { 
+  margin-left: 1em;
+  padding: 0em;
+}
+ul.enum { 
+  margin-left: 4em;
+  font-size: 0.95em;
+}
+table.myheap {
+  font-size: 0.6666em; /*10px*/
+}
+table.myheap td.spacer { 
+  width: 0.55em;
+}
+div.tA {
+   margin-top: 0.5em;
+}
+div.bA {
+   margin-bottom: 0.5em;
+}
+div.tB {
+   margin-top: 1.0em;
+}
+div.bB {
+   margin-bottom: 1.0em;
+}
+div.tBB {
+   margin-top: 1.2em;
+}
+div.bBB {
+   margin-bottom: 1.2em;
+}
+div.tC {
+   margin-top: 1.7em;
+}
+div.bC {
+   margin-bottom: 1.7em;
+}
+div.tCC {
+   margin-top: 2.5em;
+}
+div.bCC {
+   margin-bottom: 2.5em;
+}
+div.tD {
+   margin-top: 3.5em;
+}
+div.bD {
+   margin-bottom: 3.5em;
+}
+div.tDD {
+   margin-top: 4.0em;
+}
+div.bDD {
+   margin-bottom: 4.0em;
+}
+div.tE {
+   margin-top: 5.0em;
+}
+div.bE {
+   margin-bottom: 5.0em;
+}
+div.exr {
+  font-size: 0.9333em; /*14px like q-and-a and footer*/
+}
+/*** experimentally deleted 
+div.exr kbd { 
+  font-size: 0.9285em; 0.9285 * 0.8750 * 16 = 13px
+}
+***/
+/*** experimentally deleted
+div.exr pre { 
+  font-size: 0.9230em; 0.9230 * 0.8125 * 16 = 12px
+  font-size: 0.8846em; 0.8846 * 0.8125 * 16 = 11.5px
+}
+***/
+li.exr {
+   margin-left: -0.5em;
+}
+li.exr pre.ind { 
+  margin-left: 1.0rem; /*rem*/
+}
+p.center {
+   margin-left: 1.2em;
+   margin-right: 1.2em;
+}
+p.box { /*only in appendices/unicode.html*/
+  margin-left: 1.0rem;
+}
+p.caption { 
+  margin-left: 10%;
+  margin-right: 10%;
+}
+li p.center {
+   margin-left: 1.2em;
+   margin-right: 1.2em;
+}
+blockquote { 
+  margin-left: 0.7em;
+  margin-right: 0.0em;
+}
+img.attention {
+  height: 11px;
+}
+img.h48 { 
+  height: 48px;
+  height: 2.4em;
+}
+img.h50 { 
+  height: 50px;
+  height: 2.3em;
+}
+img.h70 {
+  height: 70px;
+  height: 3.3em;
+}
+img.h78 {
+  height: 78px;
+  height: 4.3em;
+}
+img.h140 { 
+  height: 140px;
+  height: 5.8em;
+}
+img.h150 { 
+  height: 150px;
+  height: 6.5em;
+}
+img.h170 { 
+  height: 170px;
+  height: 7.5em;
+}
+img.h180 {
+  height: 180px;
+  height: 8.0em;
+}
+img.h230 {
+  height: 230px;
+  height: 10.0em;
+}
+/*** ../appendices/xxxx.h.html ***/
+div.q-and-a {
+  font-size: 0.9333em; /*14px like div.exr and footer*/
+}
+div.q-and-a ul {
+  margin-left: -1.0em;
+}
+div.q-and-a li {
+  margin-left: 0.0em;
+}
+div.q-and-a kbd {
+  font-size: 0.9891em; /* igual div.exr kbd 0.9891x0.9333x0.8666x15px = 12px*/
+}
+div.q-and-a pre {
+  font-size: 0.9891em; /* igual div.exr kbd 0.9891x0.9333x0.8666x15px = 12px*/
+  font-size: 0.9066em; /* igual div.exr kbd 0.9066x0.9333x0.8666x15px = 11px*/
+}
+div.footer {
+  font-size: 0.9333em; /*14px experimental like div.exr and q-and-a*/
+}
+div.footer img.r {
+  width: 50px;
+}
+
+table.ascii { /*and iso-latin-1*/
+  border-spacing: 14px 0px; /*horiz vertical*/
+}
+table.ascii tr.head { 
+  font-size: 0.8666em; /*13px*/
+}
+table.ascii tr.tail { 
+  font-size: 0.8666em; /*13px*/
+}
+table.ascii th.ch { /*character*/
+  padding: 0px 6px 0px 6px;
+}
+table.ascii th.obs { /*observation*/
+  padding-left: 0.5em;
+}
+table.ascii td.dec { /*decimal column*/
+  font-size: 0.9333em; /*14px*/
+}
+table.ascii td.bin { /*binary, in kbd*/
+  font-size: 0.9231em; /*0.9231 * 0.8666 * 15 = 12px*/
+}
+table.ascii td.hex { /*hexadecimal, in kbd*/
+  font-size: 1.0000em; /*1.0000 * 0.8666 * 15 = 13px*/
+}
+table.ascii td.uni { /*Unicode*/
+  font-size: 0.9333em; /*14px*/
+}
+table.ascii td.ch { /*blank*/
+  font-size: 0.9333em; /*14px*/
+}
+table.ascii td.ch1 { /*pink characters*/
+  font-size: 0.9333em; /*14px*/
+}
+table.ascii td.ch2 { /*green characters*/
+  font-size: 0.9333em; /*14px*/
+}
+table.ascii td.obs { 
+  font-size: 0.8666em; /*13px*/
+}
+
+audio.my {
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  margin-left: -1em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  padding-left: 0em;
+  background-color: yellow;
+  background-color: white;
+  color: red;
+  width: 15em;
+  height: 1.5em;
+/*font-size: 1em; no!*/
+}
+
+    

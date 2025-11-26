@@ -1,0 +1,1372 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"getE",
+				"getElementsByClassName"
+			],
+			[
+				"innet",
+				"innerHTML"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"in",
+				"innerHTML"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"borde",
+				"border-radius"
+			],
+			[
+				"flex",
+				"flex-wrap"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"backgroun",
+				"background-size"
+			],
+			[
+				"backgr",
+				"background-repeat"
+			],
+			[
+				"backg",
+				"background-image"
+			],
+			[
+				"align",
+				"align-items"
+			],
+			[
+				"san",
+				"sans-serif"
+			],
+			[
+				"text",
+				"text-field"
+			],
+			[
+				"class",
+				"class"
+			],
+			[
+				"bot",
+				"bottom"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"ali",
+				"box-align"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"blo",
+				"block"
+			],
+			[
+				"name",
+				"name"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"id",
+				"id"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"BORDER",
+				"border-radius"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"cla",
+				"class"
+			],
+			[
+				"fle",
+				"flex-direction"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"clas",
+				"class"
+			],
+			[
+				"c",
+				"class"
+			],
+			[
+				"A",
+				"Arial Narrow, Arial, sans-serif"
+			],
+			[
+				"cl",
+				"class"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"gra",
+				"gray"
+			],
+			[
+				"gre",
+				"green"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"col",
+				"collapse"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"targe",
+				"target"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"tar",
+				"target"
+			],
+			[
+				"htt",
+				"http-equiv"
+			],
+			[
+				"sty",
+				"style"
+			],
+			[
+				"i",
+				"id"
+			],
+			[
+				"fo",
+				"for"
+			],
+			[
+				"alt",
+				"alt"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"ac",
+				"action"
+			],
+			[
+				"inu",
+				"input"
+			],
+			[
+				"a",
+				"a\t<a>"
+			],
+			[
+				"td",
+				"td"
+			],
+			[
+				"tb",
+				"tbody"
+			],
+			[
+				"th",
+				"th"
+			],
+			[
+				"u",
+				"ul"
+			],
+			[
+				"html",
+				"html5\tSimple HTML5 Boilerplate"
+			],
+			[
+				"lorem",
+				"lorem\tLorem ipsum"
+			],
+			[
+				"im",
+				"img\timg"
+			],
+			[
+				"hea",
+				"head\t<head>"
+			],
+			[
+				"o",
+				"ol"
+			],
+			[
+				"hr",
+				"href"
+			],
+			[
+				"press",
+				"press_it"
+			],
+			[
+				"my",
+				"my_button"
+			],
+			[
+				"Qt",
+				"PyQt5.QtGui"
+			],
+			[
+				"setF",
+				"setFont"
+			],
+			[
+				"setWi",
+				"setWindowTitle"
+			],
+			[
+				"QA",
+				"QApplication"
+			],
+			[
+				"__",
+				"__init__"
+			],
+			[
+				"de",
+				"def\tFunction"
+			],
+			[
+				"edi",
+				"edit_redo"
+			],
+			[
+				"itali",
+				"italics_font"
+			],
+			[
+				"tag",
+				"tag_configure"
+			],
+			[
+				"ta",
+				"tag_remove"
+			],
+			[
+				"bold",
+				"bold_font"
+			],
+			[
+				"sele",
+				"selected"
+			],
+			[
+				"my_",
+				"my_label"
+			],
+			[
+				"op",
+				"open_txt"
+			],
+			[
+				"as",
+				"askopenfilename"
+			],
+			[
+				"st",
+				"stuff"
+			],
+			[
+				"mi",
+				"my_spin"
+			],
+			[
+				"m",
+				"my_label"
+			],
+			[
+				"L",
+				"Label"
+			],
+			[
+				"from",
+				"from_="
+			],
+			[
+				"random",
+				"random_label"
+			],
+			[
+				"crea",
+				"create_window"
+			],
+			[
+				"con",
+				"configure"
+			],
+			[
+				"s",
+				"set"
+			],
+			[
+				"R",
+				"RIGHT"
+			],
+			[
+				"Sc",
+				"Scrollbar"
+			],
+			[
+				"edit",
+				"edit_cut_frame"
+			],
+			[
+				"winfo",
+				"winfo_children"
+			],
+			[
+				"win",
+				"winfo_children"
+			],
+			[
+				"file_new",
+				"file_new_frame"
+			],
+			[
+				"fil",
+				"file_new"
+			],
+			[
+				"ver",
+				"VERTICAL"
+			],
+			[
+				"panel",
+				"panel_2"
+			],
+			[
+				"Pa",
+				"Panedwindow"
+			],
+			[
+				"ed",
+				"edit_cut_frame"
+			],
+			[
+				"file",
+				"file_new_frame"
+			],
+			[
+				"add",
+				"add_command"
+			],
+			[
+				"pac",
+				"pack_forget"
+			],
+			[
+				"file_",
+				"file_new_frame"
+			],
+			[
+				"DIA",
+				"DISABLED"
+			],
+			[
+				"De",
+				"DeleteButton"
+			],
+			[
+				"unique",
+				"unique_entries"
+			],
+			[
+				"sear",
+				"search_customers"
+			],
+			[
+				"searc",
+				"search_customers"
+			],
+			[
+				"pi",
+				"picked"
+			],
+			[
+				"Cus",
+				"Customer"
+			],
+			[
+				"sea",
+				"searched_label"
+			],
+			[
+				"search_",
+				"search_customer"
+			],
+			[
+				"se",
+				"search_customer"
+			],
+			[
+				"csv",
+				"csv_button"
+			],
+			[
+				"lis",
+				"list_customer_query"
+			],
+			[
+				"lo",
+				"lookup_label"
+			],
+			[
+				"list",
+				"list_customer_query"
+			],
+			[
+				"li",
+				"list_customer_query"
+			],
+			[
+				"sta",
+				"state_box"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/home/bruno/Git/Learning/codefr/html css js/JS/challenge_4/index.html",
+			"settings":
+			{
+				"buffer_size": 659,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					1,
+					1,
+					"insert",
+					{
+						"characters": "!"
+					},
+					"AQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2,
+					1,
+					"emmet_expand_abbreviation",
+					{
+						"tab": true
+					},
+					"AgAAAAAAAAAAAAAAAAAAAAAAAAABAAAAIQAAAAAAAAAAwQAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					5,
+					1,
+					"insert",
+					{
+						"characters": "\nlink"
+					},
+					"BQAAAIcAAAAAAAAAiQAAAAAAAAAAAAAAiQAAAAAAAACKAAAAAAAAAAAAAACKAAAAAAAAAIsAAAAAAAAAAAAAAIsAAAAAAAAAjAAAAAAAAAAAAAAAjAAAAAAAAACNAAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAIcAAAAAAAAAhwAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					6,
+					1,
+					"emmet_expand_abbreviation",
+					{
+						"tab": true
+					},
+					"AgAAAIkAAAAAAAAAiQAAAAAAAAAEAAAAbGlua4kAAAAAAAAAqAAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAI0AAAAAAAAAjQAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					7,
+					1,
+					"insert",
+					{
+						"characters": "styles"
+					},
+					"BgAAAKYAAAAAAAAApwAAAAAAAAAAAAAApwAAAAAAAACoAAAAAAAAAAAAAACoAAAAAAAAAKkAAAAAAAAAAAAAAKkAAAAAAAAAqgAAAAAAAAAAAAAAqgAAAAAAAACrAAAAAAAAAAAAAACrAAAAAAAAAKwAAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAKYAAAAAAAAApgAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					8,
+					1,
+					"insert_completion",
+					{
+						"completion": "lsp_select_completion {\"index\":2,\"session_name\":\"LSP-html\"}",
+						"format": "command",
+						"keep_prefix": true,
+						"must_insert": false,
+						"query_change_id":
+						[
+							6,
+							7,
+							1
+						],
+						"trigger": "styles.css"
+					},
+					"BwAAAKsAAAAAAAAAqwAAAAAAAAABAAAAc6oAAAAAAAAAqgAAAAAAAAABAAAAZakAAAAAAAAAqQAAAAAAAAABAAAAbKgAAAAAAAAAqAAAAAAAAAABAAAAeacAAAAAAAAApwAAAAAAAAABAAAAdKYAAAAAAAAApgAAAAAAAAABAAAAc6YAAAAAAAAAsAAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAKwAAAAAAAAArAAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					11,
+					1,
+					"insert",
+					{
+						"characters": "\n\n"
+					},
+					"AwAAANwAAAAAAAAA3gAAAAAAAAAAAAAA3gAAAAAAAADgAAAAAAAAAAAAAADdAAAAAAAAAN0AAAAAAAAAAQAAAAk",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAANwAAAAAAAAA3AAAAAAAAAAAAAAAADB4QA"
+				],
+				[
+					13,
+					1,
+					"reindent",
+					null,
+					"AQAAAN0AAAAAAAAA3gAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAN0AAAAAAAAA3QAAAAAAAAAAAAAAAABCQA"
+				],
+				[
+					14,
+					1,
+					"insert",
+					{
+						"characters": "s"
+					},
+					"AgAAAN4AAAAAAAAA3wAAAAAAAAAAAAAA4AAAAAAAAADgAAAAAAAAAAEAAAAJ",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAN4AAAAAAAAA3gAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					15,
+					1,
+					"left_delete",
+					null,
+					"AQAAAN4AAAAAAAAA3gAAAAAAAAABAAAAcw",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAN8AAAAAAAAA3wAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					16,
+					1,
+					"insert",
+					{
+						"characters": "source"
+					},
+					"BgAAAN4AAAAAAAAA3wAAAAAAAAAAAAAA3wAAAAAAAADgAAAAAAAAAAAAAADgAAAAAAAAAOEAAAAAAAAAAAAAAOEAAAAAAAAA4gAAAAAAAAAAAAAA4gAAAAAAAADjAAAAAAAAAAAAAADjAAAAAAAAAOQAAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAN4AAAAAAAAA3gAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					18,
+					1,
+					"delete_word",
+					{
+						"forward": false
+					},
+					"AQAAAN4AAAAAAAAA3gAAAAAAAAAGAAAAc291cmNl",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAOQAAAAAAAAA5AAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					19,
+					1,
+					"insert",
+					{
+						"characters": "script"
+					},
+					"BgAAAN4AAAAAAAAA3wAAAAAAAAAAAAAA3wAAAAAAAADgAAAAAAAAAAAAAADgAAAAAAAAAOEAAAAAAAAAAAAAAOEAAAAAAAAA4gAAAAAAAAAAAAAA4gAAAAAAAADjAAAAAAAAAAAAAADjAAAAAAAAAOQAAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAN4AAAAAAAAA3gAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					20,
+					1,
+					"emmet_expand_abbreviation",
+					{
+						"tab": true
+					},
+					"AgAAAN4AAAAAAAAA3gAAAAAAAAAGAAAAc2NyaXB03gAAAAAAAADvAAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAOQAAAAAAAAA5AAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					22,
+					1,
+					"insert",
+					{
+						"characters": " sr"
+					},
+					"AwAAAOUAAAAAAAAA5gAAAAAAAAAAAAAA5gAAAAAAAADnAAAAAAAAAAAAAADnAAAAAAAAAOgAAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAOUAAAAAAAAA5QAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					23,
+					1,
+					"insert_completion",
+					{
+						"completion": "src=\"$1\"",
+						"format": "snippet",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "src"
+					},
+					"AgAAAOYAAAAAAAAA5gAAAAAAAAACAAAAc3LmAAAAAAAAAOwAAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAOgAAAAAAAAA6AAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					24,
+					1,
+					"insert_completion",
+					{
+						"completion": "lsp_select_completion {\"index\":0,\"session_name\":\"LSP-html\"}",
+						"format": "command",
+						"keep_prefix": true,
+						"must_insert": true,
+						"query_change_id":
+						[
+							20,
+							23,
+							2
+						],
+						"trigger": "app.js"
+					},
+					"AQAAAOsAAAAAAAAA8QAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAOsAAAAAAAAA6wAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					30,
+					1,
+					"insert",
+					{
+						"characters": "Challenge"
+					},
+					"CQAAALsAAAAAAAAAvAAAAAAAAAAIAAAARG9jdW1lbnS8AAAAAAAAAL0AAAAAAAAAAAAAAL0AAAAAAAAAvgAAAAAAAAAAAAAAvgAAAAAAAAC/AAAAAAAAAAAAAAC/AAAAAAAAAMAAAAAAAAAAAAAAAMAAAAAAAAAAwQAAAAAAAAAAAAAAwQAAAAAAAADCAAAAAAAAAAAAAADCAAAAAAAAAMMAAAAAAAAAAAAAAMMAAAAAAAAAxAAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAALsAAAAAAAAAwwAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					31,
+					1,
+					"insert",
+					{
+						"characters": " 3"
+					},
+					"AgAAAMQAAAAAAAAAxQAAAAAAAAAAAAAAxQAAAAAAAADGAAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAMQAAAAAAAAAxAAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					32,
+					1,
+					"left_delete",
+					null,
+					"AQAAAMUAAAAAAAAAxQAAAAAAAAABAAAAMw",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAMYAAAAAAAAAxgAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					33,
+					1,
+					"insert",
+					{
+						"characters": "=4"
+					},
+					"AgAAAMUAAAAAAAAAxgAAAAAAAAAAAAAAxgAAAAAAAADHAAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAMUAAAAAAAAAxQAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					34,
+					2,
+					"left_delete",
+					null,
+					"AgAAAMYAAAAAAAAAxgAAAAAAAAABAAAANMUAAAAAAAAAxQAAAAAAAAABAAAAPQ",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAMcAAAAAAAAAxwAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					35,
+					1,
+					"insert",
+					{
+						"characters": "4"
+					},
+					"AQAAAMUAAAAAAAAAxgAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAMUAAAAAAAAAxQAAAAAAAAAAAAAAAADwvw"
+				]
+			]
+		},
+		{
+			"file": "/home/bruno/Git/Learning/codefr/html css js/JS/challenge_4/styles.css",
+			"settings":
+			{
+				"buffer_size": 1075,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/bruno/Git/Learning/codefr/html css js/JS/challenge_4/app.js",
+			"settings":
+			{
+				"buffer_size": 994,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"liv",
+				"Live Server: Start"
+			],
+			[
+				"live",
+				"Live Server: Start"
+			],
+			[
+				"li",
+				"Live Server: Start"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"color",
+				"Color Helper: Picker"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"colo",
+				"Color Helper: Picker"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"colorsche",
+				"UI: Select Color Scheme"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Enable Package"
+			],
+			[
+				"isntal",
+				"Package Control: Install Package"
+			],
+			[
+				"settings",
+				"Preferences: Settings"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"lorem",
+				"LoremIpsum: (15) some"
+			],
+			[
+				"lore",
+				"LoremIpsum: (5) a bit"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"livs",
+				"Live Server: Start"
+			],
+			[
+				"liveser",
+				"Live Server: Start"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"print(settings.get('color_pick_return'))",
+			"sublime.run_command('color_pick_api_get_color', {'settings': 'my_shared.sublime-settings', 'default_color': '#ff0000'})",
+			"settings.set('color_pick_return', None)",
+			"settings = sublime.load_settings('my_shared.sublime-settings')",
+			"print(settings.get('color_pick_return'))",
+			"sublime.run_command('color_pick_api_is_available', {'settings': 'my_shared.sublime-settings'})",
+			"settings.set('color_pick_return', None)",
+			"settings = sublime.load_settings('my_shared.sublime-settings')",
+			"print(settings.get('color_pick_return'))",
+			"sublime.run_command('color_pick_api_get_color', {'settings': 'my_shared.sublime-settings', 'default_color': '#ff0000'})",
+			"settings.set('color_pick_return', None)",
+			"settings = sublime.load_settings('my_shared.sublime-settings')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/home/bruno/Git/Learning/codefr/html css js/JS/using variables/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/using variables/app.js",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/using variables/styles.css",
+		"/home/bruno/Git/Learning/codefr/html css js/javascript_output/styles.css",
+		"/home/bruno/Git/Learning/codefr/html css js/javascript_output/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/javascript_output/app.js",
+		"/home/bruno/Git/Learning/codefr/html css js/glass_ui/css/style.css",
+		"/home/bruno/Git/Learning/codefr/html css js/glass_ui/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/glass_ui/js/app.js",
+		"/home/bruno/Git/Learning/codefr/html css js/glass_ui/img/flower1.jpg",
+		"/home/bruno/Git/learning/codefr/html css js/glass_ui/css/style.css",
+		"/home/bruno/Git/learning/codefr/html css js/glass_ui/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/challenge 3/challenge_3_starting_files/css/style.css",
+		"/home/bruno/Git/learning/codefr/html css js/challenge 3/challenge_3_starting_files/signup.html",
+		"/home/bruno/Git/learning/codefr/html css js/challenge 3/challenge_3_starting_files/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/challenge 3/challenge_3.sublime-project",
+		"/home/bruno/Git/learning/codefr/html css js/basic web structure/style.css",
+		"/home/bruno/Git/learning/codefr/html css js/basic web structure/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/Login page/login_page/style.css",
+		"/home/bruno/Git/learning/codefr/html css js/Login page/login_page/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/Login page/login_page/login_page.sublime-project",
+		"/home/bruno/Git/learning/codefr/html css js/Login page/style.css",
+		"/home/bruno/Git/learning/codefr/html css js/Login page/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/selectors/styles.css",
+		"/home/bruno/Git/learning/codefr/html css js/selectors/selectors.css",
+		"/home/bruno/Git/learning/codefr/html css js/selectors/index.html",
+		"/home/bruno/Documents/teste.html",
+		"/home/bruno/Git/learning/codefr/html css js/sign_up form/style.css",
+		"/home/bruno/Git/learning/codefr/html css js/sign_up form/index.html",
+		"/home/bruno/.config/sublime-text/Packages/User/ColorPicker.sublime-settings",
+		"/home/bruno/.config/sublime-text/Packages/ColorPicker/ColorPicker.sublime-settings",
+		"/home/bruno/.config/sublime-text/Packages/ColorPicker/lib/linux_colorpicker.py",
+		"/home/bruno/.config/sublime-text/Packages/ColorPicker/sublimecp.py",
+		"/home/bruno/Git/learning/codefr/html css js/css selectors/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/css selectors/style.css",
+		"/home/bruno/Git/learning/codefr/html css js/CSS first/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/CSS first/assets/styles.css",
+		"/home/bruno/Git/learning/codefr/html css js/CSS first/styles.css",
+		"/home/bruno/Git/learning/codefr/html css js/CSS first/secondpage.html",
+		"/home/bruno/Git/learning/codefr/html css js/tables/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/Challenge2_files/javascript.html",
+		"/home/bruno/Git/learning/codefr/html css js/Challenge2_files/css.html",
+		"/home/bruno/Git/learning/codefr/html css js/Challenge2_files/contents.txt",
+		"/home/bruno/Git/learning/codefr/html css js/html forms/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/Challenge2_files/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/Bruno folder/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/html_image/image.html",
+		"/home/bruno/Git/learning/codefr/html css js/emmet/emmet.html",
+		"/home/bruno/Git/learning/codefr/html css js/challenge 1/populartags+(1).html",
+		"/home/bruno/Git/learning/codefr/html css js/challenge 1/first_challenge.html",
+		"/home/bruno/Git/learning/codefr/html css js/challenge 1/challenge1_solution+(1)+(1).html",
+		"/home/bruno/Git/learning/codefr/html css js/Inline and block-line elements/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/mypage.html",
+		"/home/bruno/Git/learning/codefr/html css js/basic html structure/index.html",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/connect2.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/connect1.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/window3.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/window2.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/window1.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/dropdown.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/combo.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/dial.py",
+		"/home/bruno/Git/learning/codefr/pyt/django/myclub_website/myclub_website/wsgi.py",
+		"/home/bruno/Git/learning/codefr/pyt/django/myclub_website/myclub_website/urls.py",
+		"/home/bruno/Git/learning/codefr/pyt/django/myclub_website/myclub_website/settings.py",
+		"/home/bruno/Git/learning/codefr/pyt/django/myclub_website/myclub_website/asgi.py",
+		"/home/bruno/Git/learning/codefr/pyt/django/myclub_website/myclub_website/__init__.py",
+		"/home/bruno/Git/learning/codefr/pyt/django/myclub_website/manage.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/status.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/radio.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/radio2.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/cb.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/todo2.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/todo.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/calc.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/hello_world.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/textbox.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/formy.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/hello.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/spin.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/testqt.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/text.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/text_write.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/toe.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/spin.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/thread.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/full_scroll.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/calculator.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/arrows.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/menu_frame2.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/panels.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/menu_frame.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/menu.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/dropbind.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/bind.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/classes.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/forget_grid.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/entry_height.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/winners.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/my_weather.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/crm_definitivo.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/crm.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/plots.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/weather.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/database.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/dropdown.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/check.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/slider.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/file.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/base.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/message.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/radio.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/frame.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/images.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/module.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/main.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/classes.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/replace_alphabet.c",
+		"/home/bruno/Documents/Computação & IT/simple problems/teste.c",
+		"/home/bruno/Documents/Computação & IT/simple problems/highest_and_lowest.c",
+		"/home/bruno/Documents/morse_decoder.c"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"h1",
+			"10px"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/bruno/Git/Learning/codefr/html css js/JS/challenge_4/index.html",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 659,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								105,
+								105
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								},
+								{
+									"characters": ".:<\"=/",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "LSP-html"
+								}
+							],
+							"color_helper.box_height": 18,
+							"color_helper.color_scheme": "ayu-dark.sublime-color-scheme",
+							"color_helper.refresh": false,
+							"color_helper.scan":
+							{
+								"allow_scanning": true,
+								"color_class":
+								[
+									{
+										"class": "css-level-4",
+										"scopes": ""
+									}
+								],
+								"color_trigger": "(?xi)\n(?:\n    \\b(?<![-#&$])(?:\n        color\\((?!\\s*-)|(?:hsla?|(?:ok)?(?:lch|lab)|hwb|rgba?)\\(\n) |\n\\b(?<![-#&$])[\\w]{3,}(?![(-])\\b|(?<![&])\\#)\n",
+								"current_ext": ".html",
+								"current_syntax": "HTML/HTML",
+								"enabled": true,
+								"last_updated": 1759553174.34,
+								"scanning": "meta.declaration-list.css -support.type.property-name.css -comment -string,meta.property-value.css -comment -string,meta.value.css -comment -string,meta.tag.inline.any.html string.quoted -constant.character.entity.html,meta.tag.any.html meta.attribute-with-value.style.html"
+							},
+							"lsp_active": true,
+							"lsp_uri": "file:///home/bruno/Git/Learning/codefr/html%20css%20js/JS/challenge_4/index.html",
+							"show_definitions": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/bruno/Git/Learning/codefr/html css js/JS/challenge_4/styles.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1075,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								}
+							],
+							"color_helper.box_height": 18,
+							"color_helper.color_scheme": "ayu-dark.sublime-color-scheme",
+							"color_helper.refresh": true,
+							"lsp_uri": "file:///home/bruno/Git/Learning/codefr/html%20css%20js/JS/challenge_4/styles.css",
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/bruno/Git/Learning/codefr/html css js/JS/challenge_4/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 994,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								},
+								{
+									"characters": ".\"'/@<",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "LSP-typescript"
+								}
+							],
+							"color_helper.box_height": 18,
+							"color_helper.color_scheme": "ayu-dark.sublime-color-scheme",
+							"color_helper.refresh": true,
+							"lsp_active": true,
+							"lsp_uri": "file:///home/bruno/Git/Learning/codefr/html%20css%20js/JS/challenge_4/app.js",
+							"show_definitions": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.LSP Log Panel":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.diagnostics":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.find_results":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"pinned_build_system": "",
+	"project": "glass_ui.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"lsp_show_inlay_hints": false
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 228.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

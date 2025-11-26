@@ -1,0 +1,11 @@
+# Ignore big static assets inside exercises
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.svg
+*.ico
+
+# Ignore local logs
+*.log

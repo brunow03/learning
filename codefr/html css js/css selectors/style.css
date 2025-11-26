@@ -1,0 +1,30 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	list-style: 1.6;
+	margin: 20px;
+	padding: 20px;
+	background-color: #6420AA;
+}
+
+.text-class {
+	color: red;
+	background-color: gray;
+}
+
+#text-id {
+	color: blue;
+}
+
+.myBtn {
+	cursor: pointer;
+}
+
+.myBtn:hover {
+	background-color: yellow;
+}
+
+.myInput:focus {
+	border-color: purple;
+	background-color: blueviolet;
+	outline: none;
+}

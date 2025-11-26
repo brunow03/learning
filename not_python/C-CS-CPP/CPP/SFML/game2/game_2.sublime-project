@@ -1,0 +1,22 @@
+{
+    "folders":
+    [
+        {
+            "path": ".",
+            "folder_exclude_patterns": [".git", "build", "__pycache__"],
+            "file_exclude_patterns": ["*.o", "*.exe"]
+        }
+    ],
+    "settings": {
+        "index_workers": 2,
+        "index_files": true,
+        "index_exclude_patterns": ["*.log"],
+        "LSP": {
+            "clangd": {
+                "enabled": true,
+                "command": ["clangd"],
+                "selector": "source.c, source.cpp"
+            }
+        }
+    }
+}

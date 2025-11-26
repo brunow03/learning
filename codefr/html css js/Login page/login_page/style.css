@@ -1,0 +1,69 @@
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;	
+}
+
+.block-labels {
+	display: block;
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+}
+
+h1 {
+	text-align: center;
+}
+
+/*form {
+	background-color: rgb(38, 199, 211);
+}*/
+
+.my-form {
+	background-color: rgb(224, 136, 126);
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+
+input {
+	font-size: 1.5rem;
+	padding: 5px;
+	border-radius: 5px;
+	border: none;
+}
+
+#sign-btn {
+	display: block;
+	padding: 12px;
+	font-size: 14px;
+	width: 100%;
+
+	background-color: rgb(10, 139, 86);
+	border: none;
+	color: white;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+#sign-btn:hover {
+	background-color: rgb(33, 158, 106);
+
+}
+
+#login-checkbox {
+	margin-top: 12px;
+	margin-bottom: 12px;
+	color: rgb(58, 58, 58);
+}
+
+.my-border {
+	border: 1px solid rgb(252, 252, 252);
+	padding: 20px;
+	border-radius: 5%;
+	box-shadow: 10px 10px 15px black;
+
+	background-color: rgb(38, 199, 211);
+}

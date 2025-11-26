@@ -1,0 +1,19 @@
+Challenge Number 2:
+
+Create a your own Mini Wiki website with three pages containing three topics(HTML, CSS & JavaScript) that are linked together using anchor tags. Please see the website preview to be presented by your instructor and try to replicate it using what you have learned in html.
+
+
+1. HTML contents for index.html
+
+Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+
+
+2. CSS contents for css.html
+
+Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside JavaScript.
+
+
+3. JavaScript contents for javascript.html
+
+Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web. JavaScript enables interactive web pages and is an essential part of web applications. The vast majority of websites use it for client-side page behavior, and all major web browsers have a dedicated JavaScript engine to execute it.
+

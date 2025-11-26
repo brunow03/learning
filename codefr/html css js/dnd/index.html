@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="stylesheet" href="styles.css"> -->
+	<title>Document</title>
+</head>
+<style>
+	input {
+		padding: 12px;
+		font-size: larger;
+	}
+
+	/** {
+
+	}*/
+</style>
+<body>
+	
+	<h1 id="eventTeller">Nothing</h1>
+
+	<h3 draggable="true" id="myItem">ITEM</h3>
+
+	<input class="dropzone" placeholder="drop here">
+
+	<script>
+		let eventTeller = document.querySelector("#eventTeller");
+		let myItem = document.querySelector("#myItem");
+		let dropzone = document.querySelector(".dropzone");
+
+		myItem.addEventListener("dragstart", function() {
+			eventTeller.innerHTML = "Draggin...";
+		})
+
+		dropzone.addEventListener("dragover", function(event) {
+			event.preventDefault();
+			eventTeller.innerHTML = "Dragginover above us...";
+		})
+
+		dropzone.addEventListener("drop", function() {
+			event.preventDefault();
+			eventTeller.innerHTML = "Dropped!";
+		})
+
+		// eventTeller.innerHTML = "testing";
+	</script>
+</body>
+</html>

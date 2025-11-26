@@ -1,0 +1,1 @@
+savedcmd_/home/bruno/Git/learning/not_python/C-CS-CPP/C/Threading/Linux_kernel_modules_Project/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/bruno/Git/learning/not_python/C-CS-CPP/C/Threading/Linux_kernel_modules_Project/Module.symvers -T /home/bruno/Git/learning/not_python/C-CS-CPP/C/Threading/Linux_kernel_modules_Project/modules.order -i Module.symvers -e 

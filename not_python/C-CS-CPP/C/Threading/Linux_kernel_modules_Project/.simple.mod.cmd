@@ -1,0 +1,1 @@
+savedcmd_/home/bruno/Git/learning/not_python/C-CS-CPP/C/Threading/Linux_kernel_modules_Project/simple.mod := printf '%s\n'   simple.o | awk '!x[$$0]++ { print("/home/bruno/Git/learning/not_python/C-CS-CPP/C/Threading/Linux_kernel_modules_Project/"$$0) }' > /home/bruno/Git/learning/not_python/C-CS-CPP/C/Threading/Linux_kernel_modules_Project/simple.mod

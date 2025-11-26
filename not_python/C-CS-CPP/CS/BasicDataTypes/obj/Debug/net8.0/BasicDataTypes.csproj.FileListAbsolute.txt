@@ -1,0 +1,15 @@
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/BasicDataTypes/bin/Debug/net8.0/BasicDataTypes
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/BasicDataTypes/bin/Debug/net8.0/BasicDataTypes.deps.json
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/BasicDataTypes/bin/Debug/net8.0/BasicDataTypes.runtimeconfig.json
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/BasicDataTypes/bin/Debug/net8.0/BasicDataTypes.dll
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/BasicDataTypes/bin/Debug/net8.0/BasicDataTypes.pdb
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/BasicDataTypes/obj/Debug/net8.0/BasicDataTypes.GeneratedMSBuildEditorConfig.editorconfig
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/BasicDataTypes/obj/Debug/net8.0/BasicDataTypes.AssemblyInfoInputs.cache
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/BasicDataTypes/obj/Debug/net8.0/BasicDataTypes.AssemblyInfo.cs
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/BasicDataTypes/obj/Debug/net8.0/BasicDataTypes.csproj.CoreCompileInputs.cache
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/BasicDataTypes/obj/Debug/net8.0/BasicDataTypes.sourcelink.json
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/BasicDataTypes/obj/Debug/net8.0/BasicDataTypes.dll
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/BasicDataTypes/obj/Debug/net8.0/refint/BasicDataTypes.dll
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/BasicDataTypes/obj/Debug/net8.0/BasicDataTypes.pdb
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/BasicDataTypes/obj/Debug/net8.0/BasicDataTypes.genruntimeconfig.cache
+/home/bruno/Git/learning/not python/C-CS-CPP/CS/BasicDataTypes/obj/Debug/net8.0/ref/BasicDataTypes.dll

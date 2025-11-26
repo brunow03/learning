@@ -1,0 +1,903 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"borde",
+				"border"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"align",
+				"align-items"
+			],
+			[
+				"fle",
+				"flex-direction"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"id",
+				"id"
+			],
+			[
+				"clas",
+				"class"
+			],
+			[
+				"cla",
+				"class"
+			],
+			[
+				"c",
+				"class"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"A",
+				"Arial Narrow, Arial, sans-serif"
+			],
+			[
+				"cl",
+				"class"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"gra",
+				"gray"
+			],
+			[
+				"gre",
+				"green"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"col",
+				"collapse"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"targe",
+				"target"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"tar",
+				"target"
+			],
+			[
+				"htt",
+				"http-equiv"
+			],
+			[
+				"sty",
+				"style"
+			],
+			[
+				"i",
+				"id"
+			],
+			[
+				"fo",
+				"for"
+			],
+			[
+				"alt",
+				"alt"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"ac",
+				"action"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"inu",
+				"input"
+			],
+			[
+				"a",
+				"a\t<a>"
+			],
+			[
+				"td",
+				"td"
+			],
+			[
+				"tb",
+				"tbody"
+			],
+			[
+				"th",
+				"th"
+			],
+			[
+				"u",
+				"ul"
+			],
+			[
+				"html",
+				"html5\tSimple HTML5 Boilerplate"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"lorem",
+				"lorem\tLorem ipsum"
+			],
+			[
+				"im",
+				"img\timg"
+			],
+			[
+				"hea",
+				"head\t<head>"
+			],
+			[
+				"o",
+				"ol"
+			],
+			[
+				"hr",
+				"href"
+			],
+			[
+				"press",
+				"press_it"
+			],
+			[
+				"my",
+				"my_button"
+			],
+			[
+				"Qt",
+				"PyQt5.QtGui"
+			],
+			[
+				"setF",
+				"setFont"
+			],
+			[
+				"setWi",
+				"setWindowTitle"
+			],
+			[
+				"QA",
+				"QApplication"
+			],
+			[
+				"__",
+				"__init__"
+			],
+			[
+				"de",
+				"def\tFunction"
+			],
+			[
+				"edi",
+				"edit_redo"
+			],
+			[
+				"itali",
+				"italics_font"
+			],
+			[
+				"tag",
+				"tag_configure"
+			],
+			[
+				"ta",
+				"tag_remove"
+			],
+			[
+				"bold",
+				"bold_font"
+			],
+			[
+				"sele",
+				"selected"
+			],
+			[
+				"my_",
+				"my_label"
+			],
+			[
+				"op",
+				"open_txt"
+			],
+			[
+				"as",
+				"askopenfilename"
+			],
+			[
+				"st",
+				"stuff"
+			],
+			[
+				"mi",
+				"my_spin"
+			],
+			[
+				"m",
+				"my_label"
+			],
+			[
+				"L",
+				"Label"
+			],
+			[
+				"from",
+				"from_="
+			],
+			[
+				"random",
+				"random_label"
+			],
+			[
+				"crea",
+				"create_window"
+			],
+			[
+				"con",
+				"configure"
+			],
+			[
+				"s",
+				"set"
+			],
+			[
+				"R",
+				"RIGHT"
+			],
+			[
+				"ma",
+				"main_frame"
+			],
+			[
+				"Sc",
+				"Scrollbar"
+			],
+			[
+				"edit",
+				"edit_cut_frame"
+			],
+			[
+				"winfo",
+				"winfo_children"
+			],
+			[
+				"win",
+				"winfo_children"
+			],
+			[
+				"file_new",
+				"file_new_frame"
+			],
+			[
+				"fil",
+				"file_new"
+			],
+			[
+				"ver",
+				"VERTICAL"
+			],
+			[
+				"panel",
+				"panel_2"
+			],
+			[
+				"Pa",
+				"Panedwindow"
+			],
+			[
+				"ed",
+				"edit_cut_frame"
+			],
+			[
+				"file",
+				"file_new_frame"
+			],
+			[
+				"add",
+				"add_command"
+			],
+			[
+				"pac",
+				"pack_forget"
+			],
+			[
+				"file_",
+				"file_new_frame"
+			],
+			[
+				"DIA",
+				"DISABLED"
+			],
+			[
+				"De",
+				"DeleteButton"
+			],
+			[
+				"unique",
+				"unique_entries"
+			],
+			[
+				"sear",
+				"search_customers"
+			],
+			[
+				"searc",
+				"search_customers"
+			],
+			[
+				"pi",
+				"picked"
+			],
+			[
+				"Cus",
+				"Customer"
+			],
+			[
+				"sea",
+				"searched_label"
+			],
+			[
+				"search_",
+				"search_customer"
+			],
+			[
+				"se",
+				"search_customer"
+			],
+			[
+				"csv",
+				"csv_button"
+			],
+			[
+				"lis",
+				"list_customer_query"
+			],
+			[
+				"lo",
+				"lookup_label"
+			],
+			[
+				"list",
+				"list_customer_query"
+			],
+			[
+				"li",
+				"list_customer_query"
+			],
+			[
+				"sta",
+				"state_box"
+			],
+			[
+				"zip",
+				"zipcode_box"
+			],
+			[
+				"dis",
+				"discount_code_label"
+			],
+			[
+				"clear",
+				"clear_fields_button"
+			],
+			[
+				"ti",
+				"title_label"
+			],
+			[
+				"mat",
+				"matplotlib"
+			],
+			[
+				"zi",
+				"zipButton"
+			],
+			[
+				"load",
+				"loads"
+			],
+			[
+				"delete",
+				"delete_box"
+			],
+			[
+				"z",
+				"zipcode_editor"
+			],
+			[
+				"city",
+				"city_editor"
+			],
+			[
+				"ci",
+				"city_editor"
+			],
+			[
+				"l_",
+				"l_name_editor"
+			],
+			[
+				"f_",
+				"f_name_editor"
+			],
+			[
+				"dele",
+				"delete_box"
+			],
+			[
+				"prin",
+				"print_records"
+			],
+			[
+				"pri",
+				"print_records"
+			],
+			[
+				"reco",
+				"records"
+			],
+			[
+				"addres",
+				"addresses"
+			],
+			[
+				"qu",
+				"query_btn"
+			],
+			[
+				"sub",
+				"submit_btn"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"live",
+				"Live Server: Start"
+			],
+			[
+				"color",
+				"Color Helper: Picker"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"liv",
+				"Live Server: Start"
+			],
+			[
+				"colo",
+				"Color Helper: Picker"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"colorsche",
+				"UI: Select Color Scheme"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Enable Package"
+			],
+			[
+				"isntal",
+				"Package Control: Install Package"
+			],
+			[
+				"settings",
+				"Preferences: Settings"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"lorem",
+				"LoremIpsum: (15) some"
+			],
+			[
+				"lore",
+				"LoremIpsum: (5) a bit"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"livs",
+				"Live Server: Start"
+			],
+			[
+				"liveser",
+				"Live Server: Start"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"print(settings.get('color_pick_return'))",
+			"sublime.run_command('color_pick_api_get_color', {'settings': 'my_shared.sublime-settings', 'default_color': '#ff0000'})",
+			"settings.set('color_pick_return', None)",
+			"settings = sublime.load_settings('my_shared.sublime-settings')",
+			"print(settings.get('color_pick_return'))",
+			"sublime.run_command('color_pick_api_is_available', {'settings': 'my_shared.sublime-settings'})",
+			"settings.set('color_pick_return', None)",
+			"settings = sublime.load_settings('my_shared.sublime-settings')",
+			"print(settings.get('color_pick_return'))",
+			"sublime.run_command('color_pick_api_get_color', {'settings': 'my_shared.sublime-settings', 'default_color': '#ff0000'})",
+			"settings.set('color_pick_return', None)",
+			"settings = sublime.load_settings('my_shared.sublime-settings')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/bruno/Git/learning/codefr/html css js/Login page/login_page/style.css",
+		"/home/bruno/Git/learning/codefr/html css js/Login page/login_page/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/Login page/login_page/login_page.sublime-project",
+		"/home/bruno/Git/learning/codefr/html css js/Login page/style.css",
+		"/home/bruno/Git/learning/codefr/html css js/Login page/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/selectors/styles.css",
+		"/home/bruno/Git/learning/codefr/html css js/selectors/selectors.css",
+		"/home/bruno/Git/learning/codefr/html css js/selectors/index.html",
+		"/home/bruno/Documents/teste.html",
+		"/home/bruno/Git/learning/codefr/html css js/sign_up form/style.css",
+		"/home/bruno/Git/learning/codefr/html css js/sign_up form/index.html",
+		"/home/bruno/.config/sublime-text/Packages/User/ColorPicker.sublime-settings",
+		"/home/bruno/.config/sublime-text/Packages/ColorPicker/ColorPicker.sublime-settings",
+		"/home/bruno/.config/sublime-text/Packages/ColorPicker/lib/linux_colorpicker.py",
+		"/home/bruno/.config/sublime-text/Packages/ColorPicker/sublimecp.py",
+		"/home/bruno/Git/learning/codefr/html css js/css selectors/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/css selectors/style.css",
+		"/home/bruno/Git/learning/codefr/html css js/CSS first/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/CSS first/assets/styles.css",
+		"/home/bruno/Git/learning/codefr/html css js/CSS first/styles.css",
+		"/home/bruno/Git/learning/codefr/html css js/CSS first/secondpage.html",
+		"/home/bruno/Git/learning/codefr/html css js/tables/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/Challenge2_files/javascript.html",
+		"/home/bruno/Git/learning/codefr/html css js/Challenge2_files/css.html",
+		"/home/bruno/Git/learning/codefr/html css js/Challenge2_files/contents.txt",
+		"/home/bruno/Git/learning/codefr/html css js/html forms/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/Challenge2_files/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/Bruno folder/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/html_image/image.html",
+		"/home/bruno/Git/learning/codefr/html css js/emmet/emmet.html",
+		"/home/bruno/Git/learning/codefr/html css js/challenge 1/populartags+(1).html",
+		"/home/bruno/Git/learning/codefr/html css js/challenge 1/first_challenge.html",
+		"/home/bruno/Git/learning/codefr/html css js/challenge 1/challenge1_solution+(1)+(1).html",
+		"/home/bruno/Git/learning/codefr/html css js/Inline and block-line elements/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/mypage.html",
+		"/home/bruno/Git/learning/codefr/html css js/basic html structure/index.html",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/connect2.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/connect1.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/window3.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/window2.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/window1.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/dropdown.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/combo.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/dial.py",
+		"/home/bruno/Git/learning/codefr/pyt/django/myclub_website/myclub_website/wsgi.py",
+		"/home/bruno/Git/learning/codefr/pyt/django/myclub_website/myclub_website/urls.py",
+		"/home/bruno/Git/learning/codefr/pyt/django/myclub_website/myclub_website/settings.py",
+		"/home/bruno/Git/learning/codefr/pyt/django/myclub_website/myclub_website/asgi.py",
+		"/home/bruno/Git/learning/codefr/pyt/django/myclub_website/myclub_website/__init__.py",
+		"/home/bruno/Git/learning/codefr/pyt/django/myclub_website/manage.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/status.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/radio.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/radio2.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/cb.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/todo2.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/todo.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/calc.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/hello_world.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/textbox.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/formy.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/hello.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/spin.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/testqt.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/text.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/text_write.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/toe.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/spin.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/thread.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/full_scroll.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/calculator.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/arrows.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/menu_frame2.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/panels.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/menu_frame.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/menu.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/dropbind.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/bind.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/classes.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/forget_grid.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/entry_height.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/winners.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/my_weather.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/crm_definitivo.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/crm.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/plots.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/weather.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/database.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/dropdown.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/check.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/slider.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/file.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/base.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/message.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/radio.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/frame.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/tkinter-python/images.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/module.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/main.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/classes.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/replace_alphabet.c",
+		"/home/bruno/Documents/Computação & IT/simple problems/teste.c",
+		"/home/bruno/Documents/Computação & IT/simple problems/highest_and_lowest.c",
+		"/home/bruno/Documents/morse_decoder.c"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"div",
+			"textarea",
+			"formgroup",
+			"from"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.LSP Log Panel":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.diagnostics":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.find_results":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"pinned_build_system": "",
+	"project": "basic_web_structure.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"lsp_show_inlay_hints": false
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 209.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

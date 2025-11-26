@@ -1,25 +1,69 @@
-# sublime
-*.sublime-workspace
-*.sublime-project
+# =========================================
+# Global Ignore Rules for Learning Projects
+# =========================================
 
-# dependencies
-/learning_venv
-/books
-/IA/CursoIA
-/IA/IA_venv
-/banco_de_dados/stuff
-__pycache__
-django_venv
-events
+# === Python ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
 
-# executables
-*.out
-*.run
+# Virtual Envs
+venv/
+*/venv/
+*/.venv/
+learning_venv/
+django_venv/
+
+# === Node / React ===
+node_modules/
+dist/
+build/
+.cache/
+.next/
+*.log
+*.env
+*.env.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === Databases / Models / Data Dumps ===
+banco_de_dados/
+
+# === Compiled Languages ===
 *.o
 *.so
-*.dylib
-*.cfg
-*.log
+*.exe
+*.out
+*.dll
+*.class
+*.bin
+not_python/**/CMakeFiles/
+not_python/**/Makefile
+not_python/**/cmake_install.cmake
 
+# === Temporary & Editor files ===
+*.swp
+*.swo
+*.swn
+*.~*
+*~
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# === Archives ===
 *.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
 
+# === Other known heavy folders ===
+IA/
+fonts/
+events/
+books/

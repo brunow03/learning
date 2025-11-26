@@ -1,0 +1,946 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"ref",
+				"refresh"
+			],
+			[
+				"add",
+				"addEventListener"
+			],
+			[
+				"remain",
+				"remaining_years"
+			],
+			[
+				"borde",
+				"border-radius"
+			],
+			[
+				"set",
+				"setInterval"
+			],
+			[
+				"if",
+				"if"
+			],
+			[
+				"age",
+				"ageInput"
+			],
+			[
+				"act",
+				"active"
+			],
+			[
+				"trans",
+				"transform"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"rg",
+				"rgb()"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"text",
+				"text-shadow"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"no",
+				"none"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"rgb",
+				"rgb()"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"alig",
+				"align-items"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"sa",
+				"sans-serif"
+			],
+			[
+				"commi",
+				"commit"
+			],
+			[
+				"ex",
+				"execute"
+			],
+			[
+				"my",
+				"myresult"
+			],
+			[
+				"co",
+				"commit"
+			],
+			[
+				"st",
+				"students"
+			],
+			[
+				"sq",
+				"sqlFormula"
+			],
+			[
+				"data",
+				"database"
+			],
+			[
+				"NU",
+				"NULL"
+			],
+			[
+				"to",
+				"toLowerCase"
+			],
+			[
+				"C",
+				"class"
+			],
+			[
+				"preven",
+				"preventDefault"
+			],
+			[
+				"even",
+				"eventTeller"
+			],
+			[
+				"event",
+				"eventTeller"
+			],
+			[
+				"ev",
+				"eventTeller"
+			],
+			[
+				"la",
+				"larger"
+			],
+			[
+				"E",
+				"ENDERECO"
+			],
+			[
+				"DATA",
+				"DATA_HORA"
+			],
+			[
+				"timer",
+				"timerDisplay"
+			],
+			[
+				"doc",
+				"document"
+			],
+			[
+				"multi",
+				"multiply"
+			],
+			[
+				"num",
+				"num_2"
+			],
+			[
+				"quot",
+				"quotient"
+			],
+			[
+				"pro",
+				"product"
+			],
+			[
+				"que",
+				"querySelector"
+			],
+			[
+				"border-",
+				"border-radius"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"ali",
+				"align-items"
+			],
+			[
+				"fle",
+				"flex-direction"
+			],
+			[
+				"mul",
+				"multiply"
+			],
+			[
+				"p",
+				"padding"
+			],
+			[
+				"Seg",
+				"Tahoma, Verdana, Segoe, sans-serif"
+			],
+			[
+				"app",
+				"appendChild"
+			],
+			[
+				"create",
+				"createElement"
+			],
+			[
+				"preve",
+				"preventDefault"
+			],
+			[
+				"hea",
+				"headers"
+			],
+			[
+				"form",
+				"FormData"
+			],
+			[
+				"name",
+				"name"
+			],
+			[
+				"mu",
+				"multiply"
+			],
+			[
+				"some",
+				"someFunc"
+			],
+			[
+				"gree",
+				"greet"
+			],
+			[
+				"conso",
+				"console.log"
+			],
+			[
+				"console",
+				"console.log"
+			],
+			[
+				"crea",
+				"createElement"
+			],
+			[
+				"q",
+				"querySelector"
+			],
+			[
+				"first",
+				"firstName"
+			],
+			[
+				"card",
+				"cardBody"
+			],
+			[
+				"robot",
+				"robotName"
+			],
+			[
+				"apped",
+				"appendChild"
+			],
+			[
+				"text-",
+				"text-center"
+			],
+			[
+				"robo",
+				"robotImage"
+			],
+			[
+				"last",
+				"lastModified"
+			],
+			[
+				"new",
+				"newEntry"
+			],
+			[
+				"las",
+				"lastName"
+			],
+			[
+				"firs",
+				"firstName"
+			],
+			[
+				"in",
+				"index"
+			],
+			[
+				"for",
+				"forEach"
+			],
+			[
+				"appe",
+				"appendChild"
+			],
+			[
+				"consol",
+				"console.log"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"ad",
+				"addEventListener"
+			],
+			[
+				"langua",
+				"languages"
+			],
+			[
+				"langu",
+				"languages"
+			],
+			[
+				"lan",
+				"languages"
+			],
+			[
+				"creat",
+				"createElement"
+			],
+			[
+				"displayA",
+				"displayArea.innerHTML"
+			],
+			[
+				"whi",
+				"while"
+			],
+			[
+				"displayAr",
+				"displayArea"
+			],
+			[
+				"nu",
+				"numberBox"
+			],
+			[
+				"blue",
+				"dodgerblue"
+			],
+			[
+				"align",
+				"align-items"
+			],
+			[
+				"col",
+				"column"
+			],
+			[
+				"felx",
+				"flex-direction"
+			],
+			[
+				"darkbe",
+				"darkslateblue"
+			],
+			[
+				"light",
+				"lightcoral"
+			],
+			[
+				"new_",
+				"new_firstname"
+			],
+			[
+				"funct",
+				"function"
+			],
+			[
+				"func",
+				"Function"
+			],
+			[
+				"functi",
+				"Function"
+			],
+			[
+				"sub",
+				"submitBtn"
+			],
+			[
+				"yellow",
+				"lightgoldenrodyellow"
+			],
+			[
+				"cen",
+				"center"
+			],
+			[
+				"flex",
+				"flex-direction"
+			],
+			[
+				"yello",
+				"lightyellow"
+			],
+			[
+				"t",
+				"thead"
+			],
+			[
+				"gre",
+				"seagreen"
+			],
+			[
+				"con",
+				"container"
+			],
+			[
+				"A",
+				"Arial Black, Arial Bold, Gadget, sans-serif"
+			],
+			[
+				"bor",
+				"border-color"
+			],
+			[
+				"white",
+				"ghostwhite"
+			],
+			[
+				"gray",
+				"darkgray"
+			],
+			[
+				"bto",
+				"bottom"
+			],
+			[
+				"bot",
+				"bottom"
+			],
+			[
+				"margin-b",
+				"margin-bottom"
+			],
+			[
+				"gra",
+				"dimgray"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"fl",
+				"flex"
+			],
+			[
+				"w",
+				"white"
+			],
+			[
+				"jus",
+				"text-justify"
+			],
+			[
+				"wdi",
+				"width"
+			],
+			[
+				"c",
+				"center"
+			],
+			[
+				"f",
+				"flex"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"padding",
+				"padding-inline"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"live",
+				"Live Server: Start"
+			],
+			[
+				"isnta",
+				"Package Control: Install Package"
+			],
+			[
+				"li",
+				"Live Server: Start"
+			],
+			[
+				"liv",
+				"Live Server: Start"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"l",
+				"Live Server: Start"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"color",
+				"Color Helper: Picker"
+			],
+			[
+				"colo",
+				"Color Helper: Picker"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"colorsche",
+				"UI: Select Color Scheme"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Enable Package"
+			],
+			[
+				"isntal",
+				"Package Control: Install Package"
+			],
+			[
+				"settings",
+				"Preferences: Settings"
+			],
+			[
+				"lorem",
+				"LoremIpsum: (15) some"
+			],
+			[
+				"lore",
+				"LoremIpsum: (5) a bit"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"livs",
+				"Live Server: Start"
+			],
+			[
+				"liveser",
+				"Live Server: Start"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"print(settings.get('color_pick_return'))",
+			"sublime.run_command('color_pick_api_get_color', {'settings': 'my_shared.sublime-settings', 'default_color': '#ff0000'})",
+			"settings.set('color_pick_return', None)",
+			"settings = sublime.load_settings('my_shared.sublime-settings')",
+			"print(settings.get('color_pick_return'))",
+			"sublime.run_command('color_pick_api_is_available', {'settings': 'my_shared.sublime-settings'})",
+			"settings.set('color_pick_return', None)",
+			"settings = sublime.load_settings('my_shared.sublime-settings')",
+			"print(settings.get('color_pick_return'))",
+			"sublime.run_command('color_pick_api_get_color', {'settings': 'my_shared.sublime-settings', 'default_color': '#ff0000'})",
+			"settings.set('color_pick_return', None)",
+			"settings = sublime.load_settings('my_shared.sublime-settings')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/bruno/Git/Learning/codefr/html css js/JS/robo_card_maker"
+	],
+	"file_history":
+	[
+		"/home/bruno/Git/Learning/codefr/html css js/PROJECT_01/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/PROJECT_01/style.css",
+		"/home/bruno/Git/Learning/codefr/html css js/PROJECT_01/app.js",
+		"/home/bruno/Git/git/sample.txt",
+		"/home/bruno/Git/git/index.html",
+		"/home/bruno/Git/Learning/PROJECTS/dummy.html",
+		"/home/bruno/Git/Learning/codefr/html css js/dnd2/style.css",
+		"/home/bruno/Git/Learning/codefr/html css js/dnd2/script.js",
+		"/home/bruno/Git/Learning/banco_de_dados/python/teste.py",
+		"/home/bruno/Git/Learning/codefr/html css js/dnd2/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/dnd2/app.js",
+		"/home/bruno/Git/Learning/banco_de_dados/stuff/_SCRIPTS DO CURSO/Script MYSQL.sql",
+		"/home/bruno/Git/Learning/banco_de_dados/inicio/modelagem.txt",
+		"/home/bruno/Git/Learning/banco_de_dados/inicio/modelagem.sql",
+		"/home/bruno/Git/Learning/codefr/html css js/dnd/styles.css",
+		"/home/bruno/Git/Learning/codefr/html css js/dnd/app.js",
+		"/home/bruno/Git/Learning/codefr/html css js/dnd/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/drag_n_drop/app.js",
+		"/home/bruno/Git/Learning/codefr/html css js/drag_n_drop/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/drag_n_drop/style.css",
+		"/home/bruno/Git/Learning/banco_de_dados/stuff/_SCRIPTS DO CURSO/Dados de Teste.xlsx",
+		"/home/bruno/Documents/senhas.txt",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/one_hour_timer/app.js",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/one_hour_timer/styles.css",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/one_hour_timer/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/timer/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/timer/app.js",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/timer/styles.css",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/mini_calculator/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/mini_calculator/style.css",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/mini_calculator/app.js",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/using variables/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/FUNCTIONS/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/function_master/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/API_add_record/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/create_element_with_html/app.js",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/function_master/script.js",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/API_add_record/confirm.html",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/javascript_map/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/object_destructuring/script.js",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/object_destructing/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/robo_card_maker/robots.html",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/robo_card_maker/robot2.html",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/objects/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/objects/app.js",
+		"/home/bruno/.bashrc",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/rest_paramenter/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/rest_paramenter/styles.css",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/rest_paramenter/app.js",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/FUNCTIONS/styles.css",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/FUNCTIONS/app.js",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/FOR_LOOP_EXERCISES/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/FOR_LOOP_EXERCISES/styles.css",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/FOR_LOOP_EXERCISES/app.js",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/array/style.css",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/array/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/array/app.js",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/array/javascript - Do we need semicolon at the end_ - Stack Overflow.html",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/expressions_operators/expressions_operators/style.css",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/expressions_operators/expressions_operators/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/expressions_operators/expressions_operators/app.js",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/expressions_operators/app.js",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/expressions_operators/styles.css",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/expressions_operators/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/increment_decrement/app.js",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/increment_decrement/styles.css",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/increment_decrement/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/create_element_with_html/styles.css",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/create_element_with_html/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/create_elements/app.js",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/create_elements/styles.css",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/create_elements/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/challenge_4/color.txt",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/challenge_4/app.js",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/challenge_4/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/challenge_4/styles.css",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/challenge_4/coding_challenge_4/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/using variables/app.js",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/using variables/styles.css",
+		"/home/bruno/Git/Learning/codefr/html css js/javascript_output/styles.css",
+		"/home/bruno/Git/Learning/codefr/html css js/javascript_output/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/javascript_output/app.js",
+		"/home/bruno/Git/Learning/codefr/html css js/glass_ui/css/style.css",
+		"/home/bruno/Git/Learning/codefr/html css js/glass_ui/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/glass_ui/js/app.js",
+		"/home/bruno/Git/Learning/codefr/html css js/glass_ui/img/flower1.jpg",
+		"/home/bruno/Git/learning/codefr/html css js/glass_ui/css/style.css",
+		"/home/bruno/Git/learning/codefr/html css js/glass_ui/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/challenge 3/challenge_3_starting_files/css/style.css",
+		"/home/bruno/Git/learning/codefr/html css js/challenge 3/challenge_3_starting_files/signup.html",
+		"/home/bruno/Git/learning/codefr/html css js/challenge 3/challenge_3_starting_files/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/challenge 3/challenge_3.sublime-project",
+		"/home/bruno/Git/learning/codefr/html css js/basic web structure/style.css",
+		"/home/bruno/Git/learning/codefr/html css js/basic web structure/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/Login page/login_page/style.css",
+		"/home/bruno/Git/learning/codefr/html css js/Login page/login_page/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/Login page/login_page/login_page.sublime-project",
+		"/home/bruno/Git/learning/codefr/html css js/Login page/style.css",
+		"/home/bruno/Git/learning/codefr/html css js/Login page/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/selectors/styles.css",
+		"/home/bruno/Git/learning/codefr/html css js/selectors/selectors.css",
+		"/home/bruno/Git/learning/codefr/html css js/selectors/index.html",
+		"/home/bruno/Documents/teste.html",
+		"/home/bruno/Git/learning/codefr/html css js/sign_up form/style.css",
+		"/home/bruno/Git/learning/codefr/html css js/sign_up form/index.html",
+		"/home/bruno/.config/sublime-text/Packages/User/ColorPicker.sublime-settings",
+		"/home/bruno/.config/sublime-text/Packages/ColorPicker/ColorPicker.sublime-settings",
+		"/home/bruno/.config/sublime-text/Packages/ColorPicker/lib/linux_colorpicker.py",
+		"/home/bruno/.config/sublime-text/Packages/ColorPicker/sublimecp.py",
+		"/home/bruno/Git/learning/codefr/html css js/css selectors/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/css selectors/style.css",
+		"/home/bruno/Git/learning/codefr/html css js/CSS first/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/CSS first/assets/styles.css",
+		"/home/bruno/Git/learning/codefr/html css js/CSS first/styles.css",
+		"/home/bruno/Git/learning/codefr/html css js/CSS first/secondpage.html",
+		"/home/bruno/Git/learning/codefr/html css js/tables/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/Challenge2_files/javascript.html",
+		"/home/bruno/Git/learning/codefr/html css js/Challenge2_files/css.html",
+		"/home/bruno/Git/learning/codefr/html css js/Challenge2_files/contents.txt",
+		"/home/bruno/Git/learning/codefr/html css js/html forms/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/Challenge2_files/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/Bruno folder/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/html_image/image.html",
+		"/home/bruno/Git/learning/codefr/html css js/emmet/emmet.html",
+		"/home/bruno/Git/learning/codefr/html css js/challenge 1/populartags+(1).html",
+		"/home/bruno/Git/learning/codefr/html css js/challenge 1/first_challenge.html",
+		"/home/bruno/Git/learning/codefr/html css js/challenge 1/challenge1_solution+(1)+(1).html"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"0",
+			"dropzone",
+			"myItem",
+			"><",
+			"0",
+			"myForm",
+			"picture"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.LSP Log Panel":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.diagnostics":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.find_results":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"pinned_build_system": "",
+	"project": "our_life_in_weeks.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"lsp_show_inlay_hints": false
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 228.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

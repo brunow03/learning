@@ -1,0 +1,971 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"setF",
+				"setFillColor"
+			],
+			[
+				"enem",
+				"enemy"
+			],
+			[
+				"init",
+				"initText"
+			],
+			[
+				"upda",
+				"updateText"
+			],
+			[
+				"Rende",
+				"RenderTarget"
+			],
+			[
+				"render",
+				"renderText"
+			],
+			[
+				"end",
+				"endGame"
+			],
+			[
+				"t",
+				"true"
+			],
+			[
+				"mo",
+				"mouseHeld"
+			],
+			[
+				"mou",
+				"mouseHeld"
+			],
+			[
+				"p",
+				"points"
+			],
+			[
+				"be",
+				"begin"
+			],
+			[
+				"is",
+				"isButtonPressed"
+			],
+			[
+				"map",
+				"mapPixelToCoords"
+			],
+			[
+				"Ve",
+				"Vector2f"
+			],
+			[
+				"d",
+				"draw"
+			],
+			[
+				"for",
+				"for"
+			],
+			[
+				"en",
+				"enemy"
+			],
+			[
+				"pus",
+				"push_back"
+			],
+			[
+				"ene",
+				"enemies"
+			],
+			[
+				"get",
+				"getSize"
+			],
+			[
+				"max",
+				"maxEnemies"
+			],
+			[
+				"e",
+				"enemySpawnTimerMax"
+			],
+			[
+				"up",
+				"updateEnemies"
+			],
+			[
+				"rende",
+				"renderEnemies"
+			],
+			[
+				"Rec",
+				"RectangleShape"
+			],
+			[
+				"vect",
+				"I-vector"
+			],
+			[
+				"uo",
+				"updateMousePositions"
+			],
+			[
+				"Vec",
+				"Vector2i"
+			],
+			[
+				"Re",
+				"RectangleShape"
+			],
+			[
+				"ini",
+				"initEnemies"
+			],
+			[
+				"i",
+				"initWindow"
+			],
+			[
+				"C",
+				"Color"
+			],
+			[
+				"K",
+				"KeyPressed"
+			],
+			[
+				"po",
+				"pollEvent"
+			],
+			[
+				"name",
+				"namespace"
+			],
+			[
+				"Audio",
+				"Audio.hpp>"
+			],
+			[
+				"iostrema",
+				"I-iostream"
+			],
+			[
+				"ar",
+				"args"
+			],
+			[
+				"par",
+				"parse_args"
+			],
+			[
+				"type",
+				"type="
+			],
+			[
+				"Ar",
+				"ArgumentParser"
+			],
+			[
+				"iostre",
+				"I-iostream"
+			],
+			[
+				"iostrea",
+				"I-iostream"
+			],
+			[
+				"unbl",
+				"unblock_websites"
+			],
+			[
+				"print",
+				"printRandom"
+			],
+			[
+				"ed",
+				"endl"
+			],
+			[
+				"de",
+				"default_random_engine"
+			],
+			[
+				"ma",
+				"max"
+			],
+			[
+				"mi",
+				"min"
+			],
+			[
+				"random",
+				"I-random"
+			],
+			[
+				"arra",
+				"I-array"
+			],
+			[
+				"vector",
+				"I-vector"
+			],
+			[
+				"iostr",
+				"I-iostream"
+			],
+			[
+				"clas",
+				"class\tclass-..-(class)"
+			],
+			[
+				"G",
+				"Graphics.hpp>"
+			],
+			[
+				"S",
+				"SFML/"
+			],
+			[
+				"include",
+				"include"
+			],
+			[
+				"theta",
+				"theta2_a"
+			],
+			[
+				"thet",
+				"theta1_v"
+			],
+			[
+				"theta1_",
+				"theta1_a"
+			],
+			[
+				"the",
+				"theta1_v"
+			],
+			[
+				"thea",
+				"theta2_v"
+			],
+			[
+				"th",
+				"theta1_v"
+			],
+			[
+				"cent",
+				"centerY"
+			],
+			[
+				"cen",
+				"centerX"
+			],
+			[
+				"ce",
+				"centerY"
+			],
+			[
+				"cente",
+				"centerY"
+			],
+			[
+				"incl",
+				"includes"
+			],
+			[
+				"V",
+				"Vector2f"
+			],
+			[
+				"set",
+				"setOrigin"
+			],
+			[
+				"MIN",
+				"MIN_MARCO"
+			],
+			[
+				"VAL",
+				"VALUES"
+			],
+			[
+				"P_",
+				"P_PRECO"
+			],
+			[
+				"NOM",
+				"NOME_EMPRESA"
+			],
+			[
+				"VI",
+				"VIEW"
+			],
+			[
+				"RE",
+				"RELATORIO"
+			],
+			[
+				"E",
+				"ENDERECO"
+			],
+			[
+				"getE",
+				"getElementsByClassName"
+			],
+			[
+				"innet",
+				"innerHTML"
+			],
+			[
+				"in",
+				"innerHTML"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"borde",
+				"border-radius"
+			],
+			[
+				"flex",
+				"flex-wrap"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"backgroun",
+				"background-size"
+			],
+			[
+				"backgr",
+				"background-repeat"
+			],
+			[
+				"backg",
+				"background-image"
+			],
+			[
+				"align",
+				"align-items"
+			],
+			[
+				"san",
+				"sans-serif"
+			],
+			[
+				"text",
+				"text-field"
+			],
+			[
+				"class",
+				"class"
+			],
+			[
+				"bot",
+				"bottom"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"ali",
+				"box-align"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"blo",
+				"block"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"id",
+				"id"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"BORDER",
+				"border-radius"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"cla",
+				"class"
+			],
+			[
+				"fle",
+				"flex-direction"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"c",
+				"class"
+			],
+			[
+				"A",
+				"Arial Narrow, Arial, sans-serif"
+			],
+			[
+				"cl",
+				"class"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"gra",
+				"gray"
+			],
+			[
+				"gre",
+				"green"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"col",
+				"collapse"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"targe",
+				"target"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"tar",
+				"target"
+			],
+			[
+				"htt",
+				"http-equiv"
+			],
+			[
+				"sty",
+				"style"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"clas",
+				"C++ Classhelper - Generate Method Definition"
+			],
+			[
+				"class",
+				"C++ Classhelper - Generate Method Definition"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"C++",
+				"C++ Classhelper - Generate Method Definition"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: class-..-(class)"
+			],
+			[
+				"colorsc",
+				"UI: Select Color Scheme"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"colors",
+				"UI: Select Color Scheme"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"li",
+				"Live Server: Start"
+			],
+			[
+				"liv",
+				"Live Server: Start"
+			],
+			[
+				"live",
+				"Live Server: Start"
+			],
+			[
+				"color",
+				"Color Helper: Picker"
+			],
+			[
+				"colo",
+				"Color Helper: Picker"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"colorsche",
+				"UI: Select Color Scheme"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Enable Package"
+			],
+			[
+				"isntal",
+				"Package Control: Install Package"
+			],
+			[
+				"settings",
+				"Preferences: Settings"
+			],
+			[
+				"lorem",
+				"LoremIpsum: (15) some"
+			],
+			[
+				"lore",
+				"LoremIpsum: (5) a bit"
+			],
+			[
+				"livs",
+				"Live Server: Start"
+			],
+			[
+				"liveser",
+				"Live Server: Start"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"print(settings.get('color_pick_return'))",
+			"sublime.run_command('color_pick_api_get_color', {'settings': 'my_shared.sublime-settings', 'default_color': '#ff0000'})",
+			"settings.set('color_pick_return', None)",
+			"settings = sublime.load_settings('my_shared.sublime-settings')",
+			"print(settings.get('color_pick_return'))",
+			"sublime.run_command('color_pick_api_is_available', {'settings': 'my_shared.sublime-settings'})",
+			"settings.set('color_pick_return', None)",
+			"settings = sublime.load_settings('my_shared.sublime-settings')",
+			"print(settings.get('color_pick_return'))",
+			"sublime.run_command('color_pick_api_get_color', {'settings': 'my_shared.sublime-settings', 'default_color': '#ff0000'})",
+			"settings.set('color_pick_return', None)",
+			"settings = sublime.load_settings('my_shared.sublime-settings')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/bruno/Git/Learning/not_python/C-CS-CPP/CPP/SFML/game1",
+		"/home/bruno/Git/Learning/not_python/C-CS-CPP/CPP/SFML/game1/Fonts"
+	],
+	"file_history":
+	[
+		"/home/bruno/Git/Learning/not_python/C-CS-CPP/CPP/SFML/game1/Game.hpp",
+		"/home/bruno/Git/Learning/not_python/C-CS-CPP/CPP/SFML/game1/Game.cpp",
+		"/home/bruno/Git/Learning/not_python/C-CS-CPP/CPP/SFML/game1/main.cpp",
+		"/usr/include/SFML/Graphics/Color.hpp",
+		"/usr/include/SFML/Graphics/RenderWindow.hpp",
+		"/home/bruno/Git/Learning/not_python/C-CS-CPP/CPP/SFML/game1/game",
+		"/usr/include/SFML/Graphics/RenderTarget.hpp",
+		"/home/bruno/.config/sublime-text/Packages/User/C++ SFML.sublime-build",
+		"/home/bruno/Git/Learning/not_python/C-CS-CPP/CPP/SFML/game1/game_1.sublime-project",
+		"/home/bruno/Git/Learning/not_python/C-CS-CPP/CPP/SFML/game1/game.cpp",
+		"/home/bruno/Git/Learning/not_python/C-CS-CPP/CPP/SFML/game1/game.hpp",
+		"/home/bruno/Git/Learning/not_python/C-CS-CPP/CPP/FUN/purple_rain/sketch.js",
+		"/home/bruno/Git/Learning/not_python/C-CS-CPP/CPP/FUN/purple_rain/drop.js",
+		"/home/bruno/Git/Learning/not_python/C-CS-CPP/CPP/FUN/purple_rain/purple_rain.cpp",
+		"/home/bruno/Git/Learning/not_python/C-CS-CPP/CPP/FUN/purple_rain/rain",
+		"/home/bruno/Git/Learning/not_python/C-CS-CPP/CPP/FUN/game_life/game_life.cpp",
+		"/home/bruno/Git/Learning/not_python/C-CS-CPP/CPP/FUN/starfield/starfield.cpp",
+		"/home/bruno/Git/Learning/missing semester/metaprogramming/data.dat",
+		"/home/bruno/Git/Learning/missing semester/metaprogramming/Makefile",
+		"/home/bruno/Git/Learning/missing semester/metaprogramming/paper.tex",
+		"/home/bruno/Git/Learning/missing semester/metaprogramming/plot.py",
+		"/home/bruno/Git/Learning/missing semester/debugging.txt",
+		"/home/bruno/Git/Learning/missing semester/paper.tex",
+		"/home/bruno/Git/Learning/missing semester/data.dat",
+		"/home/bruno/Git/Learning/missing semester/plot.py",
+		"/home/bruno/Git/Learning/missing semester/Makefile",
+		"/home/bruno/Git/Learning/not_python/C-CS-CPP/CPP/FUN/celular_automata/cellular_automata.cpp",
+		"/home/bruno/Git/Learning/not_python/C-CS-CPP/CPP/FUN/falling_sand/falling_sand.cpp",
+		"/home/bruno/Git/Learning/not_python/C-CS-CPP/CPP/FUN/double_pendulum/double_pendulum.cpp",
+		"/home/bruno/Git/pdb-tutorial/main.py",
+		"/home/bruno/Git/Learning/missing semester/fib.sh",
+		"/home/bruno/Git/Learning/missing semester/sorts.py",
+		"/home/bruno/Git/pdb-tutorial/README.md",
+		"/home/bruno/Documents/blockwebsites.py",
+		"/home/bruno/Git/Learning/not_python/C-CS-CPP/CPP/FUN/starfield/random/main.cpp",
+		"/home/bruno/Git/Learning/not_python/C-CS-CPP/CPP/FUN/starfield/random/random.cpp",
+		"/home/bruno/Git/Learning/not_python/C-CS-CPP/CPP/FUN/starfield/random/random.hpp",
+		"/home/bruno/Git/Learning/not_python/C-CS-CPP/CPP/FUN/double_pendulum/single_pendulum.cpp",
+		"/home/bruno/Git/Learning/XML/first.xml",
+		"/home/bruno/Git/Learning/not_python/C-CS-CPP/CPP/FUN/black_hole/README.md",
+		"/home/bruno/Git/Learning/not_python/C-CS-CPP/CPP/FUN/boids.cpp",
+		"/home/bruno/Git/Learning/banco_de_dados/inicio/modelagem.sql",
+		"/home/bruno/Git/Learning/banco_de_dados/stuff/_SCRIPTS DO CURSO/Script MYSQL.sql",
+		"/home/bruno/Git/Learning/banco_de_dados/stuff/_SCRIPTS DO CURSO/Script SQL Server.sql",
+		"/home/bruno/Git/Learning/banco_de_dados/stuff/Módulo Postgres/01 - Script Aulas.sql",
+		"/home/bruno/Git/Learning/codefr/html css js/personal_website/personal_website/style.css",
+		"/home/bruno/Git/Learning/codefr/html css js/personal_website/personal_website/app.js",
+		"/home/bruno/Git/Learning/codefr/html css js/personal_website/personal_website/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/challenge_4/app.js",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/challenge_4/styles.css",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/challenge_4/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/using variables/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/using variables/app.js",
+		"/home/bruno/Git/Learning/codefr/html css js/JS/using variables/styles.css",
+		"/home/bruno/Git/Learning/codefr/html css js/javascript_output/styles.css",
+		"/home/bruno/Git/Learning/codefr/html css js/javascript_output/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/javascript_output/app.js",
+		"/home/bruno/Git/Learning/codefr/html css js/glass_ui/css/style.css",
+		"/home/bruno/Git/Learning/codefr/html css js/glass_ui/index.html",
+		"/home/bruno/Git/Learning/codefr/html css js/glass_ui/js/app.js",
+		"/home/bruno/Git/Learning/codefr/html css js/glass_ui/img/flower1.jpg",
+		"/home/bruno/Git/learning/codefr/html css js/glass_ui/css/style.css",
+		"/home/bruno/Git/learning/codefr/html css js/glass_ui/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/challenge 3/challenge_3_starting_files/css/style.css",
+		"/home/bruno/Git/learning/codefr/html css js/challenge 3/challenge_3_starting_files/signup.html",
+		"/home/bruno/Git/learning/codefr/html css js/challenge 3/challenge_3_starting_files/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/challenge 3/challenge_3.sublime-project",
+		"/home/bruno/Git/learning/codefr/html css js/basic web structure/style.css",
+		"/home/bruno/Git/learning/codefr/html css js/basic web structure/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/Login page/login_page/style.css",
+		"/home/bruno/Git/learning/codefr/html css js/Login page/login_page/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/Login page/login_page/login_page.sublime-project",
+		"/home/bruno/Git/learning/codefr/html css js/Login page/style.css",
+		"/home/bruno/Git/learning/codefr/html css js/Login page/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/selectors/styles.css",
+		"/home/bruno/Git/learning/codefr/html css js/selectors/selectors.css",
+		"/home/bruno/Git/learning/codefr/html css js/selectors/index.html",
+		"/home/bruno/Documents/teste.html",
+		"/home/bruno/Git/learning/codefr/html css js/sign_up form/style.css",
+		"/home/bruno/Git/learning/codefr/html css js/sign_up form/index.html",
+		"/home/bruno/.config/sublime-text/Packages/User/ColorPicker.sublime-settings",
+		"/home/bruno/.config/sublime-text/Packages/ColorPicker/ColorPicker.sublime-settings",
+		"/home/bruno/.config/sublime-text/Packages/ColorPicker/lib/linux_colorpicker.py",
+		"/home/bruno/.config/sublime-text/Packages/ColorPicker/sublimecp.py",
+		"/home/bruno/Git/learning/codefr/html css js/css selectors/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/css selectors/style.css",
+		"/home/bruno/Git/learning/codefr/html css js/CSS first/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/CSS first/assets/styles.css",
+		"/home/bruno/Git/learning/codefr/html css js/CSS first/styles.css",
+		"/home/bruno/Git/learning/codefr/html css js/CSS first/secondpage.html",
+		"/home/bruno/Git/learning/codefr/html css js/tables/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/Challenge2_files/javascript.html",
+		"/home/bruno/Git/learning/codefr/html css js/Challenge2_files/css.html",
+		"/home/bruno/Git/learning/codefr/html css js/Challenge2_files/contents.txt",
+		"/home/bruno/Git/learning/codefr/html css js/html forms/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/Challenge2_files/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/Bruno folder/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/html_image/image.html",
+		"/home/bruno/Git/learning/codefr/html css js/emmet/emmet.html",
+		"/home/bruno/Git/learning/codefr/html css js/challenge 1/populartags+(1).html",
+		"/home/bruno/Git/learning/codefr/html css js/challenge 1/first_challenge.html",
+		"/home/bruno/Git/learning/codefr/html css js/challenge 1/challenge1_solution+(1)+(1).html",
+		"/home/bruno/Git/learning/codefr/html css js/Inline and block-line elements/index.html",
+		"/home/bruno/Git/learning/codefr/html css js/mypage.html",
+		"/home/bruno/Git/learning/codefr/html css js/basic html structure/index.html",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/connect2.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/connect1.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/window3.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/window2.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/window1.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/dropdown.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/combo.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/dial.py",
+		"/home/bruno/Git/learning/codefr/pyt/django/myclub_website/myclub_website/wsgi.py",
+		"/home/bruno/Git/learning/codefr/pyt/django/myclub_website/myclub_website/urls.py",
+		"/home/bruno/Git/learning/codefr/pyt/django/myclub_website/myclub_website/settings.py",
+		"/home/bruno/Git/learning/codefr/pyt/django/myclub_website/myclub_website/asgi.py",
+		"/home/bruno/Git/learning/codefr/pyt/django/myclub_website/myclub_website/__init__.py",
+		"/home/bruno/Git/learning/codefr/pyt/django/myclub_website/manage.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/status.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/radio.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/radio2.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/cb.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/todo2.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/todo.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/calc.py",
+		"/home/bruno/Documents/Computação & IT/simple problems/pyqt/hello_world.py"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"x",
+			"game"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"ifthis",
+			"rand"
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.LSP Log Panel":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.diagnostics":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.exec":
+	{
+		"height": 373.0,
+		"history":
+		[
+		]
+	},
+	"output.find_results":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"pinned_build_system": "Packages/User/C++ SFML.sublime-build",
+	"project": "game_1.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"lsp_show_inlay_hints": false
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 228.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

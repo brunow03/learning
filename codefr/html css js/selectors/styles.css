@@ -1,0 +1,46 @@
+/** {
+	margin: 0px;
+	padding: 0px;
+	color: rgb(43, 43, 160);
+}*/
+
+h1 {
+	color: green;
+}
+
+.title {
+	text-decoration: underline;
+	/*color: red;*/
+}
+
+#intro {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+div > h1{
+	text-transform: uppercase;
+	color: blue;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+}
+
+h1 + p {
+	color: blue;
+}
+
+.my_section {
+	background-color: rgb(67, 175, 228);
+	padding: 10px;
+}
+
+.my_section:hover {
+	background-color: rgb(70, 240, 138);
+}
+/*
+h1:hover {
+	text-decoration: underline;
+}*/
+
+#demo::first-line {
+	font-weight: bold;
+	text-transform: uppercase;
+}

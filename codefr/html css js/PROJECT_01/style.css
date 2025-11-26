@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wdth,wght@0,18..144,87..112,300..900;1,18..144,87..112,300..900&display=swap');
+
+* {
+	font-family: 'Merriweather', 'sans-serif';
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url('sunset.jpg ');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+
+	width: 100vw;
+
+	display: flex;
+
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+
+}
+
+.container {
+	text-align: center;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	background-color: wheat;
+	width: 50vw;
+	height: 800px;
+	margin: 30px;
+	padding: 10px;
+	border-radius: 1rem;
+
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.8);
+
+	background-origin: 15px;
+	background: rgba(255, 255, 255, 0.1);
+	border-top: 2px solid rgba(255, 255, 255, 0.5);
+	overflow: hidden;
+	backdrop-filter: blur(8px);
+}
+
+.container h1 {
+	color: white;
+	text-shadow: 2px 2px 2px #030303;
+
+	font-style: italic;
+	font-size: 1rem;
+}
+
+.container p {
+	font-style: italic;
+
+	text-shadow: 2px 2px 2px #030303;
+	font-size: 1rem;
+
+}
+
+#displayResult {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(29, 29, 29);
+	height: 160px;
+	width: 280px;
+	padding: 10px;
+	margin: 10px;
+
+}
+
+#result {
+	font-size: 2rem;
+}
+
+#ageInput {
+	width: 100%;
+	border: none;
+	background-color: rgba(248, 248, 248 / 0.4);
+	margin-bottom: 10px;
+	padding: 10px;
+	text-align: center;
+	color: black;
+	font-size: 1.4rem;
+	font-weight: bold;
+	text-shadow: 2px 2px 2px rgba(26, 25, 25, 0.4);
+
+}
+
+#ageInput:palceholder {
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 14px;
+}
+
+#ageInput:focus {
+	outline: none;
+	background-color: white;
+}
+
+.buttons {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	/*background-color: skyblue;*/
+}
+
+.buttons .refresh {
+	display: none;
+}
+
+.btn {
+	padding: 10px;
+	width: 100%;
+	border: none;
+	background-color: #fdac00;
+	margin: 10px;
+	color: rgb(19, 18, 18);
+	cursor: pointer;
+	transition: background-color 0.3s;
+
+}
+
+.btn:hover {
+	background-color: rgb(29, 28, 28);
+	color: white;
+}
+
+#resetBtn {
+	color: white;
+	background-color: rgb(58,57,57);
+
+}
+
+#resetBtn:hover {
+	background-color: #030303;
+
+}
+
+.btn:focus {
+	outline: none;
+	/*transform: scale(0.9);*/
+}
+
+.btn:active {
+	transform: scale(0.98);
+}
+
+.alert {
+	display: none;
+}
+
+.alert2 {
+	display: none;
+}
+
+/*if .active is present*/
+.alert.active {
+	display: block;
+}
+
+.alert2.active {
+	display: block;
+}
+
+.answer {
+	display: none;
+}
+
+.answer.active {
+	display: block;
+}
+
+@media(max-width: 800px) {
+	.container {
+		width: 60vw;
+	}
+}
+
+@media(max-width: 600px) {
+	.container {
+		width: 80vw;
+	}
+
+	.contaner h1 {
+		font-size: 1.5rem;
+	}
+
+	.container p {
+		font-size: 0.8rem;
+
+	}
+}
+
+@media(max-width: 300px) {
+	.container {
+		width: 90vw;
+	}
+}
+
