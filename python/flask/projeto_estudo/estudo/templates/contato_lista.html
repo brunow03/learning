@@ -28,6 +28,7 @@
                                 <th>E-mail</th>
                                 <th>Assunto</th>
                                 <th>Respondido</th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -43,6 +44,7 @@
                                         Sim
                                     {% endif %}
                                 </td>
+                                <td><a href="{{ url_for('contatoDetail', id=linha.id) }}"><img src="{{ url_for('static', filename='img/sonic-icon.svg') }}" style="width: 20px;"></a></td>
                             </tr>
                             {% endfor %}
 
