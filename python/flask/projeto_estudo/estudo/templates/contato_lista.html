@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+
+    <div class="container">
+
+        {% include 'nav.html' %}
+
+            <div class="row mt-4">
+                <h3>Lista de Contatos</h3>
+
+                <!-- {{context['dados']}} -->
+                
+                <form action="" method="get" class="row">
+                    <div class="col-9">
+                        <input type="text" name="pesquisa" class="form-control">
+                    </div>
+                    <div class="col-3">
+                        <button type="submit" class="btn btn-primary">Pesquisar</button>
+                    </div>
+                </form>
+
+                <div class="col-12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>E-mail</th>
+                                <th>Assunto</th>
+                                <th>Respondido</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for linha in context['dados'] %}
+                            <tr>
+                                <td>{{linha.nome}}</td>
+                                <td>{{linha.email}}</td>
+                                <td>{{linha.assunto}}</td>
+                                <td>
+                                    {% if linha.respondido == 0 %}
+                                        Não
+                                    {% else %}
+                                        Sim
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            
+
+    </div>
+
+{% endblock %}
