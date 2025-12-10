@@ -12,7 +12,7 @@ int main()
 	const unsigned WINDOW_HEIGHT = 600;
 	sf::RenderWindow window(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "SFML works!");
 	window.setFramerateLimit(120);
-
+	
 	float dt;
 	Clock dt_clock;
 

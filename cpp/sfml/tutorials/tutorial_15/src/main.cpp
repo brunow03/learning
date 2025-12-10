@@ -85,7 +85,7 @@ int main()
 	srand(time(NULL));
 
 	RenderWindow window(VideoMode(800, 600), "Spaceship action!", Style::Default);
-	window.setFramerateLimit(200);
+	window.setFramerateLimit(60);
 
 	Clock clock;
 	float dt = 0.f;
@@ -93,7 +93,7 @@ int main()
 
 	//Init text
 	Font font;
-	font.loadFromFile("Fonts/Dosis-Light.ttf");
+	font.loadFromFile("Fonts/xkcd-script.ttf");
 
 	//Init textures
 	Texture playerTex;
@@ -150,7 +150,7 @@ int main()
 		dt = clock.restart().asSeconds();
 		std::cout << dt << "\n";
 
-		//UPDATE ========================================================UPDATE
+		//UPDATE ======================================================== UPDATE
 		if (player.HP > 0)
 		{
 			//Player

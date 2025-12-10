@@ -24,7 +24,7 @@ int main()
 	Vector2f direction;
 	float maxVelocity = 25.f;
 	float acceleration = 1.f;
-	float drag = 0.5f;
+	float drag = .5f;
 
 	while (window.isOpen())
 	{
@@ -117,3 +117,4 @@ int main()
 
 	return 0;
 }
+

@@ -17,7 +17,7 @@ int main()
 	sf::Vector2f mousePosView;
 	sf::Vector2u mousePosGrid;
 	sf::Font font;
-	font.loadFromFile("/home/bruno/xkcd-font-master/xkcd-script/font/xkcd-script.ttf");
+	font.loadFromFile("Fonts/xkcd-script.ttf");
 	sf::Text text;
 	text.setCharacterSize(30);
 	text.setFillColor(sf::Color::White);

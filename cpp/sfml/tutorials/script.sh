@@ -39,8 +39,26 @@
 #     cd ..
 # done
 
-for n in {01..25}; do
-    echo $n
-    rm tutorial_$n/Textures/*.svg
-    # cp -r base/Textures -t ./tutorial_$n
+# for n in {01..25}; do
+#     echo $n
+#     rm tutorial_$n/Textures/*.svg
+#     # cp -r base/Textures -t ./tutorial_$n
+# done
+
+# for n in {18..24}; do
+#     mkdir tutorial_$n
+#     cp -r base/* -t tutorial_$n/
+#     cd tutorial_$n
+#     ./configure.sh
+#     cd ..
+# done
+
+# for n in {01..24}; do
+#     [ "$n" = "02" ] && continue
+#     cp -r base/Fonts -t tutorial_$n/
+# done
+
+for n in {01..24}; do
+    [ "$n" = "02" ] && continue
+    cp base/run.sh -t tutorial_$n/
 done
