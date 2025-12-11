@@ -131,10 +131,10 @@ int main(int argc, char const *argv[])
 
         window.draw(shape);
 
-        fromX = mousePosGrid.x - 2;
+        fromX = mousePosGrid.x - 1;
         toX = mousePosGrid.x + 2;
 
-        fromY = mousePosGrid.y - 2;
+        fromY = mousePosGrid.y - 1;
         toY = mousePosGrid.y + 2;
 
         // fromX
