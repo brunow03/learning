@@ -1,0 +1,6 @@
+{
+    "git.openRepositoryInParentFolders": "never",
+    "git.confirmSync": false,
+    "git.enabled": false,
+    "python.defaultInterpreterPath": "/bin/python3"
+}

@@ -8,198 +8,68 @@ using namespace sf;
 
 int main()
 {
-	const unsigned WINDOW_WIDTH = 800;
-	const unsigned WINDOW_HEIGHT = 600;
-	sf::RenderWindow window(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "SFML works!");
-	window.setFramerateLimit(120);
-	
-	float dt;
-	Clock dt_clock;
+    RenderWindow window(VideoMode(1366, 768), "View Tutorial", Style::Fullscreen);
 
-	const float gridSize = 50.f;
+	View mainView;
+	mainView.setSize(1366, 768);
+	// mainView.setViewport(FloatRect(0, 0, 1366, 768));
 
-	Vector2i mousePosGrid;
-
-	//Player
-	const float movementSpeed = 400.f;
-	Vector2f velocity;
 	RectangleShape player;
-	player.setFillColor(Color::Green);
-	player.setSize(Vector2f(gridSize, gridSize));
+	player.setSize(Vector2f(50.f, 50.f));
+	player.setPosition(500.f, 500.f);
 
-	//Walls
-	std::vector<RectangleShape> walls;
-	
-	RectangleShape wall;
-	wall.setFillColor(Color::Red);
-	wall.setSize(Vector2f(gridSize, gridSize));
-	wall.setPosition(gridSize * 5, gridSize * 2);
+	RectangleShape object;
+	object.setSize(Vector2f(50.f, 50.f));
+	object.setPosition(500.f, 500.f);
 
-	walls.push_back(wall);
-
-	//Collision
-	FloatRect nextPos;
+	RectangleShape UIElement;
+	UIElement.setSize(Vector2f(300.f, 20.f));
 
 	while (window.isOpen())
 	{
-		dt = dt_clock.restart().asSeconds();
-
-		mousePosGrid.x = Mouse::getPosition(window).x / (int)gridSize;
-		mousePosGrid.y = Mouse::getPosition(window).y / (int)gridSize;
-
-		sf::Event event;
+		Event event;
 		while (window.pollEvent(event))
 		{
-			if (event.type == sf::Event::Closed)
+			if (event.type == Event::Closed)
 				window.close();
+			if (event.KeyPressed && event.key.code == Keyboard::Escape)
+                window.close();
 		}
 
-		//Add walls
-		if (Mouse::isButtonPressed(Mouse::Left))
+		// Update
+		if (Keyboard::isKeyPressed(Keyboard::A))
 		{
-			bool exists = false;
-			for (size_t i = 0; i < walls.size() && !exists; i++)
-			{
-				if (walls[i].getPosition().x / (int)gridSize == mousePosGrid.x
-					&& walls[i].getPosition().y / (int)gridSize == mousePosGrid.y)
-				{
-					exists = true;
-				}
-			}
-
-			if (!exists)
-			{
-				wall.setPosition(mousePosGrid.x * gridSize, mousePosGrid.y * gridSize);
-				walls.push_back(wall);
-			}
+			player.move(-0.5f, 0.f);
 		}
-
-		//Remove wall
-		if (Mouse::isButtonPressed(Mouse::Right))
+		else if (Keyboard::isKeyPressed(Keyboard::D))
 		{
-			bool exists = false;
-			int index = -1;
-			for (size_t i = 0; i < walls.size() && !exists; i++)
-			{
-				if (walls[i].getPosition().x / (int)gridSize == mousePosGrid.x
-					&& walls[i].getPosition().y / (int)gridSize == mousePosGrid.y)
-				{
-					exists = true;
-					index = i;
-				}
-			}
-
-			if (exists)
-			{
-				walls.erase(walls.begin() + index);
-			}
+			player.move(0.5f, 0.f);
 		}
-
-		//Player movement
-		velocity.y = 0.f;
-		velocity.x = 0.f;
 
 		if (Keyboard::isKeyPressed(Keyboard::W))
 		{
-			velocity.y += -movementSpeed * dt;
+			player.move(0.f, -0.5f);
 		}
-		if (Keyboard::isKeyPressed(Keyboard::S))
+		else if (Keyboard::isKeyPressed(Keyboard::S))
 		{
-			velocity.y += movementSpeed * dt;
-		}
-		if (Keyboard::isKeyPressed(Keyboard::A))
-		{
-			velocity.x += -movementSpeed * dt;
-		}
-		if (Keyboard::isKeyPressed(Keyboard::D))
-		{
-			velocity.x += movementSpeed * dt;
+			player.move(0.f, 0.5f);
 		}
 
-		//Collision
-		for (auto &wall : walls)
-		{
-			FloatRect playerBounds = player.getGlobalBounds();
-			FloatRect wallBounds = wall.getGlobalBounds();
+		mainView.setCenter(player.getPosition());
 
-			nextPos = playerBounds;
-			nextPos.left += velocity.x;
-			nextPos.top += velocity.y;
-
-			if (wallBounds.intersects(nextPos))
-			{
-				//Bottom collision
-				if (playerBounds.top < wallBounds.top
-					&& playerBounds.top + playerBounds.height < wallBounds.top + wallBounds.height
-					&& playerBounds.left < wallBounds.left + wallBounds.width
-					&& playerBounds.left + playerBounds.width > wallBounds.left
-					)
-				{
-					velocity.y = 0.f;
-					player.setPosition(playerBounds.left, wallBounds.top - playerBounds.height);
-				}
-
-				//Top collision
-				else if (playerBounds.top > wallBounds.top
-					&& playerBounds.top + playerBounds.height > wallBounds.top + wallBounds.height
-					&& playerBounds.left < wallBounds.left + wallBounds.width
-					&& playerBounds.left + playerBounds.width > wallBounds.left
-					)
-				{
-					velocity.y = 0.f;
-					player.setPosition(playerBounds.left, wallBounds.top + wallBounds.height);
-				}
-
-				//Right collision
-				if (playerBounds.left < wallBounds.left
-					&& playerBounds.left + playerBounds.width < wallBounds.left + wallBounds.width
-					&& playerBounds.top < wallBounds.top + wallBounds.height
-					&& playerBounds.top + playerBounds.height > wallBounds.top
-					)
-				{
-					velocity.x = 0.f;
-					player.setPosition(wallBounds.left - playerBounds.width, playerBounds.top);
-				}
-				
-				//Left collision
-				else if (playerBounds.left > wallBounds.left
-					&& playerBounds.left + playerBounds.width > wallBounds.left + wallBounds.width
-					&& playerBounds.top < wallBounds.top + wallBounds.height
-					&& playerBounds.top + playerBounds.height > wallBounds.top
-					)
-				{
-					velocity.x = 0.f;
-					player.setPosition(wallBounds.left + wallBounds.width, playerBounds.top);
-				}
-			}
-		}
-
-		player.move(velocity);
-
-		//Collision screen
-		//Left collision
-		if (player.getPosition().x < 0.f)
-			player.setPosition(0.f, player.getPosition().y);
-		//Top collision
-		if (player.getPosition().y < 0.f)
-			player.setPosition(player.getPosition().x, 0.f);
-		//Right collision
-		if (player.getPosition().x + player.getGlobalBounds().width > WINDOW_WIDTH)
-			player.setPosition(WINDOW_WIDTH - player.getGlobalBounds().width, player.getPosition().y);
-		//Bottom collision
-		if (player.getPosition().y + player.getGlobalBounds().height > WINDOW_HEIGHT)
-			player.setPosition(player.getPosition().x, WINDOW_HEIGHT - player.getGlobalBounds().height);
-
-		//Render
+		// Draw
 		window.clear();
-
+		
+		// Draw stuff
+		window.setView(mainView);
 		window.draw(player);
+		window.draw(object);
 
-		for (auto &i : walls)
-		{
-			window.draw(i);
-		}
+		// Draw UI
+		window.setView(window.getDefaultView());
+		window.draw(UIElement);
 
+		// Finished drawing
 		window.display();
 	}
 

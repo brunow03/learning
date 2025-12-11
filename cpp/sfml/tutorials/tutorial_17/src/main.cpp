@@ -5,174 +5,207 @@
 #include "SFML/Window.hpp"
 #include "SFML/System.hpp"
 
+using namespace sf;
+
 int main()
 {
-	//Init game
-	float gridSizeF = 100.f;
-	unsigned gridSizeU = static_cast<unsigned>(gridSizeF);
-	float dt = 0.f;
-	sf::Clock dtClock;
-	sf::Vector2i mousePosScreen;
-	sf::Vector2i mousePosWindow;
-	sf::Vector2f mousePosView;
-	sf::Vector2u mousePosGrid;
-	sf::Font font;
-	font.loadFromFile("Fonts/xkcd-script.ttf");
-	sf::Text text;
-	text.setCharacterSize(30);
-	text.setFillColor(sf::Color::White);
-	text.setFont(font);
-	text.setPosition(20.f, 20.f);
-	text.setString("TEST");
+	const unsigned WINDOW_WIDTH = 800;
+	const unsigned WINDOW_HEIGHT = 600;
+	RenderWindow window(VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "SMLF works!", Style::Default);
+	window.setFramerateLimit(60);
 
-	//Init window
-	sf::RenderWindow window(sf::VideoMode(1920, 1080), "SFML works!");
-	window.setFramerateLimit(120);
-	
-	//Init window
-	sf::View view;
-	view.setSize(1920.f, 1080.f);
-	view.setCenter(window.getSize().x / 2.f, window.getSize().y / 2.f);
-	float viewSpeed = 200.f;
+	float dt;
+	Clock dt_clock;
 
-	window.setView(view);
+	const float gridSize = 50.f;
 
-	//Init game elements
-	sf::RectangleShape shape(sf::Vector2f(gridSizeF, gridSizeF));
+	Vector2f mousePosGrid;
 
-	const int mapSize = 1000;
+	// Player
+	const float movementSpeed = 250.f;
+	Vector2f velocity;
+	RectangleShape player;
+	player.setFillColor(Color::Green);
+	player.setSize(Vector2f(gridSize, gridSize));
 
-	std::vector<std::vector<sf::RectangleShape>> tileMap;
+	// Walls
+	std::vector<RectangleShape> walls;
 
-	tileMap.resize(mapSize, std::vector<sf::RectangleShape>());
+	RectangleShape wall;
+	wall.setFillColor(Color::Red);
+	wall.setSize(Vector2f(gridSize, gridSize));
+	wall.setPosition(gridSize * 5, gridSize * 2);
 
-	for (int x = 0; x < mapSize; x++)
-	{
-		tileMap[x].resize(mapSize, sf::RectangleShape());
-		for (int y = 0; y < mapSize; y++)
-		{
-			tileMap[x][y].setSize(sf::Vector2f(gridSizeF, gridSizeF));
-			tileMap[x][y].setFillColor(sf::Color::White);
-			tileMap[x][y].setOutlineThickness(1.f);
-			tileMap[x][y].setOutlineColor(sf::Color::Black);
-			tileMap[x][y].setPosition(x * gridSizeF, y * gridSizeF);
-		}
-	}
+	walls.push_back(wall);
 
-	int fromX = 0;
-	int toX = 0;
-	int fromY = 0;
-	int toY = 0;
-
-	sf::RectangleShape tileSelector(sf::Vector2f(gridSizeF, gridSizeF));
-	tileSelector.setFillColor(sf::Color::Transparent);
-	tileSelector.setOutlineThickness(1.f);
-	tileSelector.setOutlineColor(sf::Color::Green);
+	// Collision
+	FloatRect nextPos;
+	// RectangleShape nextBox;
+	// nextBox.setSize(Vector2f(gridSize, gridSize));
+	// nextBox.setFillColor(Color::Transparent);
+	// nextBox.setOutlineColor(Color::White);
+	// nextBox.setOutlineThickness(1.f);
 
 	while (window.isOpen())
 	{
-		//Update dt
-		dt = dtClock.restart().asSeconds();
+		dt = dt_clock.restart().asSeconds();
 
-		//Update mouse positions
-		mousePosScreen = sf::Mouse::getPosition();
-		mousePosWindow = sf::Mouse::getPosition(window);
-		window.setView(view);
-		mousePosView = window.mapPixelToCoords(mousePosWindow);
-		if(mousePosView.x >= 0.f)
-			mousePosGrid.x = mousePosView.x / gridSizeU;
-		if (mousePosView.y >= 0.f)
-			mousePosGrid.y = mousePosView.y / gridSizeU;
-		window.setView(window.getDefaultView());
+		mousePosGrid.x = Mouse::getPosition(window).x / (int)gridSize;
+		mousePosGrid.y = Mouse::getPosition(window).y / (int)gridSize;
 
-		//Update game elements
-		tileSelector.setPosition(mousePosGrid.x * gridSizeF, mousePosGrid.y * gridSizeF);
-
-		//Update UI
-		std::stringstream ss;
-		ss << "Screen: " << mousePosScreen.x << " " << mousePosScreen.y << "\n"
-			<< "Window: " << mousePosWindow.x << " " << mousePosWindow.y << "\n"
-			<< "View: " << mousePosView.x << " " << mousePosView.y << "\n"
-			<< "Grid: " << mousePosGrid.x << " " << mousePosGrid.y << "\n";
-
-		text.setString(ss.str());
-
-		//Events
-		sf::Event event;
+		Event event;
 		while (window.pollEvent(event))
 		{
-			if (event.type == sf::Event::Closed)
+			if (event.type == Event::Closed)
+				window.close();
+			// if (event.KeyPressed && event.key.code == Keyboard::Escape)
+            //     window.close();
+			if (event.type == Event::KeyPressed && event.key.code == Keyboard::Escape)
 				window.close();
 		}
 
-		//Update
-		//Update input
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) //Left
+		// Add walls
+		if (Mouse::isButtonPressed(Mouse::Left))
 		{
-			view.move(-viewSpeed * dt, 0.f);
-		}
-		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) //Right
-		{
-			view.move(viewSpeed * dt, 0.f);
-		}
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) //Up
-		{
-			view.move(0.f, -viewSpeed * dt);
-		}
-		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) //Down
-		{
-			view.move(0.f, viewSpeed * dt);
-		}
-
-		//Render
-		window.clear();
-		
-		//Render game elements
-		window.setView(view);
-
-		window.draw(shape);
-		
-		fromX = view.getCenter().x / gridSizeF - 5;
-		toX = view.getCenter().x / gridSizeF + 6;
-		fromY = view.getCenter().y / gridSizeF - 5;
-		toY = view.getCenter().y / gridSizeF + 6;
-
-		if (fromX < 0)
-			fromX = 0;
-		else if (fromX >= mapSize)
-			fromX = mapSize - 1;
-
-		if (toX < 0)
-			toX = 0;
-		else if (toX >= mapSize)
-			toX = mapSize - 1;
-
-		if (fromY < 0)
-			fromY = 0;
-		else if (fromY >= mapSize)
-			fromY = mapSize - 1;
-
-		if (toY < 0)
-			toY = 0;
-		else if (toY >= mapSize)
-			toY = mapSize - 1;
-
-		for (int x = fromX; x < toX; x++)
-		{
-			for (int y = fromY; y < toY; y++)
+			bool exists = false;
+			for (size_t i = 0; i < walls.size() && !exists; i++)
 			{
-				window.draw(tileMap[x][y]);
+				if (walls[i].getPosition().x / (int)gridSize == mousePosGrid.x &&
+					walls[i].getPosition().y / (int)gridSize == mousePosGrid.y)
+				{
+					exists = true;
+				}
+			}
+
+			if (!exists)
+			{
+				wall.setPosition(mousePosGrid.x * gridSize, mousePosGrid.y * gridSize);
+				walls.push_back(wall);
 			}
 		}
 
-		window.draw(tileSelector);
+		if (Mouse::isButtonPressed(Mouse::Right))
+		{
+			bool exists = false;
+			int index = -1;
+			for (size_t i = 0; i < walls.size() && !exists; i++)
+			{
+				if (walls[i].getPosition().x / (int)gridSize == mousePosGrid.x &&
+					walls[i].getPosition().y / (int)gridSize == mousePosGrid.y)
+				{
+					exists = true;
+					index = i;
+				}
+			}
 
-		//Render ui
-		window.setView(window.getDefaultView());	
+			if (exists)
+			{
+				walls.erase(walls.begin() + index);
+			}
+		}
+		
+		// Player Movement
+		velocity.y = 0.f;
+		velocity.x = 0.f;
 
-		window.draw(text);
+		if (Keyboard::isKeyPressed(Keyboard::W))
+			velocity.y += -movementSpeed * dt;
+		if (Keyboard::isKeyPressed(Keyboard::S))
+			velocity.y += movementSpeed * dt;
+		if (Keyboard::isKeyPressed(Keyboard::A))
+			velocity.x += -movementSpeed * dt;
+		if (Keyboard::isKeyPressed(Keyboard::D))
+			velocity.x += movementSpeed * dt;
 
-		//Done drawing
+		// Collision
+		for (auto &wall : walls)
+		{
+			FloatRect playerBounds = player.getGlobalBounds();
+			FloatRect wallBounds = wall.getGlobalBounds();
+
+			nextPos = playerBounds;
+			nextPos.left += velocity.x;
+			nextPos.top += velocity.y;
+			// nextBox.setPosition(nextPos.left, nextPos.top);
+
+			if (wallBounds.intersects(nextPos))
+			{
+				// velocity.x = 0.f;
+				// velocity.y = 0.f;
+				// std::cout << "COLLISION!" << "\n";
+
+				// Bottom collision
+				if (playerBounds.top < wallBounds.top
+					&& playerBounds.top + playerBounds.height < wallBounds.top + wallBounds.height
+					&& playerBounds.left < wallBounds.left + wallBounds.width
+					&& playerBounds.left + playerBounds.width > wallBounds.left
+					)
+				{
+					velocity.y = 0.f;
+					player.setPosition(playerBounds.left, wallBounds.top - playerBounds.height);
+				}
+				// Top collision
+				else if (playerBounds.top > wallBounds.top	
+					&& playerBounds.top + playerBounds.height > wallBounds.top + wallBounds.height
+					&& playerBounds.left < wallBounds.left + wallBounds.width
+					&& playerBounds.left + playerBounds.width > wallBounds.left
+					)
+				{
+					velocity.y = 0.f;
+					player.setPosition(playerBounds.left, wallBounds.top + wallBounds.height);
+				}		
+
+				// Right collision
+				if (playerBounds.left < wallBounds.left
+					&& playerBounds.left + playerBounds.width < wallBounds.left + wallBounds.width
+					&& playerBounds.top < wallBounds.top + wallBounds.height
+					&& playerBounds.top + playerBounds.height > wallBounds.top
+					)
+				{
+					velocity.x = 0.f;
+					player.setPosition(wallBounds.left - playerBounds.width, playerBounds.top);
+				}
+				// Left collision
+				else if (playerBounds.left > wallBounds.left 
+					&& playerBounds.left + playerBounds.width > wallBounds.left + wallBounds.width
+					&& playerBounds.top < wallBounds.top + wallBounds.height
+					&& playerBounds.top + playerBounds.height > wallBounds.top
+					)
+				{
+					velocity.x = 0.f;
+					player.setPosition(wallBounds.left + wallBounds.width, playerBounds.top);
+				}
+			}
+		}
+
+		player.move(velocity);
+
+		// Collision screen
+		// Left collision
+		if (player.getPosition().x < 0)
+			player.setPosition(0, player.getPosition().y);
+		// Top collision
+		if (player.getPosition().y < 0)
+			player.setPosition(player.getPosition().x, 0.f);
+		// Right collision
+		if (player.getPosition().x + player.getGlobalBounds().width > window.getSize().x)
+			player.setPosition(WINDOW_WIDTH - player.getGlobalBounds().width, player.getPosition().y);
+		// Bottom collision
+		if (player.getPosition().y + player.getGlobalBounds().height > window.getSize().y)
+			player.setPosition(player.getPosition().x, WINDOW_HEIGHT - player.getGlobalBounds().height);
+
+		// Render
+		window.clear();
+
+		window.draw(player);
+
+		for (auto &i : walls)
+		{
+			window.draw(i);
+		}
+
+		// window.draw(nextBox);
+
 		window.display();
 	}
 
