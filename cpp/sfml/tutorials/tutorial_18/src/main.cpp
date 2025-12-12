@@ -42,7 +42,7 @@ int main(int argc, char const *argv[])
     // Init game elements
     RectangleShape shape(Vector2f(gridSizeF, gridSizeF));
 
-    const int mapSize = 10;
+    const int mapSize = 100;
 
     std::vector<std::vector <RectangleShape>> tileMap;
 
@@ -131,11 +131,10 @@ int main(int argc, char const *argv[])
 
         window.draw(shape);
 
-        fromX = mousePosGrid.x - 1;
-        toX = mousePosGrid.x + 2;
-
-        fromY = mousePosGrid.y - 1;
-        toY = mousePosGrid.y + 2;
+        fromX = view.getCenter().x / gridSizeF - 5;
+        toX = view.getCenter().x / gridSizeF + 6;
+        fromY = view.getCenter().y / gridSizeF - 5;
+        toY = view.getCenter().y / gridSizeF + 6;
 
         // fromX
         if (fromX < 0)
