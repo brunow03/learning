@@ -58,7 +58,11 @@
 #     cp -r base/Fonts -t tutorial_$n/
 # done
 
-for n in {01..24}; do
-    [ "$n" = "02" ] && continue
-    cp base/run.sh -t tutorial_$n/
+# for n in {01..24}; do
+#     [ "$n" = "02" ] && continue
+#     cp base/run.sh -t tutorial_$n/
+# done
+
+for n in {03..19}; do
+    cp tutorial_01/.gitignore -t tutorial_$n/
 done
