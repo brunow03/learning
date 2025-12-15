@@ -48,6 +48,8 @@ int main(int argc, char const *argv[])
                 window.close();
         }
 
+        // Event banana;
+
         // Update
         // Player
         playerCenter = Vector2f(player.getPosition().x + player.getRadius(), player.getPosition().y + player.getRadius());

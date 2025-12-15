@@ -7,7 +7,7 @@ using namespace sf;
 
 int main(int argc, char const *argv[])
 {
-    RenderWindow window(VideoMode(640,400), "Example 1", Style::None);
+    RenderWindow window(VideoMode(800, 600), "Example 1", Style::Default);
     window.setFramerateLimit(60);
 
     while (window.isOpen())
@@ -15,8 +15,10 @@ int main(int argc, char const *argv[])
         Event event;
         while (window.pollEvent(event))
         {
-            if (event.KeyPressed && event.key.code == Keyboard::Escape)
-                window.close();
+            if (event.type == Event::Closed)
+				window.close();
+			if (event.type == Event::KeyPressed && event.key.code == Keyboard::Escape)
+				window.close();
         }
 
         // Update
