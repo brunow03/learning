@@ -1,2 +1,12 @@
 ./read-and-copy/out.txt
 ./read-and-copy/run
+
+*.o.cdm
+*.o
+*.cmd
+*.ko
+*.mod
+*.symvers
+*.order
+*.mod.c
+
